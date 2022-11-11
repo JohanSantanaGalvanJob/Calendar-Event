@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyString
+  date: 2022-11-11
+  starting_hour: MyString
+  finished_hour: MyString
+  url: MyString
+
+two:
+  title: MyString
+  description: MyString
+  date: 2022-11-11
+  starting_hour: MyString
+  finished_hour: MyString
+  url: MyString
