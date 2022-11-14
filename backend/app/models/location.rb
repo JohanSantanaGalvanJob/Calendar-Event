@@ -1,3 +1,3 @@
 class Location < ApplicationRecord
-    has_one :events
+    has_many :events
 end
