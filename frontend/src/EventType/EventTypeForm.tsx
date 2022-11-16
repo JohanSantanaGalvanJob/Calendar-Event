@@ -3,34 +3,33 @@ import { IEventType } from "../types/eventTypeData"
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import { Button, Form } from "react-bootstrap";
+import {getOneEventType,getAllEventType,createEventType,updateEventType,deleteEventType} from './EventTypeMethods';
 
-export const EventTypeForm = (props: { updateEventTypeList: (EventType: IEventType) => void; }) => {
+export const EventTypeForm = (props: { updateEventTypeList: (EventType: IEventType) => void, dataChanged: any }) => {
   const [name, setName] = useState<string>('')
 
   const { register, handleSubmit, formState: { errors } } = useForm();
 
   const onSubmit = async () => {
-    const EventTypeData : IEventType = {name}
+    const EventTypeData: IEventType = { name }
 
     try {
-      const response = await axios
-        .post('http://localhost:3000/event_types', {EventType: EventTypeData})
 
-        props.updateEventTypeList(response.data)
- 
-    } catch(error: any) {
+      createEventType(name);
+
+    } catch (error: any) {
       console.log(error)
-    } 
+    }
   }
 
   return (
     <>
       <Form onSubmit={handleSubmit(onSubmit)}>
-        
+
         <Form.Group>
           <Form.Label>Content</Form.Label>
           <Form.Control
-            {...register("name", {required: true})}
+            {...register("name", { required: true })}
             type="text"
             name="name"
             onChange={e => setName(e.target.value)}

@@ -34,10 +34,15 @@ export const EventTypeList = () => {
 
     setUpdate(true)
   }
+
+  const dataChanged = () => {
+    getEventTypes();
+    setUpdate(false);
+  }
   
   return (
     <>
-      <EventTypeForm updateEventTypeList={updateEventTypeList} />
+      <EventTypeForm updateEventTypeList={updateEventTypeList} dataChanged={dataChanged}/>
       
       <h1>Post List</h1>
       {EventTypes.map((post: IEventType) => (
