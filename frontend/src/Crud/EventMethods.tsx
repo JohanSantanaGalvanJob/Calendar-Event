@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 
 
 const createData = (title: string, description: string, date: Date, starting_hour: string, finished_hour:
-    string, url: string, location_id: number, event_id: number) => {
+    string, url: string, location_id: number, event_type_id: number) => {
     return JSON.stringify({
         "event": {
             "title": title,
@@ -14,7 +14,7 @@ const createData = (title: string, description: string, date: Date, starting_hou
             "finished_hour": finished_hour,
             "url": url,
             "location_id": location_id,
-            "event_id": event_id
+            "event_type_id": event_type_id
         }
     });
 }
@@ -50,14 +50,14 @@ export const getOneEvent = async (id: number) => {
 }
 
 export const createEvent = async (title: string, description: string, date: Date, starting_hour: string, finished_hour:
-    string, url: string, location_id: number, event_id: number) => {
+    string, url: string, location_id: number, event_type_id: number) => {
     var post = {
         method: 'post',
         url: 'http://localhost:3000/events',
         headers: {
             'Content-Type': 'application/json'
         },
-        data: createData(title,description,date,starting_hour,finished_hour,url,location_id,event_id)
+        data: createData(title,description,date,starting_hour,finished_hour,url,location_id,event_type_id)
     };
 
     axios(post).then(function (response) {
@@ -68,14 +68,14 @@ export const createEvent = async (title: string, description: string, date: Date
 }
 
 export const updateEvent = async (id: number, title: string, description: string, date: Date, starting_hour: string, finished_hour:
-    string, url: string, location_id: number, event_id: number) => {
+    string, url: string, location_id: number, event_type_id: number) => {
     var update = {
         method: 'put',
         url: `http://localhost:3000/event_types/${id}`,
         headers: {
             'Content-Type': 'application/json'
         },
-        data: createData(title,description,date,starting_hour,finished_hour,url,location_id,event_id)
+        data: createData(title,description,date,starting_hour,finished_hour,url,location_id,event_type_id)
     };
 
     axios(update)
