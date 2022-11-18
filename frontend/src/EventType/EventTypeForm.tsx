@@ -3,7 +3,7 @@ import { IEventType } from "../types/eventTypeData"
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import { Button, Form } from "react-bootstrap";
-import {getOneEventType,getAllEventType,createEventType,updateEventType,deleteEventType} from './EventTypeMethods';
+import {getOneEventType,getAllEventType,createEventType,updateEventType,deleteEventType} from '../Crud/EventTypeMethods';
 
 export const EventTypeForm = (props: { updateEventTypeList: (EventType: IEventType) => void, dataChanged: any }) => {
   const [name, setName] = useState<string>('')
