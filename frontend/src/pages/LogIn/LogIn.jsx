@@ -11,31 +11,32 @@ export const LogIn = () => {
                 <Row className="justify-content-center">
                     <Col xs={8} md={6}>
                         <div className="log-in-style">
-                            <h2 className="title">Log In</h2>
+                            <h2 className="log-in-title">Log In</h2>
                             <form>
-                                <div className='field'>
+                                <div className='log-in-field'>
                                     <input type="text" placeholder='Write your email' required></input>
-                                    <p className='hypertext'>Forgot Email?</p>
+                                    <p className='log-in-hypertext'>Forgot Email?</p>
                                 </div>
 
-                                <div className='field'>
+                                <div className='log-in-field'>
                                     <input type="password" placeholder='Write your password' required></input>
-                                    <p className='hypertext'>Forgot password?</p>
+                                    <p className='log-in-hypertext'>Forgot password?</p>
                                 </div>
 
-                                <div className='field'>
+                                <div className='log-in-field'>
                                     <input type="password" placeholder='Repeat your password' required></input>
                                 </div>
-                                <div className='login-buttons'>
-                                    <div className='login'>
-                                        <button className="button">Log In</button>
+                                <div>
+                                    <div>
+                                        <button className="log-in-button">Log In</button>
                                     </div>
-                                    <div className='extra'>
-                                        <h2 className='subtext'>Any Problem?</h2>
-                                        <button className="button">Contact Us</button>
-                                    </div>
+
                                 </div>
                             </form>
+                            <div>
+                                <h2 className='log-in-subtext'>Any Problem?</h2>
+                                <button className="log-in-button">Contact Us</button>
+                            </div>
 
                         </div>
                     </Col>

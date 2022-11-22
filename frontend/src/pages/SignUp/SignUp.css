@@ -1,11 +1,11 @@
-/* @import url('http://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('http://fonts.googleapis.com/css?family=Lato:400,700');
 
 body{
     justify-content: center;
     background-color: #F4F9F9;
 }
 
-.title{
+.sign-up-title{
     font-weight: bold;
     font-size: 2em;
 }
@@ -17,14 +17,14 @@ body{
 
 }
 
-.row{
+.sign-up-field{
     justify-content: center;
     padding-bottom: 1.5em;
 }
 
-.row input{
+.sign-up-field input{
     height: 2em;
-    width: 15em;
+    width: 100%;
     outline: none;
     padding-left: 10px;
     border-radius: 5px;
@@ -37,11 +37,11 @@ body{
    
   }
 
-  .button {
+  .sign-up-button {
     font-size: 1.75em;
     font-weight: bold;
     text-align: center;
-    width: 10em;
+    width: 8em;
     height: 1.75em;
     color: #424242;
     background: #A4EBF3;
@@ -49,33 +49,12 @@ body{
     border: 0.25px solid #A4EBF3;
 }
 
-.col{
-    padding-left: 1em;
-    padding-right: 1em;
-}
 
-.subtext{
+.sign-up-subtext{
     color: #424242;
-    font-size: 1.75em;
+    font-size: 1.5em;
     
 }
 
-
-  @media only screen and (min-width: 768px) {
-    .row input{
-        height: 2em;
-        width: 70%;
-        outline: none;
-        padding-left: 10px;
-        border-radius: 5px;
-        border: 2px solid #000000;
-        font-size: 16px;
-        font-style: italic;
-        transition: all 0.3s ease;
-        background-color: #CCF2F4;
-        color: #424242;
-       
-      }
-  } */
 
   
