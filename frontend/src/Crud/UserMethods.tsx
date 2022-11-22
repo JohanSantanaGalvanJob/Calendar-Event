@@ -24,6 +24,8 @@ const signIn = (email: string,password: string) => {
     });
 }
 
+
+
 export const getAllUsers = async () => {
     var getAll = {
         method: 'get',

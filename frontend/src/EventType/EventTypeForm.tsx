@@ -2,7 +2,6 @@ import axios from "axios";
 import { IEventType } from "../types/eventTypeData"
 import { useForm } from "react-hook-form";
 import { useState } from "react";
-import { Button, Form } from "react-bootstrap";
 import {getOneEventType,getAllEventType,createEventType,updateEventType,deleteEventType} from '../Crud/EventTypeMethods';
 
 export const EventTypeForm = (props: { updateEventTypeList: (EventType: IEventType) => void, dataChanged: any }) => {
@@ -24,9 +23,11 @@ export const EventTypeForm = (props: { updateEventTypeList: (EventType: IEventTy
 
   return (
     <>
-      <Form onSubmit={handleSubmit(onSubmit)}>
+      <form onSubmit={handleSubmit(onSubmit)}>
 
-        <Form.Group>
+        <input type="text" placeholder="Insert the name of Event Type here"></input>
+
+        {/* <Form.Group>
           <Form.Label>Content</Form.Label>
           <Form.Control
             {...register("name", { required: true })}
@@ -35,12 +36,10 @@ export const EventTypeForm = (props: { updateEventTypeList: (EventType: IEventTy
             onChange={e => setName(e.target.value)}
           />
           {errors?.content?.type === "required" && <p>This field is required</p>}
-        </Form.Group><br />
+        </Form.Group><br /> */}
 
-        <Button variant="primary" type="submit">
-          Submit
-        </Button><hr />
-      </Form>
+        <button className="submit-button" type="submit">Submit</button>
+      </form>
     </>
   )
 }
