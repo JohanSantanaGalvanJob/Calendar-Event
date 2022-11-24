@@ -1,5 +1,7 @@
 import './LogIn.css';
 
+import { DownMenu } from '../../components/DownMenu/DownMenu';
+import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
@@ -35,13 +37,16 @@ export const LogIn = () => {
                             </form>
                             <div>
                                 <h2 className='log-in-subtext'>Any Problem?</h2>
-                                <button className="log-in-button">Contact Us</button>
+                                <Link to='/ContactUs'>
+                                    <button className="log-in-button">Contact Us</button>
+                                </Link>
                             </div>
 
                         </div>
                     </Col>
                 </Row>
             </Container>
+            <DownMenu></DownMenu>
         </>
     )
 }

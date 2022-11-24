@@ -1,27 +1,32 @@
 @import url('http://fonts.googleapis.com/css?family=Lato:400,700');
 
+body{
+    justify-content: center;
+    background-color: #F4F9F9;
+}
 
-.log-in-title{
+.contact-us-title{
     font-weight: bold;
     font-size: 2em;
 }
 
-.log-in-style {
+.contact-us-style {
     text-align: center;
-    /* background-color: #F4F9F9; */
-
-}
-
-.log-in-field{
-    justify-content: center;
+    background-color: #F4F9F9;
     padding-bottom: 2em;
+
 }
 
-.log-in-field input{
-    padding-left: 10px;
+.contact-us-field{
+    justify-content: center;
+    padding-bottom: 1.5em;
+}
+
+.contact-us-field input{
     height: 2em;
     width: 100%;
     outline: none;
+    padding-left: 10px;
     border-radius: 5px;
     border: 2px solid #000000;
     font-size: 16px;
@@ -32,21 +37,26 @@
    
   }
 
-  .log-in-hypertext{
-    font-size: 1.25em;
-    justify-content: left;
-    text-align: left;
+.contact-us-field textarea{
+    height: 13em;
+    width: 100%;
+    outline: none;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    font-size: 16px;
+    font-style: italic;
+    transition: all 0.3s ease;
+    background-color: #CCF2F4;
     color: #424242;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    font-weight: bold;
+   
   }
 
-  .log-in-button {
+  .contact-us-button {
     font-size: 1.75em;
     font-weight: bold;
     text-align: center;
-    width: 7em;
+    width: 8em;
     height: 1.75em;
     color: #424242;
     background: #A4EBF3;
@@ -54,8 +64,9 @@
     border: 0.25px solid #A4EBF3;
 }
 
-.log-in-subtext{
+
+.contact-us-subtext{
     color: #424242;
-    font-size: 1.75em;
+    font-size: 1.5em;
     
 }

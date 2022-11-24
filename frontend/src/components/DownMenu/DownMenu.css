@@ -1,0 +1,10 @@
+.down-menu-field{
+    background-color: #A4EBF3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3em;
+}

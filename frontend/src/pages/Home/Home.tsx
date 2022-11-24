@@ -9,6 +9,7 @@ import { Col } from 'react-bootstrap';
 export const Home = () => {
     return (
         <>
+         <style>{'body { background-color: #CCF2F4;}'}</style>
             <Container>
                 <Row className="justify-content-center">
                     <Col xs={10} md={6}>
