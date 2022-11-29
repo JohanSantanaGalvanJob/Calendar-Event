@@ -29,7 +29,9 @@ export const ContactUs = () => {
                                 <div className='contact-us-field'>
                                     <textarea placeholder='Write Here your Problem with the App'></textarea>
                                 </div>
+                                <Link to = '/Event'>
                                 <button className="contact-us-button">Send Message</button>
+                                </Link>
                             </form>
                         </div>
                     </Col>

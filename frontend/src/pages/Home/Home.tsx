@@ -9,8 +9,8 @@ import { Col } from 'react-bootstrap';
 export const Home = () => {
     return (
         <>
-         <style>{'body { background-color: #CCF2F4;}'}</style>
-            <Container>
+            <style>{'body { background-color: #CCF2F4;}'}</style>
+            <Container className='sos'>
                 <Row className="justify-content-center">
                     <Col xs={10} md={6}>
                         <div className="home-style">
@@ -25,7 +25,9 @@ export const Home = () => {
                                 <button className="home-button">Log In</button>
                             </Link>
                             <p className="home-text">You don't want to log or create account?</p>
-                            <button className="home-button">Continue</button>
+                            <Link to='/Event'>
+                                <button className="home-button">Continue</button>
+                            </Link>
                         </div>
                     </Col>
                 </Row>

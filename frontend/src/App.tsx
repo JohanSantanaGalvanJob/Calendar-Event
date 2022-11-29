@@ -4,8 +4,12 @@ import { Home } from './pages/Home/Home'
 import { SignUp } from './pages/SignUp/SignUp'
 import { LogIn } from './pages/LogIn/LogIn';
 import {ContactUs} from './pages/ContactUs/ContactUs'
+import { Event } from './pages/Events/Event';
 
 import 'bootstrap/dist/css/bootstrap-grid.css';
+import { Add } from './pages/Add/Add';
+import { AddEventType } from './pages/AddEventType/AddEventType';
+
 
 function App() {
   return (
@@ -24,6 +28,9 @@ function App() {
         <Route path="/SignUp" element={<SignUp />} />
         <Route path="/LogIn" element={<LogIn />} />
         <Route path="/ContactUs" element={<ContactUs />} />
+        <Route path="/Event" element={<Event />} />
+        <Route path="/Add" element={<Add />} />
+        <Route path="/AddEventType" element={<AddEventType />} />
         </>
         /*<Route path="/about" element={<AboutPage />} />
         <Route path="*" element={<NotFoundPage />} />

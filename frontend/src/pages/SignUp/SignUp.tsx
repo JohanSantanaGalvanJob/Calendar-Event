@@ -12,7 +12,7 @@ export const SignUp = () => {
     const onSubmit = (data: any) => console.log(data);
     return (
         <>
-            <Container className='test'>
+            <Container className='container'>
                 <Row className="justify-content-center">
                     <Col xs={8} md={6}>
                         <div className="sign-up-style">
@@ -37,7 +37,9 @@ export const SignUp = () => {
                                 <div className='sign-up-field'>
                                     <input type="date" placeholder='Write your date of birth' required></input>
                                 </div>
+                                <Link to="/Event">
                                 <button className="sign-up-button">Sign Up</button>
+                                </Link>
                             </form>
                             <div className='sign-up-extra'>
                                 <h2 className='sign-up-subtext'>Already Logged?</h2>

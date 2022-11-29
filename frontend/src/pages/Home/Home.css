@@ -1,6 +1,8 @@
 @import url('http://fonts.googleapis.com/css?family=Lato:400,700');
 
-
+.sos{
+    box-sizing: border-box;
+}
 
 .home-style {
     text-align: center;

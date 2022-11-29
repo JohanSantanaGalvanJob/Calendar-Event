@@ -9,7 +9,7 @@ import { Col } from 'react-bootstrap';
 export const LogIn = () => {
     return (
         <>
-            <Container>
+            <Container className='container'>
                 <Row className="justify-content-center">
                     <Col xs={8} md={6}>
                         <div className="log-in-style">
@@ -30,7 +30,9 @@ export const LogIn = () => {
                                 </div>
                                 <div>
                                     <div>
-                                        <button className="log-in-button">Log In</button>
+                                        <Link to='/Event'>
+                                            <button className="log-in-button">Log In</button>
+                                        </Link>
                                     </div>
 
                                 </div>
