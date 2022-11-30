@@ -19,11 +19,13 @@ export const Add = () => {
                 </div>
 
                 <div className='add-field'>
-                    <div className='add-field-content'>
-                        <h4 className='add-field-title'>Location</h4>
-                        <div className="add-field-line"></div>
-                        <p>Acceder a las location</p>
-                    </div>
+                    <Link to='/AddLocation'>
+                        <div className='add-field-content'>
+                            <h4 className='add-field-title'>Location</h4>
+                            <div className="add-field-line"></div>
+                            <p>Acceder a las location</p>
+                        </div>
+                    </Link>
                 </div>
 
                 <div className='add-field'>

@@ -1,39 +1,25 @@
-@import url('http://fonts.googleapis.com/css?family=Lato:400,700');
-
-
-/* .cards{
-   background-color: #CCF2F4;
-    display: flex;
-    column-gap: 1em;
-    margin: 1em;
-    width: 90vw;
-    height: 12.5em;
-    border-radius: 0px 10px 10px 0px;
-    padding: .5em;
-} */
-
 body {
     justify-content: center;
     background-color: #F4F9F9;
 }
 
-.event-type-title {
+.location-title {
     font-weight: bold;
     font-size: 2em;
 }
 
-.event-type-style {
+.location-style {
     text-align: center;
     background-color: #F4F9F9;
 
 }
 
-.event-type-field {
+.location-field {
     justify-content: center;
     padding-bottom: 1.5em;
 }
 
-.event-type-field input {
+.location-field input {
     height: 2em;
     width: 100%;
     outline: none;
@@ -48,7 +34,7 @@ body {
 
 }
 
-.event-type-button {
+.location-button {
     font-size: 1.75em;
     font-weight: bold;
     text-align: center;
@@ -61,7 +47,7 @@ body {
 }
 
 
-.event-type-subtext {
+.location-subtext {
     color: #424242;
     font-size: 1.5em;
 

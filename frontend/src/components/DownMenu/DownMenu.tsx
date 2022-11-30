@@ -9,11 +9,11 @@ export const DownMenu = () => {
                 <Link to='/Event'>
                     <img src='./icons/MenuAbajo/hogar.png'></img>
                 </Link>
-                <a><img src='./icons/MenuAbajo/busqueda.png'></img></a>
+                <img src='./icons/MenuAbajo/busqueda.png'></img>
                 <Link to='/Add'>
-                    <a><img src='./icons/MenuAbajo/mas.png'></img></a>
+                    <img src='./icons/MenuAbajo/mas.png'></img>
                 </Link>
-                <a><img src='./icons/MenuAbajo/estrella.png'></img></a>
+                <img src='./icons/MenuAbajo/estrella.png'></img>
             </div>
 
         </>

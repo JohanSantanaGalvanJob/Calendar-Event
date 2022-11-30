@@ -13,14 +13,17 @@ body{
 }
 
 .sign-up-style {
-    text-align: center;
+    justify-content: center;
     background-color: #F4F9F9;
     padding-bottom: 2em;
 
 }
 
+.sign-up-title{
+    text-align: center;
+}
+
 .sign-up-field{
-    justify-content: center;
     padding-bottom: 1.5em;
 }
 
@@ -53,8 +56,20 @@ body{
 
 
 .sign-up-subtext{
+    text-align: center;
     color: #424242;
     font-size: 1.5em;
     
+}
+
+.sign-up-label{
+    font-size: 0.75em;
+    text-align: left;
+    color: red;
+    font-weight: bold;
+}
+
+#first-name-error{
+
 }
   

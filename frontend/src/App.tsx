@@ -8,7 +8,8 @@ import { Event } from './pages/Events/Event';
 
 import 'bootstrap/dist/css/bootstrap-grid.css';
 import { Add } from './pages/Add/Add';
-import { AddEventType } from './pages/AddEventType/AddEventType';
+import AddEventType from './pages/AddEventType/AddEventType';
+import AddLocation from './pages/AddLocation/AddLocation';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path="/Event" element={<Event />} />
         <Route path="/Add" element={<Add />} />
         <Route path="/AddEventType" element={<AddEventType />} />
+        <Route path="/AddLocation" element={<AddLocation />} />
         </>
         /*<Route path="/about" element={<AboutPage />} />
         <Route path="*" element={<NotFoundPage />} />
