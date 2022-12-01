@@ -1,7 +1,6 @@
 import { Routes, Route, Link } from 'react-router-dom'
 import { Container, Navbar } from 'react-bootstrap';
 import { Home } from './pages/Home/Home'
-import { SignUp } from './pages/SignUp/SignUp'
 import { LogIn } from './pages/LogIn/LogIn';
 import {ContactUs} from './pages/ContactUs/ContactUs'
 import { Event } from './pages/Events/Event';
@@ -10,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap-grid.css';
 import { Add } from './pages/Add/Add';
 import AddEventType from './pages/AddEventType/AddEventType';
 import AddLocation from './pages/AddLocation/AddLocation';
+import SignUp from './pages/SignUp/SignUp';
 
 
 function App() {

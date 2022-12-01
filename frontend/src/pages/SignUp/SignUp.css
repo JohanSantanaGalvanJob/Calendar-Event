@@ -52,6 +52,8 @@ body{
     background: #A4EBF3;
     border-radius: 10px;
     border: 0.25px solid #A4EBF3;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -67,9 +69,5 @@ body{
     text-align: left;
     color: red;
     font-weight: bold;
-}
-
-#first-name-error{
-
 }
   
