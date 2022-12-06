@@ -16,6 +16,10 @@ const AddLocation = () => {
         name: ""
     };
 
+    const submit = () => {
+        saveLocation();
+    }
+
     const [locations, setLocations] = useState([]);
 
     const [location, setLocation] = useState(initialLocationState);
@@ -78,13 +82,13 @@ const AddLocation = () => {
                             ) : (
                                 <div>
                                     <h2 className="location-title">Add Location</h2>
-                                    <form>
+                                    <form onSubmit={submit}>
 
                                         <div className='location-field'>
                                             <input minLength={5} maxLength={30} id='name' name="name" type="text" value={location.name} placeholder='Write your new Location' onChange={handleInputChange} required></input>
                                         </div>
 
-                                        <button type="submit" className="location-button" onClick={saveLocation}>Create</button>
+                                        <button type="submit" className="location-button">Create</button>
                                     </form>
                                     <h2 className="location-title">Location List</h2>
                                 </div>

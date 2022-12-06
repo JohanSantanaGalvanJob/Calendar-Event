@@ -5,23 +5,31 @@ class EventsController < ApplicationController
   def index
     @events = Event.all
 
-    render json: @events
+    render json: @events.map { |event|
+      event.as_json.merge({ image: url_for(event.image) })
+  }
+    
+    
   end
 
   # GET /events/1
   def show
-    render json: @event
+    # url = url_for(@image)
+
+    render json: @event.as_json.merge({ image: url_for(@event.image) })
   end
 
   # POST /events
   def create
     @event = Event.new(event_params)
 
-    if @event.save
-      render json: @event, status: :created #, location: @event
-    else
-      render json: @event.errors, status: :unprocessable_entity
-    end
+  
+      if @event.save
+        render json: @event.as_json.merge({ image: url_for(@event.image) }), status: :created #, location: @event
+      else
+        render json: @event.errors, status: :unprocessable_entity
+      end
+
   end
 
   # PATCH/PUT /events/1
@@ -46,6 +54,6 @@ class EventsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def event_params
-      params.require(:event).permit(:title, :description, :date, :starting_hour, :finished_hour, :url,:location,:event_type,:location_id,:event_type_id,:image)
+      params.require(:event).permit(:title, :description, :date, :starting_hour, :finished_hour, :url, :location, :event_type, :location_id, :event_type_id, :image)
     end
 end

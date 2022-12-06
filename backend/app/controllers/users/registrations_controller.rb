@@ -7,7 +7,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   protected
 
     def configure_permitted_parameters
-      devise_parameter_sanitizer.permit(:sign_up, keys: [:first_name,:last_name,:date_birth])
+      devise_parameter_sanitizer.permit(:sign_up, keys: [:first_name,:last_name,:date_birth,:image])
     end
   
   private 
@@ -15,7 +15,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   def respond_with(resource,options={})
     if resource.persisted?
       render json:{
-        status: {code: 200, message: 'Signed Up successfully',data: resource}
+        status: {code: 200, message: 'Signed Up successfully',data: resource.as_json.merge({ image: url_for(current_user.image) })}
       }, status: :ok
     else
       render json: {

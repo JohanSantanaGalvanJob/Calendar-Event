@@ -10,7 +10,6 @@ export const Event = () => {
         <>
 
             <UpMenu></UpMenu>
-
             <div className="event-fields-container">
                 <EventField></EventField>
             </div>

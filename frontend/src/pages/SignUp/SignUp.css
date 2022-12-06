@@ -2,12 +2,12 @@
 
 
 
-body{
+body {
     justify-content: center;
     background-color: #F4F9F9;
 }
 
-.sign-up-title{
+.sign-up-title {
     font-weight: bold;
     font-size: 2em;
 }
@@ -19,15 +19,15 @@ body{
 
 }
 
-.sign-up-title{
+.sign-up-title {
     text-align: center;
 }
 
-.sign-up-field{
+.sign-up-field {
     padding-bottom: 1.5em;
 }
 
-.sign-up-field input{
+.sign-up-field input {
     height: 2em;
     width: 100%;
     outline: none;
@@ -39,10 +39,10 @@ body{
     transition: all 0.3s ease;
     background-color: #CCF2F4;
     color: #424242;
-   
-  }
 
-  .sign-up-button {
+}
+
+.sign-up-button {
     font-size: 1.75em;
     font-weight: bold;
     text-align: center;
@@ -57,17 +57,24 @@ body{
 }
 
 
-.sign-up-subtext{
+.sign-up-subtext {
     text-align: center;
     color: #424242;
     font-size: 1.5em;
-    
+
 }
 
-.sign-up-label{
+.sign-up-label {
     font-size: 0.75em;
     text-align: left;
     color: red;
     font-weight: bold;
 }
-  
+
+.file-select {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.5em;
+}

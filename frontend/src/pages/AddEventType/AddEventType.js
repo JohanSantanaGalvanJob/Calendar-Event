@@ -26,6 +26,10 @@ const AddEventType = () => {
         setEventType({ ...eventType, [name]: value });
     };
 
+    const submit = () => {
+        saveEventType();
+    }
+
     const singleUpdateList = (index) => (et) => {
         const ets = [...eventTypes];
         ets[index] = et;
@@ -49,11 +53,6 @@ const AddEventType = () => {
                 console.log(e);
             });
 
-    };
-
-    const newEventType = () => {
-        setEventType(initialEventTypeState);
-        setSubmitted(false);
     };
 
     const getEventTypes = ()  =>{
@@ -83,13 +82,13 @@ const AddEventType = () => {
                             ) : (
                                 <div>
                                     <h2 className="event-type-title">Add Event Type</h2>
-                                    <form>
+                                    <form onSubmit={submit}>
 
                                         <div className='event-type-field'>
                                             <input id='name' name="name" type="text" value={eventType.name} placeholder='Write your new Event Type' onChange={handleInputChange} required></input>
                                         </div>
 
-                                        <button type="submit" className="event-type-button" onClick={saveEventType}>Create</button>
+                                        <button type="submit" className="event-type-button">Create</button>
                                     </form>
                                     <h2 className="event-type-title">Event Type List</h2>
                                 </div>

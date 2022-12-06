@@ -10,20 +10,12 @@ import { Add } from './pages/Add/Add';
 import AddEventType from './pages/AddEventType/AddEventType';
 import AddLocation from './pages/AddLocation/AddLocation';
 import SignUp from './pages/SignUp/SignUp';
+import Settings from './pages/Settings/Settings';
 
 
 function App() {
   return (
     <>
-    {/* <Container>
-      <Navbar expand="lg" variant="light" bg="light">
-        <Container>
-          <Link className="nav-link" to="/">Home</Link>
-          <Link className="nav-link" to="/about">About Me</Link>
-          <Link className="nav-link" to="/SignUp">About Me</Link>
-        </Container>
-      </Navbar><br /> */}
-    
       <Routes>
         { <><Route path="/" element={<Home />} />
         <Route path="/SignUp" element={<SignUp />} />
@@ -33,12 +25,9 @@ function App() {
         <Route path="/Add" element={<Add />} />
         <Route path="/AddEventType" element={<AddEventType />} />
         <Route path="/AddLocation" element={<AddLocation />} />
-        </>
-        /*<Route path="/about" element={<AboutPage />} />
-        <Route path="*" element={<NotFoundPage />} />
-        <Route path="/SignUp" element={<SignUpForm />} /> */}
+        <Route path="/Settings" element={<Settings />} />
+        </>}
       </Routes>
-    {/* </Container> */}
   </>
   );
 }

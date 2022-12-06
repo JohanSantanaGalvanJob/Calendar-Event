@@ -9,5 +9,8 @@ class User < ApplicationRecord
   def jwt_payload
     super
   end
-has_many :event_user
+
+  has_many :event_user
+  has_one_attached :image, dependent: :destroy
+  
 end
