@@ -1,6 +1,7 @@
 
 .settings-title{
     text-align: center;
+    text-decoration: none;
 }
 
 .settings-field{
@@ -9,6 +10,7 @@
     margin: 1em;
     margin-bottom: 0;
     padding: .5em;
+    text-decoration: none;
 }
 
 .settings-text{
@@ -16,6 +18,7 @@
     font-style: italic;
     margin-top: 0;
     margin-left: 0.5em;
+    text-decoration: none;
 
 }
 
