@@ -11,6 +11,7 @@ import AddEventType from './pages/AddEventType/AddEventType';
 import AddLocation from './pages/AddLocation/AddLocation';
 import SignUp from './pages/SignUp/SignUp';
 import Settings from './pages/Settings/Settings';
+import './App.css'
 
 
 function App() {
