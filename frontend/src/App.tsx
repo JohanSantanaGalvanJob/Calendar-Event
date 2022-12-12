@@ -12,6 +12,7 @@ import AddLocation from './pages/AddLocation/AddLocation';
 import SignUp from './pages/SignUp/SignUp';
 import Settings from './pages/Settings/Settings';
 import './App.css'
+import { EditProfile } from './pages/EditProfile/EditProfile';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/AddEventType" element={<AddEventType />} />
         <Route path="/AddLocation" element={<AddLocation />} />
         <Route path="/Settings" element={<Settings />} />
+        <Route path="/EditProfile" element={<EditProfile />} />
         </>}
       </Routes>
   </>

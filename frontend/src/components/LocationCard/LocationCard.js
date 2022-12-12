@@ -14,14 +14,6 @@ import LocationService from "../../Services/LocationService"
 
 export const LocationCard = props => {
 
-    const { id } = useParams();
-    let navigate = useNavigate();
-
-    const initialLocationState = {
-        id: null,
-        name: ""
-    };
-
     const [currentLocation, setCurrentLocation] = useState(props.location);
     const [message, setMessage] = useState("");
 

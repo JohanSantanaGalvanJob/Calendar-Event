@@ -1,13 +1,13 @@
 import http from '../http-common'
 import axios from 'axios';
 
-// const getAll = () => {
-//     return http.get("/events");
-// };
+const getAll = () => {
+    return http.get("/users");
+};
 
-// const get = id => {
-//     return http.get(`/events/${id}`);
-// };
+const get = id => {
+    return http.get(`/users/${id}`);
+};
 
 const signUp = params => {
     // return http.post("/users", data);
@@ -53,9 +53,35 @@ const signOut = id => {
 //     return http.post("/events", data);
 // };
 
-// const update = (id, data) => {
-//     return http.put(`/events/${id}`, data);
-// };
+const update = (id, params) => {
+    var data = new FormData();
+    data.append('user[email]', params.email);
+    data.append('user[first_name]', params.first_name);
+    data.append('user[last_name]', params.last_name);
+    data.append('user[date_birth]', params.date_birth);
+    data.append('user[image]', params.image);
+
+    
+
+    var config = {
+        method: 'put',
+        url: `http://localhost:3000/users/${id}`,
+        headers: {
+             'Authorization': localStorage.getItem("token"),
+            'Content-Type': 'multipart/form-data'
+        },
+        data: data
+    };
+
+    return axios(config);
+
+        // .then(function (response) {
+        //     console.log(JSON.stringify(response.data));
+        // })
+        // .catch(function (error) {
+        //     console.log(error);
+        // });
+};
 
 // const remove = id => {
 //     return http.delete(`/events/${id}`);
@@ -72,10 +98,10 @@ const signOut = id => {
 const UserService = {
     signUp,
     signOut,
-    // getAll,
-    // get,
+    getAll,
+    get,
     // create,
-    // update,
+    update,
     // remove,
     // removeAll,
     // findByTitle

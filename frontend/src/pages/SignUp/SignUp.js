@@ -32,9 +32,11 @@ const SignUp = () => {
     UserService.signUp(params).then((response) => {
       console.log(response);
       const authheader = response.headers.get('Authorization');
-      authheader.replace("Bearer ", "")
       localStorage.setItem('token', authheader)
+      localStorage.setItem('user',response.data.status.data.id)
+      localStorage.setItem('userData',JSON.stringify(response.data.status.data))
       console.log(localStorage.getItem('token'))
+      // console.log(localStorage.getItem())
     });
 
     navigate('/Event')
@@ -87,7 +89,7 @@ const SignUp = () => {
 
                 <form onSubmit={onSubmit}>
 
-                  <div style={{ backgroundColor: '#F4F9F9' }}>
+                  <div>
                     <div className="d-flex justify-content-center mb-4">
                       <Image roundedCircle src={imgSrc}
                         
