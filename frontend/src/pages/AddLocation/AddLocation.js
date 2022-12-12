@@ -8,6 +8,7 @@ import './AddLocation.css'
 import {LocationCard} from '../../components/LocationCard/LocationCard'
 import { useState, useEffect } from "react";
 import LocationService from "../../Services/LocationService"
+import Navbar from "../../components/Sidebar/Navbar";
 
 
 const AddLocation = () => {
@@ -71,6 +72,7 @@ const AddLocation = () => {
 
     return (
         <>
+        <Navbar></Navbar>
             <Container className='container'>
                 <Row className="justify-content-center">
                     <Col xs={8} md={6}>
@@ -99,7 +101,11 @@ const AddLocation = () => {
                 </Row>
             </Container>
 
+            <div className="location-card-sos">
             {locations.map((location, index) => <LocationCard key={location.id} location={location} updateList={getLocations} updateOne={singleUpdateList(index)}></LocationCard> )}
+            </div>
+
+            
             
             <DownMenu></DownMenu>
         </>

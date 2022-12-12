@@ -13,6 +13,10 @@
     text-decoration: none;
 }
 
+.settings-field p{
+    text-decoration: none;
+}
+
 .settings-text{
     color: #424242;
     font-style: italic;

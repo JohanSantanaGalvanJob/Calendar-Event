@@ -4,6 +4,8 @@ body {
 }
 
 .location-title {
+    margin-top: 1em;
+    margin-bottom: 1em;
     font-weight: bold;
     font-size: 2em;
 }
@@ -51,4 +53,8 @@ body {
     color: #424242;
     font-size: 1.5em;
 
+}
+
+.location-card-sos{
+    margin-bottom: 4em;
 }

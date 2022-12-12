@@ -3,13 +3,15 @@ import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
+import Image from 'react-bootstrap/Image'
 import { useForm } from "react-hook-form";
 import { DownMenu } from '../../components/DownMenu/DownMenu';
 import UserService from "../../Services/UserService"
 import { useState, useEffect } from 'react';
+import "bootstrap/dist/css/bootstrap.css";
 
 const SignUp = () => {
-
+  const [imgSrc, setImgSrc] = useState("https://mdbootstrap.com/img/Photos/Others/placeholder-avatar.jpg");
   const navigate = useNavigate();
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
 
@@ -30,7 +32,7 @@ const SignUp = () => {
     UserService.signUp(params).then((response) => {
       console.log(response);
       const authheader = response.headers.get('Authorization');
-      authheader.replace("Bearer ","")
+      authheader.replace("Bearer ", "")
       localStorage.setItem('token', authheader)
       console.log(localStorage.getItem('token'))
     });
@@ -57,8 +59,19 @@ const SignUp = () => {
   };
 
   const handleInputFileChange = event => {
-    const { name, files } = event.target;
-    setUser({ ...user, [name]: files[0] });
+
+    var file = event.target.files[0];
+    var reader = new FileReader();
+    var url = reader.readAsDataURL(file);
+
+    reader.onloadend = function (e) {
+      console.log("holaaaaaaaaaaa", reader.result)
+      setImgSrc(reader.result);
+    };
+
+    console.log(url) // Would see a path?
+
+    setUser({ ...user, image: file });
   };
 
   return (
@@ -73,10 +86,24 @@ const SignUp = () => {
                 <h2 className="sign-up-title">Sign Up</h2>
 
                 <form onSubmit={onSubmit}>
-                  
-                
-                    <input id='image' name='image' type="file" required onChange={handleInputFileChange}></input>
-                  
+
+                  <div style={{ backgroundColor: '#F4F9F9' }}>
+                    <div className="d-flex justify-content-center mb-4">
+                      <Image roundedCircle src={imgSrc}
+                        
+                        style={{ width: "200px" }} />
+                    </div>
+                    <div className="d-flex justify-content-center">
+                      <div className="btn btn-primary btn-rounded">
+                        <label className="form-label text-white m-1" htmlFor="customFile2">Choose file</label>
+                        <input name='image' type="file" className="form-control d-none" id="customFile2" required onChange={handleInputFileChange} />
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
 
                   <div className='sign-up-field'>
                     <input id='firstname' name='firstname' value={user.firstname} onChange={handleInputChange} required type='text' maxLength={20} minLength={5} placeholder='Write your first name' pattern="[a-zA-Z]*" />

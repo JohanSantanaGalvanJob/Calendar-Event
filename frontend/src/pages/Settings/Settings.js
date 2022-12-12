@@ -2,12 +2,15 @@
 import './Settings.css'
 import { SettingsData } from './SettingsData'
 import { Link } from 'react-router-dom'
+import { UpMenu } from '../../components/UpMenu/UpMenu'
+import { DownMenu } from '../../components/DownMenu/DownMenu'
 
 const Settings = () => {
 
 
     return (
         <>
+        <UpMenu></UpMenu>
             <div>
                 <h1 className='settings-title'>Settings</h1>
                 {SettingsData.map((item, index) => {
@@ -31,6 +34,7 @@ const Settings = () => {
 
 
             </div>
+            <DownMenu></DownMenu>
 
 
         </>

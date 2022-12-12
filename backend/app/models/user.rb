@@ -13,4 +13,14 @@ class User < ApplicationRecord
   has_many :event_user
   has_one_attached :image, dependent: :destroy
   
+  enum role: [:user,:admin]
+  after_initialize :set_default_role, :if => :new_record?
+
+  def set_default_role
+  
+  self.role ||= :user
+
+  end
+
+  
 end
