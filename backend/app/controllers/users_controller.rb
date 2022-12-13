@@ -5,11 +5,13 @@
 # users_controller.rb
     def index
       @users = User.all
-      render json: @users
+      render json: @users.map { |user|
+        user.as_json.merge({ image: url_for(user.image) })
+      }
     end
 
     def show
-        render json: @users
+        render json: @users.as_json.merge({ image: url_for(@users.image) })
       end
   
     def destroy

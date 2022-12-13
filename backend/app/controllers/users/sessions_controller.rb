@@ -8,7 +8,7 @@ class Users::SessionsController < Devise::SessionsController
  def respond_with(resource,options={})
   render json: {
     status: { code: 200, message: "user signed in successfully",
-    data: current_user}
+    data: current_user.as_json.merge({ image: url_for(current_user.image) })}
   }, status: :ok
   end
 
