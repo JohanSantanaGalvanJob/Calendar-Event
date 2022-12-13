@@ -5,9 +5,10 @@ import EditIcon from '@mui/icons-material/Edit';
 import { useForm } from "react-hook-form";
 import { DownMenu } from "../../components/DownMenu/DownMenu";
 import './AddEventType.css'
-import {EventTypeCard} from '../../components/EventTypeCard/EventTypeCard'
+import { EventTypeCard } from '../../components/EventTypeCard/EventTypeCard'
 import { useState, useEffect } from "react";
 import EventTypeService from "../../Services/EventTypeService"
+
 
 
 const AddEventType = () => {
@@ -36,6 +37,12 @@ const AddEventType = () => {
         setEventTypes(ets);
     };
 
+    const singleDeleteList = (index) => () => {
+        const ets = [...eventTypes];
+        ets.splice(index,1)
+        setEventTypes(ets);
+    };
+
     const saveEventType = () => {
         var data = {
             name: eventType.name
@@ -55,19 +62,19 @@ const AddEventType = () => {
 
     };
 
-    const getEventTypes = ()  =>{
+    const getEventTypes = () => {
         EventTypeService.getAll().then(response => {
             setEventTypes(response.data);
             console.log(response.data);
-          })
-          .catch(e => {
-            console.log(e);
-          });
+        })
+            .catch(e => {
+                console.log(e);
+            });
     }
 
     useEffect(() => {
         getEventTypes();
-      }, []);
+    }, []);
 
     return (
         <>
@@ -75,9 +82,9 @@ const AddEventType = () => {
                 <Row className="justify-content-center">
                     <Col xs={8} md={6}>
                         <div className="event-type-style">
-                            { submitted ? (
+                            {submitted ? (
                                 <div>
-                                 
+
                                 </div>
                             ) : (
                                 <div>
@@ -98,9 +105,9 @@ const AddEventType = () => {
                     </Col>
                 </Row>
             </Container>
-
-            {eventTypes.map((eventType, index) => <EventTypeCard key={eventType.id} eventType={eventType} updateList={getEventTypes} updateOne={singleUpdateList(index)}></EventTypeCard> )}
-            
+            <div className="event-type-card-sos">
+                {eventTypes.map((eventType, index) => <EventTypeCard key={eventType.id} eventType={eventType} updateList={getEventTypes} updateOne={singleUpdateList(index)} deleteOne={singleDeleteList(index)} ></EventTypeCard>)}
+            </div>
             <DownMenu></DownMenu>
         </>
     )

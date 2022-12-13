@@ -1,0 +1,45 @@
+.edit-profile-container{
+    justify-items: center;
+    text-align: center;
+}
+
+.edit-profile-title{
+    text-align: center;
+    margin: 1em;
+    font-size: 2em;
+}
+
+.edit-profile-image-container{
+    text-align: center;
+    margin: 1em;
+}
+
+.edit-profile-input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1em;
+}
+
+.edit-profile-input input{
+    font-style: italic;
+    background-color: transparent;
+    margin: 0.5em;
+    border: none;
+    border-bottom: solid 2px #282727;
+    width: 100%;
+}
+
+.edit-profile-button{
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+    width: 8em;
+    height: 1.75em;
+    color: #424242;
+    background: #A4EBF3;
+    border-radius: 10px;
+    border: 0.25px solid #A4EBF3;
+    justify-items: center;
+    margin-bottom: 3em;
+}

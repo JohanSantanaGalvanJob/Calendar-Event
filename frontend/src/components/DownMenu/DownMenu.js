@@ -6,27 +6,29 @@ import './DownMenu.css';
 export const DownMenu = () => {
     const user = JSON.parse(localStorage.getItem('userData'))
 
-    return user.role.includes('admin') ? (
+    // const isGuest = !user;
+    const isAdmin = !!user?.role.includes('admin');
+    const isUser = !!user;
+
+    return (
         <>
             <div className='down-menu-field'>
                 <Link to='/Event'>
                     <img src='./icons/MenuAbajo/hogar.png'></img>
                 </Link>
                 <img src='./icons/MenuAbajo/busqueda.png'></img>
-                <Link to='/Add'>
-                    <img src='./icons/MenuAbajo/mas.png'></img>
-                </Link>
+                {isAdmin ? (
+                    <Link to='/Add'>
+                        <img src='./icons/MenuAbajo/mas.png'></img>
+                    </Link>
+                ): null }
 
-                <img src='./icons/MenuAbajo/estrella.png'></img>
+                {isUser ? ( 
+                    <img src='./icons/MenuAbajo/estrella.png'></img>
+                ) : null }
+
             </div>
 
         </>
-    ) : <div className='down-menu-field'>
-        <Link to='/Event'>
-            <img src='./icons/MenuAbajo/hogar.png'></img>
-        </Link>
-        <img src='./icons/MenuAbajo/busqueda.png'></img>
-
-        <img src='./icons/MenuAbajo/estrella.png'></img>
-    </div>;
+    );
 }

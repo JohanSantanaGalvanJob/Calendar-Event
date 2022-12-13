@@ -12,6 +12,9 @@ import { useNavigate, useParams } from "react-router-dom";
 
 import EventTypeService from "../../Services/EventTypeService"
 
+import swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content'
+
 export const EventTypeCard = props => {
 
     const { id } = useParams();
@@ -36,23 +39,6 @@ export const EventTypeCard = props => {
         setCurrentEventType({ ...currentEventType, [name]: value });
     };
 
-    const updatePublished = status => {
-        var data = {
-            id: currentEventType.id,
-            name: currentEventType.name
-        };
-
-        EventTypeService.update(currentEventType.id, data)
-            .then(response => {
-                setCurrentEventType({ ...currentEventType });
-                console.log(response.data);
-            })
-            .catch(e => {
-                console.log(e);
-            });
-
-    };
-
     const updateEventType = () => {
         EventTypeService.update(currentEventType.id, currentEventType)
             .then(response => {
@@ -67,37 +53,47 @@ export const EventTypeCard = props => {
     };
 
     const deleteEventType = () => {
-        EventTypeService.remove(currentEventType.id)
-            .then(response => {
-                console.log(response.data);
-            })
-            .catch(e => {
-                console.log(e);
-            });
+
+        const swalWithBootstrapButtons = swal.mixin({
+            customClass: {
+              confirmButton: 'btn btn-success',
+              cancelButton: 'btn btn-danger'
+            },
+            buttonsStyling: false
+          })
+
+        swal.fire({
+            title: 'Delete Event Type',
+            text: 'Are you sure you want to delete the Event Type?',
+            icon: 'warning',
+            showCancelButton: true,
+            cancelButtonText: 'No, cancel!',
+            confirmButtonText: 'Yes, delete it!',
+            reverseButtons: true
+        }).then((result) => {
+            if (result.isConfirmed) {
+                EventTypeService.remove(currentEventType.id)
+                    .then(response => {
+                        props.deleteOne();
+                        console.log(response.data);
+                    })
+                    .catch(e => {
+                        console.log(e);
+                    });
+            } else if (
+                /* Read more about handling dismissals below */
+                result.dismiss === swal.DismissReason.cancel
+              ) {
+                swalWithBootstrapButtons.fire(
+                  'Cancelled',
+                  'Event Type is safe',
+                  'error'
+                )
+              }
+        })
+
+
     };
-
-
-
-    //   React.useEffect(() => {
-    //     axios.get(baseURL).then((response) => {
-    //         setEventTypes(response.data);
-    //     });
-    // }, []);
-
-    // //DELETE
-    // const deleteEventType = (id: any) => {
-    //     axios.delete(`http://localhost:3000/event_types/${id}`);
-    //     setEventTypes(EventTypes.filter((post) => {
-    //         return post.id !== id;
-    //     })
-    //     );
-    // };
-
-    // //UPDATE
-
-
-
-    // if (!EventTypes) return null;
 
     return (
 

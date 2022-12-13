@@ -3,6 +3,8 @@ import * as BootstrapIcons from "react-icons/bs";
 import * as AiIcons from "react-icons/ai";
 import * as IoIcons from 'react-icons/io'
 import * as IoIcons5 from 'react-icons/io5'
+import Swal from 'sweetalert2'
+
 
 export const SidebarData =[
     {

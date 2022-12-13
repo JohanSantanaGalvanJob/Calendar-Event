@@ -16,17 +16,35 @@ import { useState, useEffect } from 'react';
 import "bootstrap/dist/css/bootstrap.css";
 
 export const EditProfile = props => {
-    const [imgSrc, setImgSrc] = useState("https://mdbootstrap.com/img/Photos/Others/placeholder-avatar.jpg");
+    const [imgSrc, setImgSrc] = useState( ("https://mdbootstrap.com/img/Photos/Others/placeholder-avatar.jpg"));
     const [currentUser, setCurrentUser] = useState({});
+    const user = localStorage.getItem('userData');
+
 
     const handleInputChange = event => {
         const { name, value } = event.target;
         setCurrentUser({ ...currentUser, [name]: value });
     };
 
+    const handleInputFileChange = event => {
+
+        var file = event.target.files[0];
+        var reader = new FileReader();
+        var url = reader.readAsDataURL(file);
+    
+        reader.onloadend = function (e) {
+          setImgSrc(reader.result);
+        };
+    
+        console.log(url) // Would see a path?
+    
+        setCurrentUser({ ...currentUser, image: file });
+      };
+
     useEffect(() => {
         UserService.get(localStorage.getItem('user')).then((response) => {
             setCurrentUser(response.data)
+            setImgSrc(response.data.image)
         }).catch()
     }, [])
 
@@ -69,35 +87,37 @@ export const EditProfile = props => {
 
     return (
         <>
-            <h2>Edit Profile</h2>
+
+            <h2 className='edit-profile-title'>Edit Profile</h2>
 
 
             <form onSubmit={updatePublished}>
+                <div className='edit-profile-container'>
 
-                <div>
-                    <div className="d-flex justify-content-center mb-4">
-                        <Image roundedCircle src={imgSrc}
+                    <div className='edit-profile-image-container'>
+                        <div className="d-flex justify-content-center mb-4">
+                            <Image roundedCircle src={ currentUser.image=imgSrc}
 
-                            style={{ width: "200px" }} />
-                    </div>
-                    <div className="d-flex justify-content-center">
-                        <div className="btn btn-primary btn-rounded">
-                            <label className="form-label text-white m-1" htmlFor="customFile2">Choose file</label>
-                            <input name='image' type="file" className="form-control d-none" id="customFile2" required />
+                                style={{ width: "200px", height:"200px" }} />
+                        </div>
+                        <div className="d-flex justify-content-center">
+                            <div className="btn btn-primary btn-rounded">
+                                <label className="form-label text-white m-1" htmlFor="customFile2">Choose file</label>
+                                <input name='image' type="file" className="form-control d-none" id="customFile2" required onChange={handleInputFileChange} />
+                            </div>
                         </div>
                     </div>
+                    <div className='edit-profile-input'>
+                        <input type='text' name='first_name' required value={currentUser.first_name} onChange={handleInputChange} ></input>
+                        <input type='text' name='last_name' required value={currentUser.last_name} onChange={handleInputChange} ></input>
+                        <input type='text' name='email' required value={currentUser.email} onChange={handleInputChange} ></input>
+                        <input type='date' name='date_birth' required value={currentUser.date_birth} onChange={handleInputChange} ></input>
+                    </div>
+                    <button type='submit' className="edit-profile-button">Edit</button>
                 </div>
-
-                <input type='text' name='first_name' required value={currentUser.first_name} onChange={handleInputChange} ></input>
-                <input type='text' name='last_name' required value={currentUser.last_name} onChange={handleInputChange} ></input>
-                <input type='text' name='email' required value={currentUser.email} onChange={handleInputChange} ></input>
-                <input type='date' name='date_birth' required value={currentUser.date_birth} onChange={handleInputChange} ></input>
-                <IconButton type='submit' color="primary" aria-label="edit">
-                    <EditIcon />
-                </IconButton>
-
             </form>
 
+            <DownMenu></DownMenu>
         </>
     )
 }

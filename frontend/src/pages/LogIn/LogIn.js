@@ -7,6 +7,9 @@ import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import UserService from "../../Services/UserService"
 import { useState, useEffect } from 'react';
+import swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content'
+
 
 export const LogIn = () => {
     const initialUserState = {
@@ -28,15 +31,32 @@ export const LogIn = () => {
         setUser({ ...user, [name]: value });
       };
 
+      const mySwal = () => {
+
+        swal.fire({
+            title: 'Logged Correctly!',
+            icon: 'success',
+          }).then((result) => {
+            if (result.isConfirmed) {
+                navigate('/Event')
+            }
+          })
+
+      }
+
     const onSubmit = (event) => {
         // saveUser()
     
         event.preventDefault();
+
+        mySwal()
     
         const params = {
           email: event.target.email.value,
           password: event.target.password.value,
         }
+
+
     
         UserService.login(params).then((response) => {
           console.log(response);
@@ -45,8 +65,12 @@ export const LogIn = () => {
           localStorage.setItem('user',response.data.status.data.id)
           localStorage.setItem('userData',JSON.stringify(response.data.status.data))
           console.log(localStorage.getItem('token'))
+          window.location.reload();
           // console.log(localStorage.getItem())
-          navigate('/Event')
+          
+
+
+
         });
 
     }

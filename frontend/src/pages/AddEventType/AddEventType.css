@@ -18,6 +18,8 @@ body {
 }
 
 .event-type-title {
+    margin-top: 1em;
+    margin-bottom: 1em;
     font-weight: bold;
     font-size: 2em;
 }
@@ -65,4 +67,8 @@ body {
     color: #424242;
     font-size: 1.5em;
 
+}
+
+.event-type-card-sos{
+    margin-bottom: 4em;
 }
