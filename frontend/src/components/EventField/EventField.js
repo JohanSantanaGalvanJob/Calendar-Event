@@ -1,7 +1,7 @@
 import './EventField.css';
 
 
-export const EventField = () => {
+export const EventField = props => {
     return (
         <>
             <div className='event-field'>

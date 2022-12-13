@@ -7,7 +7,9 @@ import { IconContext } from 'react-icons'
 import './Navbar.css'
 
 function Navbar() {
+    const user = JSON.parse(localStorage.getItem('userData'))
     const [sidebar, setSideBar] = useState(false)
+    console.log(user)
 
     const showSidebar = () => {
         setSideBar(!sidebar)
@@ -17,8 +19,13 @@ function Navbar() {
         <>
             <IconContext.Provider value={{ color: 'black' }}>
                 <div className='navbar'>
+
                     <Link to='#' className='menu-bars'>
-                        <BootstrapIcons.BsPerson onClick={showSidebar} />
+                        {user ? (
+                            <img src='./icons/Ayuda/mundo.png' onClick={showSidebar} />
+                        ) : <BootstrapIcons.BsPerson onClick={showSidebar} />
+                        }
+
                     </Link>
                     <img src='./icons/MenuArriba/logo.png' ></img>
                     <Link to='/Settings'>

@@ -19,7 +19,7 @@ export const SidebarData =[
     },
     {
         title: 'Logout',
-        path: '/Logout',
+        path: `http://localhost:3000/users/sign_out`,
         icon: <IoIcons5.IoLogOutOutline></IoIcons5.IoLogOutOutline>,
         className: 'nav-text'
     },

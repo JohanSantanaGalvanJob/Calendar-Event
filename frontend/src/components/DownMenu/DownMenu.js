@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
 import './DownMenu.css';
 
-const user = JSON.parse(localStorage.getItem('userData'))
+
 
 export const DownMenu = () => {
+    const user = JSON.parse(localStorage.getItem('userData'))
 
     return user.role.includes('admin') ? (
         <>

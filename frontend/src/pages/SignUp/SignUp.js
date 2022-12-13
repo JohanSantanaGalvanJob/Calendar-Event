@@ -93,7 +93,7 @@ const SignUp = () => {
                     <div className="d-flex justify-content-center mb-4">
                       <Image roundedCircle src={imgSrc}
                         
-                        style={{ width: "200px" }} />
+                        style={{ width: "200px", height:"200px" }} />
                     </div>
                     <div className="d-flex justify-content-center">
                       <div className="btn btn-primary btn-rounded">

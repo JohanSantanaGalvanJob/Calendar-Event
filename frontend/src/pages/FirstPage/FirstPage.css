@@ -1,0 +1,29 @@
+.first-page-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    text-decoration: none;
+}
+
+.first-page-image{
+    margin: auto;
+    position: absolute;
+    top: 40vw;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+}
+
+.first-page-copyright{
+    text-align: center;
+    font-size: 3em;
+    position: absolute;
+    font-weight: bold;
+    margin-left: 0.25em;
+    bottom: 0;
+  
+}

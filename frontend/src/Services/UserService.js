@@ -10,7 +10,6 @@ const get = id => {
 };
 
 const signUp = params => {
-    // return http.post("/users", data);
 
     console.log("todo loco")
     console.log(params)
@@ -22,14 +21,12 @@ const signUp = params => {
     data.append('user[last_name]', params.lastname);
     data.append('user[date_birth]', params.date_birth);
     data.append('user[image]', params.image);
-    
+
 
     var config = {
         method: 'post',
         url: 'http://localhost:3000/users',
         headers: {
-            // 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJlYzAzYTBiZC1jOTVjLTQ0Y2MtYjc2Yy1kNzM3YTk3MGVkM2UiLCJzdWIiOiIxMCIsInNjcCI6InVzZXIiLCJhdWQiOm51bGwsImlhdCI6MTY3MDAwODYwMywiZXhwIjoxNjcwMDE1ODAzfQ.jXSM7YTCqndCeb6m35kLxkPC2RntMrpD99fDKDlB_L0',
-            // 'Cookie': '_interslice_session=VFeUiEVtAZSAHzGxlzrmrCyrfRQ0afIqefgIUOPwk0FlNTO00v8mb2PdFNJOJKlxL4qwJDCu%2Bbe1m5pi9gaKiVRge8gF%2BVmhscz5n1wdHvmC6bxKGSXvvdubmZ8y1RmOCJYhfX%2B50LZR4rLZlVk4%2BMxomLAagK0wsx6ILnDPPm6I1BKt2z4l18Ltd02WJub7stRqdOcUEIaEBLKTY6KhjqEIms4yXmWJqOdYfxnw%2BbfhpipxVv%2Bf%2BhGjxCYKW3GQRjRkg2YJixSipNyKzj0dFmFfkSEvTlcl06QN--sTp0FH0SYwCjmetu--9p%2FRSk9xTjQelmwap3ZNrQ%3D%3D',
             'Content-Type': 'multipart/form-data'
         },
         data: data
@@ -37,21 +34,29 @@ const signUp = params => {
 
     return axios(config);
 
-        // .then(function (response) {
-        //     console.log(JSON.stringify(response.data));
-        // })
-        // .catch(function (error) {
-        //     console.log(error);
-        // });
+};
+
+const login = params => {
+
+    var data = new FormData();
+    data.append('user[email]', params.email);
+    data.append('user[password]', params.password);
+
+    var config = {
+        method: 'post',
+        url: 'http://localhost:3000/users/sign_in',
+        headers: {
+            'Content-Type': 'multipart/form-data'
+        },
+        data: data
+    };
+
+    return axios(config);
 };
 
 const signOut = id => {
     return http.delete(`/users/sign_out`);
 };
-
-// const create = data => {
-//     return http.post("/events", data);
-// };
 
 const update = (id, params) => {
     var data = new FormData();
@@ -61,26 +66,17 @@ const update = (id, params) => {
     data.append('user[date_birth]', params.date_birth);
     data.append('user[image]', params.image);
 
-    
-
     var config = {
         method: 'put',
         url: `http://localhost:3000/users/${id}`,
         headers: {
-             'Authorization': localStorage.getItem("token"),
+            'Authorization': localStorage.getItem("token"),
             'Content-Type': 'multipart/form-data'
         },
         data: data
     };
 
     return axios(config);
-
-        // .then(function (response) {
-        //     console.log(JSON.stringify(response.data));
-        // })
-        // .catch(function (error) {
-        //     console.log(error);
-        // });
 };
 
 // const remove = id => {
@@ -99,6 +95,7 @@ const UserService = {
     signUp,
     signOut,
     getAll,
+    login,
     get,
     // create,
     update,
