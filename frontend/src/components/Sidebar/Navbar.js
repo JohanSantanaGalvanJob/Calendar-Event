@@ -10,31 +10,33 @@ import UserService from "../../Services/UserService"
 function Navbar() {
     const user = JSON.parse(localStorage.getItem('userData'))
 
-   
-   
+
+
     // const hasImg = !!user.image;
     const [sidebar, setSideBar] = useState(false)
     // const isGuest = !user;
     const isAdmin = !!user?.role.includes('admin');
     const isUser = !!user;
 
-    let img='';
-    if (isUser){
+    let img = '';
+    let fullName = '';
+    if (isUser) {
         img = user.image
+        fullName = user.first_name + ' ' + user.last_name;
     }
 
     const logOut = (event) => {
         // saveUser()
         const id = localStorage.getItem("user")
         event.preventDefault();
-    
+
         UserService.signOut(id).then((response) => {
-          console.log(response);
+            console.log(response);
             localStorage.removeItem('userData')
             window.location.reload()
         });
-    
-      }
+
+    }
 
     const showSidebar = () => {
         setSideBar(!sidebar)
@@ -62,11 +64,29 @@ function Navbar() {
                 <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
 
                     <ul className='nav-menu-items' onClick={showSidebar}>
-                        <li className='navbar-toggle'>
-                            <Link to='#' className='menu-bars'>
-                                <AiIcons.AiOutlineClose />
-                            </Link>
-                        </li>
+
+                        <div className='sidebar-button'>
+
+                            <li className='navbar-toggle'>
+                                <Link to='#' className='menu-bars'>
+                                    <AiIcons.AiOutlineClose />
+                                </Link>
+                            </li>
+
+                            <li className='navbar-toggle'>
+                                {isUser ? (
+                                    <div className='sidebar-user-information'>
+                                        <img className='sidebar-image' src={img} onClick={showSidebar} />
+                                        <p className='sidebar-name'>{fullName}</p>
+                                        <div className="navbar-line"></div>
+                                    </div>
+                                ) : <img src='./icons/MenuArriba/usuario.png' onClick={showSidebar} />
+                                }
+                            </li>
+
+                        </div>
+
+
 
 
 
@@ -92,8 +112,8 @@ function Navbar() {
 
                                 <li onClick={logOut}>
                                     <Link to='/'>
-                                    <IoIcons5.IoLogOutOutline></IoIcons5.IoLogOutOutline>
-                                    <span>Log Out</span>
+                                        <IoIcons5.IoLogOutOutline></IoIcons5.IoLogOutOutline>
+                                        <span>Log Out</span>
                                     </Link>
                                 </li>
 
@@ -101,9 +121,9 @@ function Navbar() {
 
                             </div>
 
-                        ) : 
-                        
-                        <div className='nav-text'>
+                        ) :
+
+                            <div className='nav-text'>
                                 <li>
                                     <Link to='/Login'>
                                         <BootstrapIcons.BsPerson></BootstrapIcons.BsPerson>
@@ -133,26 +153,26 @@ function Navbar() {
 
                                 <li>
                                     <Link to='/'>
-                                    <IoIcons5.IoLogOutOutline></IoIcons5.IoLogOutOutline>
+                                        <IoIcons5.IoLogOutOutline></IoIcons5.IoLogOutOutline>
                                         <span>Exit</span>
                                     </Link>
                                 </li>
 
                                 <div className="navbar-line"></div>
-                               
+
                             </div>
-                        
+
                         }
 
 
-                      
+
 
                         {/* <Link to="" onClick={item.method}>
                                                 {item.icon}
                                                 <span>{item.title}</span>
 
                                             </Link> */}
-                       
+
 
 
 
