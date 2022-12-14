@@ -9,6 +9,11 @@ import { Col } from 'react-bootstrap';
 export const Home = () => {
     return (
         <>
+            <div className='first-page-container'>
+                <div className='home-image-container'>
+                    <img className='home-image' src='./img/AppLogo.png'></img>
+                </div>
+            </div>
             <style>{'body { background-color: #CCF2F4;}'}</style>
             <Container className='sos'>
                 <Row className="justify-content-center">
