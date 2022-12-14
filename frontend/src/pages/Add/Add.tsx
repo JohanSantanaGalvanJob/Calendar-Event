@@ -2,11 +2,12 @@ import './Add.css'
 import { DownMenu } from "../../components/DownMenu/DownMenu"
 import { UpMenu } from "../../components/UpMenu/UpMenu"
 import { Link } from 'react-router-dom'
+import Navbar from '../../components/Sidebar/Navbar'
 
 export const Add = () => {
     return (
         <>
-            <UpMenu></UpMenu>
+            <Navbar></Navbar>
             <div className='cards'>
                 <div className='add-field'>
                     <Link to='/AddEventType'>

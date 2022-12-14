@@ -39,6 +39,7 @@ export const LogIn = () => {
           }).then((result) => {
             if (result.isConfirmed) {
                 navigate('/Event')
+                window.location.reload();
             }
           })
 
@@ -49,7 +50,7 @@ export const LogIn = () => {
     
         event.preventDefault();
 
-        mySwal()
+        
     
         const params = {
           email: event.target.email.value,
@@ -65,13 +66,15 @@ export const LogIn = () => {
           localStorage.setItem('user',response.data.status.data.id)
           localStorage.setItem('userData',JSON.stringify(response.data.status.data))
           console.log(localStorage.getItem('token'))
-          window.location.reload();
+         
           // console.log(localStorage.getItem())
           
 
 
 
         });
+
+        mySwal()
 
     }
 

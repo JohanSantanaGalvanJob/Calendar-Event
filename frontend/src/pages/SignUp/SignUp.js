@@ -9,11 +9,26 @@ import { DownMenu } from '../../components/DownMenu/DownMenu';
 import UserService from "../../Services/UserService"
 import { useState, useEffect } from 'react';
 import "bootstrap/dist/css/bootstrap.css";
+import swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content'
 
 const SignUp = () => {
   const [imgSrc, setImgSrc] = useState("https://mdbootstrap.com/img/Photos/Others/placeholder-avatar.jpg");
   const navigate = useNavigate();
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
+
+  const mySwal = () => {
+
+    swal.fire({
+        title: 'Signed Up Correctly!',
+        icon: 'success',
+      }).then((result) => {
+        if (result.isConfirmed) {
+            navigate('/Event')
+        }
+      })
+
+  }
 
   const onSubmit = (event) => {
     // saveUser()
@@ -38,6 +53,7 @@ const SignUp = () => {
       console.log(localStorage.getItem('token'))
       window.location.reload();
       // console.log(localStorage.getItem())
+      mySwal();
     });
 
     navigate('/Event')
