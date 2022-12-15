@@ -1,36 +1,35 @@
 import EventUserService from '../../Services/EventUserService';
-import './EventField.css';
+import './EventFieldLiked.css';
 import { useState, useEffect } from "react";
 
 
-export const EventField = props => {
+export const EventFieldLiked = props => {
 
-
-    const initialEventUserState = {
-        id: null,
-        user_id:null,
-        event_id:null,
-    };
     
 
     const user = JSON.parse(localStorage.getItem('userData'))
     const isUser = !!user;
-    const [eventUser, setEventUser] = useState(initialEventUserState);
 
-
-
-    const saveEventUser = () => {
-        var data = {
-            user_id:user.id,
-            event_id:props.event.id,
-        };
-
-        EventUserService.create(data).then(response => {
-            setEventUser({
-                id: response.data.id,
-                user_id:response.data.user_id,
-                event_id:response.data.event_id,
+    const getEventUsers = () => {
+        const user = JSON.parse(localStorage.getItem('userData'))
+        EventUserService.getAll().then(response => {
+            console.log("response.data", response.data)
+            for (let i = 0; i < response.data.length; i++) {
+                if ((user.id == response.data[i].user_id) && (props.event.id == response.data[i].event_id)) {
+                    deleteEventUser(response.data[i].id)
+                }
+            }
+        })
+            .catch(e => {
+                console.log(e);
             });
+    }
+
+
+
+    const deleteEventUser = (id) => {
+
+        EventUserService.remove(id).then(response => {
             console.log(response.data);
         })
             .catch(e => {
@@ -51,7 +50,7 @@ export const EventField = props => {
                     <p>{props.event.description}</p>
                     {isUser ? (
                         <div className='event-field-icon'>
-                            <img src='./icons/MenuAbajo/estrella.png' onClick={saveEventUser}></img>
+                            <img src='./icons/MenuAbajo/estrellanegro.png' onClick={getEventUsers}></img>
                         </div>
                     ) : null
                     }

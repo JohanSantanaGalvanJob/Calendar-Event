@@ -21,11 +21,13 @@ export const DownMenu = () => {
                     <Link to='/Add'>
                         <img src='./icons/MenuAbajo/mas.png'></img>
                     </Link>
-                ): null }
+                ) : null}
 
-                {isUser ? ( 
-                    <img src='./icons/MenuAbajo/estrella.png'></img>
-                ) : null }
+                {isUser ? (
+                    <Link to='/Favourite'>
+                        <img src='./icons/MenuAbajo/estrella.png'></img>
+                    </Link>
+                ) : null}
 
             </div>
 

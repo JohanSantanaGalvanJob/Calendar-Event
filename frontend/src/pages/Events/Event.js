@@ -14,7 +14,7 @@ export const Event = () => {
     const [events, setEvents] = useState([]);
    
 
-    const getEventTypes = () => {
+    const getEvents = () => {
         EventService.getAll().then(response => {
             setEvents(response.data);
             console.log(response.data);
@@ -25,7 +25,7 @@ export const Event = () => {
     }
 
     useEffect(() => {
-        getEventTypes();
+        getEvents();
     }, []);
 
 

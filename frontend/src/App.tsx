@@ -14,6 +14,7 @@ import './App.css'
 import { EditProfile } from './pages/EditProfile/EditProfile';
 import { LogIn } from './pages/LogIn/LogIn';
 import { FirstPage } from './pages/FirstPage/FirstPage';
+import { Favourite } from './pages/Favourite/Favourite';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Route path="/AddLocation" element={<AddLocation />} />
         <Route path="/Settings" element={<Settings />} />
         <Route path="/EditProfile" element={<EditProfile />} />
+        <Route path="/Favourite" element={<Favourite />} />
         </>}
       </Routes>
   </>
