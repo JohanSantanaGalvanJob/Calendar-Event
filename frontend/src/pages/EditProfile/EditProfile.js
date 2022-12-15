@@ -19,6 +19,7 @@ export const EditProfile = props => {
     const [imgSrc, setImgSrc] = useState( ("https://mdbootstrap.com/img/Photos/Others/placeholder-avatar.jpg"));
     const [currentUser, setCurrentUser] = useState({});
     const user = localStorage.getItem('userData');
+    const navigate = useNavigate();
 
 
     const handleInputChange = event => {
@@ -73,13 +74,14 @@ export const EditProfile = props => {
 
         UserService.update(currentUser.id, data)
             .then(response => {
-                //props.updateList();
-                // props.updateOne(response.data);
+                localStorage.setItem('userData',JSON.stringify(response.data.status.data))
                 console.log(response.data);
             })
             .catch(e => {
                 console.log(e);
             });
+
+            navigate('/Event')
 
     };
 
