@@ -8,17 +8,17 @@ export const EventField = props => {
         <>
             <div className='event-field'>
                 <div>
-                    <img className='event-field-img' src='./img/likes.jpg'></img>
+                    <img className='event-field-img' src={props.event.image}></img>
                 </div>
                 <div className='event-field-content'>
-                    <h4 className='event-field-title'>Likes y Cicatrices</h4>
+                    <h4 className='event-field-title'>{props.event.title}</h4>
                     <div className="event-field-line"></div>
-                    <p>¿Tienes ganas de escuchar los últimos  éxitos de uno de los artisas más influyentes de España? Melendi celebra otro de sus conciertos aquí en Gran Canaria....</p>
+                    <p>{props.event.description}</p>
                     {isUser ? (
-                    <div className='event-field-icon'>
-                        <img src='./icons/MenuAbajo/estrella.png'></img>
-                    </div>
-                     ) : null
+                        <div className='event-field-icon'>
+                            <img src='./icons/MenuAbajo/estrella.png'></img>
+                        </div>
+                    ) : null
                     }
                 </div>
             </div>

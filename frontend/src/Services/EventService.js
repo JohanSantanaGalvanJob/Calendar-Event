@@ -24,7 +24,7 @@ const removeAll = () => {
     return http.delete(`/events`);
 };
 
-const findByTitle = name => {
+const findByTitle = title => {
     return http.get(`/events?title=${title}`);
 };
 

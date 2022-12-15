@@ -20,13 +20,8 @@ export const EventTypeCard = props => {
     const { id } = useParams();
     let navigate = useNavigate();
 
-    const initialEventTypeState = {
-        id: null,
-        name: ""
-    };
 
     const [currentEventType, setCurrentEventType] = useState(props.eventType);
-    const [message, setMessage] = useState("");
     const [currentIndex, setCurrentIndex] = useState(-1);
 
     const setActiveEventType = (eventType, index) => {
@@ -45,7 +40,6 @@ export const EventTypeCard = props => {
                 //props.updateList();
                 props.updateOne(response.data);
                 console.log(response.data);
-                setMessage("The Event Type was updated successfully!");
             })
             .catch(e => {
                 console.log(e);
