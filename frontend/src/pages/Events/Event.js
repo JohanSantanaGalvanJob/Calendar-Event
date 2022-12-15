@@ -11,16 +11,8 @@ import EventService from "../../Services/EventService";
 
 export const Event = () => {
 
-
-    const initialEventState = {
-        id: null,
-        title: "",
-        description: "",
-        image: ""
-    };
-
     const [events, setEvents] = useState([]);
-    const [event, setEvent] = useState(initialEventState);
+   
 
     const getEventTypes = () => {
         EventService.getAll().then(response => {
