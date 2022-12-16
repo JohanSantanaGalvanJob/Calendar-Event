@@ -40,11 +40,13 @@ export const Add = () => {
                 </div>
 
                 <div className='add-field'>
-                    <div className='add-field-content'>
-                        <h4 className='add-field-title'>Users</h4>
-                        <div className="add-field-line"></div>
-                        <p>Acceder a los usuarios</p>
-                    </div>
+                    <Link to='/AddUser'>
+                        <div className='add-field-content'>
+                            <h4 className='add-field-title'>Users</h4>
+                            <div className="add-field-line"></div>
+                            <p>Acceder a los usuarios</p>
+                        </div>
+                    </Link>
                 </div>
             </div>
             <DownMenu></DownMenu>

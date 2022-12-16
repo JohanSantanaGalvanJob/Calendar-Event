@@ -25,7 +25,7 @@ const signUp = params => {
 
     var config = {
         method: 'post',
-        url: 'http://localhost:3000/users',
+        url: 'http://'+ window.location.hostname +':3000/users',
         headers: {
             'Content-Type': 'multipart/form-data'
         },
@@ -44,7 +44,7 @@ const login = params => {
 
     var config = {
         method: 'post',
-        url: 'http://localhost:3000/users/sign_in',
+        url: 'http://'+ window.location.hostname +':3000/users/sign_in',
         headers: {
             'Content-Type': 'multipart/form-data'
         },
@@ -68,7 +68,7 @@ const update = (id, params) => {
 
     var config = {
         method: 'put',
-        url: `http://localhost:3000/users/${id}`,
+        url: `http://` + window.location.hostname +`:3000/users/${id}`,
         headers: {
             'Authorization': localStorage.getItem("token"),
             'Content-Type': 'multipart/form-data'
@@ -79,9 +79,9 @@ const update = (id, params) => {
     return axios(config);
 };
 
-// const remove = id => {
-//     return http.delete(`/events/${id}`);
-// };
+const remove = id => {
+    return http.delete(`/users/${id}`);
+};
 
 // const removeAll = () => {
 //     return http.delete(`/events`);
@@ -99,7 +99,7 @@ const UserService = {
     get,
     // create,
     update,
-    // remove,
+    remove,
     // removeAll,
     // findByTitle
 };

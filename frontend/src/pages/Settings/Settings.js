@@ -77,7 +77,7 @@ const Settings = () => {
                         <Link to='/EmailSent'>
                             <div className="settings-field">
                                 <div>
-                                    <img src="./icons/Ayuda/sobre.png"></img>
+                                    <img src="/icons/Ayuda/sobre.png"></img>
                                 </div>
                                 <div className='settings-content'>
                                     <h2 className='settings-subtitle'>Control Emails Sent</h2>
@@ -90,7 +90,7 @@ const Settings = () => {
                         <Link to='/Help'>
                             <div className="settings-field">
                                 <div>
-                                    <img src="./icons/Ayuda/interrogatorio.png"></img>
+                                    <img src="/icons/Ayuda/interrogatorio.png"></img>
                                 </div>
                                 <div className='settings-content'>
                                     <h2 className='settings-subtitle'>Help</h2>
@@ -108,7 +108,7 @@ const Settings = () => {
                         <Link to='/ChangeView'>
                             <div className="settings-field">
                                 <div>
-                                    <img src="./icons/Ayuda/paleta.png"></img>
+                                    <img src="/icons/Ayuda/paleta.png"></img>
                                 </div>
                                 <div className='settings-content'>
                                     <h2 className='settings-subtitle'>Change View</h2>
@@ -121,7 +121,7 @@ const Settings = () => {
                         <Link to='/ChangeLanguage'>
                             <div className="settings-field">
                                 <div>
-                                    <img src="./icons/Ayuda/mundo.png"></img>
+                                    <img src="/icons/Ayuda/mundo.png"></img>
                                 </div>
                                 <div className='settings-content'>
                                     <h2 className='settings-subtitle'>Change Language</h2>
@@ -134,7 +134,7 @@ const Settings = () => {
                         <Link to='/Help'>
                             <div className="settings-field">
                                 <div>
-                                    <img src="./icons/Ayuda/interrogatorio.png"></img>
+                                    <img src="/icons/Ayuda/interrogatorio.png"></img>
                                 </div>
                                 <div className='settings-content'>
                                     <h2 className='settings-subtitle'>Help</h2>

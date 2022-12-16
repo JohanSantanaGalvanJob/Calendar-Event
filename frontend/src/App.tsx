@@ -17,6 +17,7 @@ import { FirstPage } from './pages/FirstPage/FirstPage';
 import { Favourite } from './pages/Favourite/Favourite';
 import { AddEvent } from './pages/AddEvent/AddEvent';
 import { UpdateEvent } from './pages/UpdateEvent/UpdateEvent';
+import { AddUser } from './pages/AddUser/AddUser';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Route path="/Event" element={<Event />} />
         <Route path="/Add" element={<Add />} />
         <Route path="/AddEvent" element={<AddEvent />} />
+        <Route path="/AddUser" element={<AddUser />} />
         <Route path="/UpdateEvent/:id" element={<UpdateEvent />} />
         <Route path="/AddEventType" element={<AddEventType />} />
         <Route path="/AddLocation" element={<AddLocation />} />
