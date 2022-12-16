@@ -15,6 +15,8 @@ import { EditProfile } from './pages/EditProfile/EditProfile';
 import { LogIn } from './pages/LogIn/LogIn';
 import { FirstPage } from './pages/FirstPage/FirstPage';
 import { Favourite } from './pages/Favourite/Favourite';
+import { AddEvent } from './pages/AddEvent/AddEvent';
+import { UpdateEvent } from './pages/UpdateEvent/UpdateEvent';
 
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
         <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="/Event" element={<Event />} />
         <Route path="/Add" element={<Add />} />
+        <Route path="/AddEvent" element={<AddEvent />} />
+        <Route path="/UpdateEvent/:id" element={<UpdateEvent />} />
         <Route path="/AddEventType" element={<AddEventType />} />
         <Route path="/AddLocation" element={<AddLocation />} />
         <Route path="/Settings" element={<Settings />} />

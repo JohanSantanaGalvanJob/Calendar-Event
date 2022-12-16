@@ -1,13 +1,7 @@
 import './EditProfile.css'
 
-import { IconButton } from "@mui/material";
-import DeleteIcon from '@mui/icons-material/Delete';
-import EditIcon from '@mui/icons-material/Edit';
 
 import { Link, Navigate, useNavigate } from 'react-router-dom';
-import { Container } from 'react-bootstrap';
-import { Row } from 'react-bootstrap';
-import { Col } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image'
 import { useForm } from "react-hook-form";
 import { DownMenu } from '../../components/DownMenu/DownMenu';
@@ -75,11 +69,14 @@ export const EditProfile = props => {
         UserService.update(currentUser.id, data)
             .then(response => {
                 localStorage.setItem('userData',JSON.stringify(response.data.status.data))
+                
                 console.log(response.data);
             })
             .catch(e => {
                 console.log(e);
             });
+
+
 
             navigate('/Event')
 
