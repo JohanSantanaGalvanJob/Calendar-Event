@@ -31,6 +31,17 @@ En este caso como campos nuevos cabe destacar el id de la localización y del ti
 
 En una localización pueden haber muchos eventos y un tipo de evento puede pertenecer a muchos eventos.
 
+También cabe destacar el tipo de dato quue tiene cada campo.
+
+Finalmente tenemos el Modelo Relacional:
+
+![Image text](https://github.com/JohanSantanaGalvanJob/Calendar-Event/blob/developer/readmeImages/Modelo%20Relacional.jpg)
+
+Este es el más cercano a lo que sería la base de datos real.
+
+
+
+
 
 
 
