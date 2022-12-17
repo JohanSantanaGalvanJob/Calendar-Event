@@ -27,7 +27,7 @@ const create = params => {
 
     var config = {
         method: 'post',
-        url: 'http://'+ window.location.href +':3000/events',
+        url: 'http://'+ window.location.hostname +':3000/events',
         headers: {
             'Content-Type': 'multipart/form-data',
             'Authorization': localStorage.getItem("token"),

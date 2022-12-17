@@ -30,6 +30,26 @@
     width: 100%;
 }
 
+.edit-profile-input textarea{
+    font-style: italic;
+    background-color: transparent;
+    margin: 0.5em;
+    border: none;
+    height: 7em;
+    border-bottom: solid 2px #282727;
+    width: 100%;
+}
+
+.edit-profile-select{
+    font-style: italic;
+    background-color: transparent;
+    margin: 0.5em;
+    outline: none;
+    border: none;
+    border-bottom: solid 2px #282727;
+    width: 100%;
+}
+
 .edit-profile-button{
     font-size: 1.75em;
     font-weight: bold;

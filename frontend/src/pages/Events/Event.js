@@ -34,7 +34,12 @@ export const Event = () => {
 
             <Navbar></Navbar>
             <div className="event-type-card-sos">
-                {events.map((event, index) => <EventField key={event.id} event={event} ></EventField>)}
+                {events.map((event, index) => 
+                <div className="event-card-part">
+                <EventField key={event.id} event={event} ></EventField>
+                 <div className="event-line"></div>
+                 </div>
+                )}
             </div>
 
 

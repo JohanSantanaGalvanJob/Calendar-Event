@@ -15,7 +15,6 @@ body {
 
 .sign-up-style {
     justify-content: center;
-    padding-bottom: 2em;
 
 }
 
@@ -42,6 +41,44 @@ body {
 
 }
 
+.sign-up-field textarea {
+    height: 10em;
+    width: 100%;
+    outline: none;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    font-size: 16px;
+    font-style: italic;
+    transition: all 0.3s ease;
+    background-color: #CCF2F4;
+    color: #424242;
+    resize: none;
+
+}
+
+.sign-up-select {
+    height: 2em;
+    width: 100%;
+    outline: none;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    font-size: 16px;
+    font-style: italic;
+    transition: all 0.3s ease;
+    background-color: #CCF2F4;
+    color: #424242;
+    resize: none;
+    margin-bottom: 1.5em;
+
+}
+
+.sign-up-form{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 .sign-up-button {
     font-size: 1.75em;
     font-weight: bold;
@@ -54,7 +91,7 @@ body {
     border: 0.25px solid #A4EBF3;
     align-items: center;
     justify-content: center;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 
 

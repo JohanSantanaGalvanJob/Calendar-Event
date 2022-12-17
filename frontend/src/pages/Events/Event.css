@@ -4,3 +4,17 @@
     flex-direction: column;
     flex-wrap: wrap;
 }
+
+.event-card-part{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.event-line{
+     margin-top: 1em;
+    height: 1em;
+    width: 90vw;
+    border-top: 1px solid black;
+}

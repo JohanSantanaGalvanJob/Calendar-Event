@@ -5,28 +5,33 @@
 }
 
 .home-style {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    /* background-color: #CCF2F4; */
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-bottom: 2em;
+    flex-direction: row;
+    flex-wrap: wrap;
 
 }
 
 .home-title{
     font-weight: bold;
-    font-size: 1.5em;
+    margin-top: 1em;
+    font-size: 2em;
 }
 
 .home-text{
-    font-size: 1.5em; 
+    font-size: 2em; 
 
 }
 
+.home-content{
+    margin-top: 1em;
+}
+
 .home-line {
+    margin-top: 1em;
     height: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
+    width: 80vw;
     border-top: 1px solid black;
 }
 

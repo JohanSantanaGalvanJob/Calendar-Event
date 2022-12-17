@@ -15,7 +15,7 @@ export const UpdateEvent = () => {
     const [locations, setLocations] = useState([]);
     const [eventTypes, setEventTypes] = useState([]);
     const navigate = useNavigate();
-    let {id} = useParams();
+    let { id } = useParams();
 
 
     const handleInputChange = event => {
@@ -111,7 +111,7 @@ export const UpdateEvent = () => {
     return (
         <>
 
-            <h2 className='edit-profile-title'>Edit Profile</h2>
+            <h2 className='edit-profile-title'>Update Event</h2>
 
 
             <form onSubmit={updatePublished}>
@@ -119,9 +119,9 @@ export const UpdateEvent = () => {
 
                     <div className='edit-profile-image-container'>
                         <div className="d-flex justify-content-center mb-4">
-                            <Image roundedCircle src={currentEvent.image = imgSrc}
+                            <Image rounded src={currentEvent.image = imgSrc}
 
-                                style={{ width: "200px", height: "200px" }} />
+                                style={{ width: "136px", height: "185px" }} />
                         </div>
                         <div className="d-flex justify-content-center">
                             <div className="btn btn-primary btn-rounded">
@@ -131,29 +131,32 @@ export const UpdateEvent = () => {
                         </div>
                     </div>
                     <div className='edit-profile-input'>
-                        <input id='title' name='title' value={currentEvent.title} onChange={handleInputChange} required type='text' maxLength={20} minLength={5} placeholder='Write the title' pattern="[a-zA-Z]*" />
-                        <input id='description' name='description' value={currentEvent.description} onChange={handleInputChange} type='text' placeholder='Write the description' required={true}></input>
+                        <input id='title' name='title' value={currentEvent.title} onChange={handleInputChange} required type='text' placeholder='Write the title' />
+                        <textarea id='description' name='description' value={currentEvent.description} onChange={handleInputChange} type='text' placeholder='Write the description' required={true}></textarea>
                         <input id='date' name='date' value={currentEvent.date} onChange={handleInputChange} type="date" placeholder='Write your date of birth' required={true}></input>
                         <input id='starting_hour' name='starting_hour' value={currentEvent.starting_hour} onChange={handleInputChange} type="text" placeholder='Write the hour it starts' required={true}></input>
                         <input id='finished_hour' name='finished_hour' value={currentEvent.finished_hour} onChange={handleInputChange} type="text" placeholder='Write the hour it ends' required={true}></input>
                         <input id='url' name='url' value={currentEvent.url} onChange={handleInputChange} type="text" placeholder='Write the url' required={true}></input>
                     </div>
 
-                    <select name="event_type_id" onChange={handleInputChange}>
-                        {eventTypes.map((eventType, index) =>
-                            <>
-                                <option value={eventType.id}  >{eventType.name}</option>
-                            </>
-                        )}
-                    </select>
+                    <div className='edit-profile-input'>
 
-                    <select name="location_id" onChange={handleInputChange}>
-                        {locations.map((location, index) =>
-                            <>
-                                <option value={location.id}>{location.name}</option>
-                            </>
-                        )}
-                    </select>
+                        <select className='edit-profile-select' name="event_type_id" onChange={handleInputChange}>
+                            {eventTypes.map((eventType, index) =>
+                                <>
+                                    <option value={eventType.id}  >{eventType.name}</option>
+                                </>
+                            )}
+                        </select>
+
+                        <select className='edit-profile-select' name="location_id" onChange={handleInputChange}>
+                            {locations.map((location, index) =>
+                                <>
+                                    <option value={location.id}>{location.name}</option>
+                                </>
+                            )}
+                        </select>
+                    </div>
                     <button type='submit' className="edit-profile-button">Edit</button>
                 </div>
             </form>

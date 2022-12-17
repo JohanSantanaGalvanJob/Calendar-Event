@@ -4,10 +4,8 @@ import EditIcon from '@mui/icons-material/Edit';
 
 import './EventTypeCard.css'
 
-import axios from 'axios';
 import { useEffect, useState } from "react";
-import React from "react";
-import { IEventType } from "../../types/eventTypeData";
+
 import { useNavigate, useParams } from "react-router-dom";
 
 import EventTypeService from "../../Services/EventTypeService"

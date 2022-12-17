@@ -70,7 +70,7 @@ export const AddEvent = () => {
 
     const singleDeleteList = (index) => () => {
         const ets = [...events];
-        ets.splice(index,1)
+        ets.splice(index, 1)
         setEvents(ets);
     };
 
@@ -166,9 +166,9 @@ export const AddEvent = () => {
 
                                     <div>
                                         <div className="d-flex justify-content-center mb-4">
-                                            <Image roundedCircle src={imgSrc}
+                                            <Image rounded src={imgSrc}
 
-                                                style={{ width: "200px", height: "200px" }} />
+                                                style={{ width: "136px", height: "185px" }} />
                                         </div>
                                         <div className="d-flex justify-content-center">
                                             <div className="btn btn-primary btn-rounded">
@@ -179,56 +179,52 @@ export const AddEvent = () => {
                                     </div>
 
 
-                                    <div className='sign-up-field'>
-                                        <input id='title' name='title' value={event.title} onChange={handleInputChange} required type='text' maxLength={20} minLength={5} placeholder='Write the title' pattern="[a-zA-Z]*" />
+                                    <div className='sign-up-form'>
+                                        <div className='sign-up-field'>
+                                            <input id='title' name='title' value={event.title} onChange={handleInputChange} required type='text' placeholder='Write the title' />
+                                        </div>
+
+                                        <div className='sign-up-field'>
+                                            <textarea id='description' name='description' value={event.description} onChange={handleInputChange} type='text' placeholder='Write the description' required={true}>
+                                            </textarea>
+                                        </div>
+
+                                        <div className='sign-up-field'>
+                                            <input id='date' name='date' value={event.date} onChange={handleInputChange} type="date" placeholder='Write your date of birth' required={true}></input>
+                                        </div>
+
+                                        <div className='sign-up-field'>
+                                            <input id='starting_hour' name='starting_hour' value={event.starting_hour} onChange={handleInputChange} type="text" placeholder='Write the hour it starts' required={true}></input>
+                                        </div>
+
+                                        <div className='sign-up-field'>
+                                            <input id='finished_hour' name='finished_hour' value={event.finished_hour} onChange={handleInputChange} type="text" placeholder='Write the hour it ends' required={true}></input>
+                                        </div>
+
+                                        <div className='sign-up-field'>
+                                            <input id='url' name='url' value={event.url} onChange={handleInputChange} type="text" placeholder='Write the url' required={true}></input>
+                                        </div>
+
+                                        <select className='sign-up-select' name="event_type_id" onChange={handleInputChange}>
+                                        <option selected='selected'>Select Event Type</option>
+                                            {eventTypes.map((eventType, index) =>
+                                                <>
+                                                    <option value={eventType.id}  >{eventType.name}</option>
+                                                </>
+                                            )}
+                                        </select>
+
+                                        <select className='sign-up-select' name="location_id" onChange={handleInputChange}>
+                                            <option selected='selected'>Select Location</option>
+                                            {locations.map((location, index) =>
+                                                <>
+                                                    <option value={location.id}>{location.name}</option>
+                                                </>
+                                            )}
+                                        </select>
+
+                                        <button type='submit' className="sign-up-button">Create Event</button>
                                     </div>
-
-                                    <div className='sign-up-field'>
-                                        <input id='description' name='description' value={event.description} onChange={handleInputChange} type='text' placeholder='Write the description' required={true}>
-                                        </input>
-                                    </div>
-
-                                    <div className='sign-up-field'>
-                                        <input id='date' name='date' value={event.date} onChange={handleInputChange} type="date" placeholder='Write your date of birth' required={true}></input>
-                                    </div>
-
-                                    <div className='sign-up-field'>
-                                        <input id='starting_hour' name='starting_hour' value={event.starting_hour} onChange={handleInputChange} type="text" placeholder='Write the hour it starts' required={true}></input>
-                                    </div>
-
-                                    <div className='sign-up-field'>
-                                        <input id='finished_hour' name='finished_hour' value={event.finished_hour} onChange={handleInputChange} type="text" placeholder='Write the hour it ends' required={true}></input>
-                                    </div>
-
-                                    <div className='sign-up-field'>
-                                        <input id='url' name='url' value={event.url} onChange={handleInputChange} type="text" placeholder='Write the url' required={true}></input>
-                                    </div>
-
-                                    {/* <div className='sign-up-field'>
-                                        <input id='event_type_id' name='event_type_id' value={event.event_type_id} onChange={handleInputChange} type="number" placeholder='Write the hour it ends' required={true}></input>
-                                    </div>
-
-                                    <div className='sign-up-field'>
-                                        <input id='location_id' name='location_id' value={event.location_id} onChange={handleInputChange} type="number" placeholder='Write the url' required={true}></input>
-                                    </div> */}
-
-                                    <select name="event_type_id" onChange={handleInputChange}>
-                                        {eventTypes.map((eventType, index) =>
-                                            <>
-                                                <option value={eventType.id}  >{eventType.name}</option>
-                                            </>
-                                        )}
-                                    </select>
-
-                                    <select name="location_id" onChange={handleInputChange}>
-                                        {locations.map((location, index) =>
-                                            <>
-                                                <option value={location.id}>{location.name}</option>
-                                            </>
-                                        )}
-                                    </select>
-
-                                    <button type='submit' className="sign-up-button">Create Event</button>
                                 </form>
                             </div>
                         </div>
