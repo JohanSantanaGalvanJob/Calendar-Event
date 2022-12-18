@@ -12,6 +12,7 @@ import withReactContent from 'sweetalert2-react-content'
 
 
 export const LogIn = () => {
+
     const initialUserState = {
         id: null,
         firstname: "",
@@ -21,6 +22,7 @@ export const LogIn = () => {
         date_birth: undefined,
         image: ""
       };
+
 
     const [user, setUser] = useState(initialUserState);
     const navigate = useNavigate();
@@ -41,6 +43,16 @@ export const LogIn = () => {
                 navigate('/Event')
                 window.location.reload();
             }
+          })
+
+      }
+
+      const mySwalError = (error) => {
+
+        swal.fire({
+            title: 'Oops Something went wrong!',
+            icon: 'error',
+            text: error,
           })
 
       }
@@ -72,11 +84,28 @@ export const LogIn = () => {
 
 
 
+        }).catch(e => {
+            mySwalError(e)
+            console.log(e);
         });
 
         mySwal()
 
     }
+
+    // function checkPassword(){
+    //     let password = document.getElementById("password").value
+    //     let confirmPassword= document.getElementById('confirmPassword').value
+    //     let message = document.getElementById('message')
+
+    //     if (password.length != 0){
+    //         if (password == confirmPassword){
+    //             message.textContent= 'Password Confirmed'
+    //         } else{
+    //             message.textContent= 'Password do not match '
+    //         }
+    //     }
+    // }
 
     return (
         <>
@@ -87,18 +116,13 @@ export const LogIn = () => {
                             <h2 className="log-in-title">Log In</h2>
                             <form onSubmit={onSubmit}>
                                 <div className='log-in-field'>
-                                    <input type="text" name='email' placeholder='Write your email' onSubmit={handleInputChange} required></input>
-                                    <p className='log-in-hypertext'>Forgot Email?</p>
+                                    <input type="text" name='email' placeholder='Write your email' pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" onSubmit={handleInputChange} required></input>
                                 </div>
 
                                 <div className='log-in-field'>
-                                    <input type="password" name='password' placeholder='Write your password' onSubmit={handleInputChange} required></input>
-                                    <p className='log-in-hypertext'>Forgot password?</p>
+                                    <input id='password' type="password" name='password' placeholder='Write your password' pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" onSubmit={handleInputChange} required></input>
                                 </div>
 
-                                <div className='log-in-field'>
-                                    <input type="password" placeholder='Repeat your password'></input>
-                                </div>
                                 <div>
                                     <div>
                                             <button type='submit' className="log-in-button">Log In</button>

@@ -5,6 +5,8 @@
 }
 
 .log-in-title{
+    margin-top: 2em;
+    margin-bottom: 1em;
     font-weight: bold;
     font-size: 2em;
 }
@@ -49,6 +51,7 @@
     font-size: 1.75em;
     font-weight: bold;
     text-align: center;
+
     width: 7em;
     height: 1.75em;
     color: #424242;
@@ -58,6 +61,8 @@
 }
 
 .log-in-subtext{
+    margin-top: 1em;
+    margin-bottom: 1em;
     color: #424242;
     font-size: 1.75em;
     

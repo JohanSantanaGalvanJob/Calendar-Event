@@ -1,7 +1,7 @@
 import EventUserService from '../../Services/EventUserService';
 import './EventFieldLiked.css';
 import { useState, useEffect } from "react";
-
+import swal from 'sweetalert2';
 
 export const EventFieldLiked = props => {
 
@@ -9,6 +9,29 @@ export const EventFieldLiked = props => {
 
     const user = JSON.parse(localStorage.getItem('userData'))
     const isUser = !!user;
+
+    const mySwal = () => {
+
+        swal.fire({
+          title: 'Event deleted successfully',
+          icon: 'success',
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.reload();
+            }
+          })
+    
+      }
+
+      const mySwalError = (error) => {
+
+        swal.fire({
+            title: 'Oops Something went wrong!',
+            icon: 'error',
+            text: error,
+          })
+    
+      }
 
     const getEventUsers = () => {
         const user = JSON.parse(localStorage.getItem('userData'))
@@ -21,6 +44,7 @@ export const EventFieldLiked = props => {
             }
         })
             .catch(e => {
+                mySwalError('Some error occured getting your Events liked')
                 console.log(e);
             });
     }
@@ -31,9 +55,11 @@ export const EventFieldLiked = props => {
 
         EventUserService.remove(id).then(response => {
             console.log(response.data);
+            mySwal();
         })
             .catch(e => {
                 console.log(e);
+                mySwalError('Some error occured removing your event')
             });
 
     };

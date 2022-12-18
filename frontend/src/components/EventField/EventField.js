@@ -1,6 +1,7 @@
 import EventUserService from '../../Services/EventUserService';
 import './EventField.css';
 import { useState, useEffect } from "react";
+import swal from 'sweetalert2';
 
 
 export const EventField = props => {
@@ -17,7 +18,24 @@ export const EventField = props => {
     const isUser = !!user;
     const [eventUser, setEventUser] = useState(initialEventUserState);
 
+    const mySwal = () => {
 
+        swal.fire({
+          title: 'Event Added to your Favs',
+          icon: 'success',
+        })
+    
+      }
+
+      const mySwalError = (error) => {
+
+        swal.fire({
+            title: 'Oops Something went wrong!',
+            icon: 'error',
+            text: error,
+          })
+    
+      }
 
     const saveEventUser = () => {
         var data = {
@@ -26,15 +44,18 @@ export const EventField = props => {
         };
 
         EventUserService.create(data).then(response => {
+
             setEventUser({
                 id: response.data.id,
                 user_id:response.data.user_id,
                 event_id:response.data.event_id,
             });
             console.log(response.data);
+            mySwal();
         })
             .catch(e => {
                 console.log(e);
+                mySwalError("Some error occured adding the event to fav")
             });
 
     };

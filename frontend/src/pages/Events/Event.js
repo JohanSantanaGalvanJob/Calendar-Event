@@ -2,16 +2,19 @@ import { DownMenu } from "../../components/DownMenu/DownMenu"
 import { UpMenu } from "../../components/UpMenu/UpMenu"
 import { EventField } from "../../components/EventField/EventField"
 import { useState, useEffect } from "react";
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 
 import './Event.css';
 import { Sidebar } from "react-pro-sidebar";
 import Navbar from "../../components/Sidebar/Navbar";
 import EventService from "../../Services/EventService";
+import swal from 'sweetalert2';
 
 
 export const Event = () => {
 
     const [events, setEvents] = useState([]);
+    const navigate = useNavigate();
    
 
     const getEvents = () => {
@@ -20,9 +23,24 @@ export const Event = () => {
             console.log(response.data);
         })
             .catch(e => {
+                mySwalError("An error occured loading the events. Please try Again Later")
                 console.log(e);
             });
     }
+
+    const mySwalError = (error) => {
+
+        swal.fire({
+            title: 'Oops Something went wrong!',
+            icon: 'error',
+            text: error,
+          }).then((result) => {
+            if (result.isConfirmed) {
+              navigate('/')
+            }
+          })
+    
+      }
 
     useEffect(() => {
         getEvents();
