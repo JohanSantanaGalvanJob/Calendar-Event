@@ -98,51 +98,32 @@ Una vez temrinado, unicamente tendrmeos que cambiar unos cuantos campos en el da
 
 ## Comparación de Tecnologías 
 
-Frontend: 
+Con las aplicaciones nativas podremos instalarlo y se ejecutará en el sistema, haciéndolo más ágil y no dependiente de que tengamos conexión a internet o no.
 
-ReactJS con Angular
+Con las híbridas tenemos una carcasa como IONIC para el sistema y luego ejecutamos la aplicación como si fuera una app web.
 
-Ambos usan el sistema de componentes de muchos Frameworks y librerías. Sin embargo, React usa Javascript en condiciones normales, mientras que Angular usa Typescript los cuales primoridalmente la diferencia reside en que Typescript usa tipos de datos como int o string
+Y finalmente con las aplicaciones web tenemos todo en remoto por lo que necesitamos conexión a internet aunque a cambio no será demandante para el sistema
 
-Diferencias:
+En mi caso mi aplicación es full web. Esto tiene como ventaja que se puede ejecutar en cualquier dispositivo sin tener requisitos del sistema o de instalarlo aunque como desventaja, ha de estar siempre conectado a internet para poder usarla.
 
-  - React usa un DOM virtual mientras que Angular usa un DOM real.
+Como nota de mejora debería de enfocarla en PWA para que coja lo mejor de los dos mundos. Que sea una aplicación web pero que funcione mínimamente si no tuviéramos conexión a internet ya que como realmente es un aplicación nada demandante se debería de poder ejecutar en local perfectamente.
 
-  - React es más ágil pero menos organizado normalmente que Angular ya que cada página cuenta con su archivo de typescript separado del html en el casod e Angular, mientras que en React todo el código puede estar en un solo archivo
+En relación a mi proyecto, la PWA sería lo óptimo en realidad ya que se comporta como una aplicación web y como además no es nada demandante por lo que se quita de en medio la desventaja de las aplicaciones nativas de que sean o no compatibles con el sistema en cuanto a recursos
 
-  - React es muy útil y ágil en  whereas Angular.js is used to build complex enterprise apps like progressive web apps and single-page apps.
+## Planificación
 
-  - Angular JS is used to build single-page applications using HTML and TypeScript. React JS is commonly used to create user interfaces for single-page applications from isolated components.
+Para organizar el desarrollo de la aplicación he usado Github
 
-  - Angular is a part of the MEAN stack and is very compatible with many code editors. It’s also considered to develop dynamic websites and web apps. On the other hand, React is widely used to develop reusable HTML elements for front end development.
+Lo primero que hice fue la parte del backend con su diseño de tablas para tener una visión clara del proyecto y de lo que quiero hacer.
 
-Backend: 
+Después de terminar con el backend, empecé a mirar tecnologías que se podían integrar con React y al final decidí quedarme con lo más básico de React con algunas páginas
 
-[![Sequelize][sequelize.io]][sequelize.url] to compare with [![Spring][spring.io]][spring.url]
+Luego volví al backend y empecé a integrar el token, las imágenes y algunas validaciones además de algún que otro endpoint.
 
-Both technologies are ORMs used for the connection between the backend and the frontend. Therefore, it seems appropriate to compare them. So, let's list the differences:
+Finalmente estuve casi todo el tiempo con el frontend integrando funcionalidades varias, dando diseño y estilo, y haciendo que todo funcione lo mejor posible.
 
-  - Sequelize is a simpler development tool than Spring with respect to application development.
-
-  - Spring and sequelize focus on creating a backend for frameworks such as frontends, having similar power in their uses. 
-
-  - Spring allows us to work with MVC frameworks with PHP, being the better of the two ORMs in this aspect.
-
-  - Sequelize allows us to perform powerful works in Digital Drawing and Painting environments.
-
----
-
-## Planification
-
-To organize myself during the development of this project, I have established pending objectives to be done from the beginning, proposing to do them as I finished the ideation of the application.
-
-The first thing I did after establishing the idea of creating the website of a hotel, was to start developing the diagrams of the database and its relationships, as well as its attributes. Once decided, I created a project in GitHub that allowed me to keep a version control and, in turn, a control of the pending tasks I had. Once the tasks were set, create a mockup of the interfaces of my application, to have a reference as soon as I started to develop them with Angular. After finalizing the prototype, I prioritized the development of a stable and complete backend that would allow me to make a CRUD of all the tables and be able to "forget" about it once the frontend was ready.
-After the completion of the backend, along with its authentication and its respective tests with Postman, I proceeded with the frontend, taking as a reference my mockup made in Figma, but not before creating the corresponding services and models for a good connection to the database.
-
-When I finished the project, I started to write the project documentation, including the different manuals for future users.
-
-You can see the control of pending tasks in the link of this project, navigating to the "project" section. However, I'll leave the link here for you to go from now on. 
- - [![ControlTasks][controlTasks.io]][controlTasks.url]
+Aquí está el link de control de proyecto. 
+https://github.com/users/JohanSantanaGalvanJob/projects/2
 
 ---
 
@@ -349,13 +330,12 @@ Paleta de colores usada:
 
  - Textos hechos perfectamente en los formularios para que sean lo más limpias y fáciles de leer posibles .
 
-## Conclusion
+## Conclusión
 
-As a conclusion of this project, I have to say that I was very excited to do it, because I had never been able to experience creating a product before, let alone made by myself. On several occasions I have been able to feel how everything fell apart and, after a hard effort, everything was back on its feet and working again. It is one of the best feelings I have ever had.
+Como conclusión de mi proyecto, en general me quedo con que he realizado una aplicación full stack en dos meses que si bien es mucho tiempo, me ha servido de experiencia para en el futuro organizarme de mejor manera. Soy consciente de la ausencia de muchos elementos y espero poder mejorarlos algunos estas vacaciones y que se quede algo de lo que realmente estoy orgulloso de haber hecho. 
 
-This project has made me realize how much I love programming and how much it fills me up to be able to show these feats with this quality that, although it remains to be polished, I consider that it is not a bad start.
+Sin duda ha sido una experiencia en general satisfactoria pero estresante y espero que con esta experiencia el trimestre que viene tenerlo todo ya mejor organizado para hacer o mejorar le proyecto que se me asigne.
 
-I have been satisfied with the result of the product and I have learned new things from the technology stack that I have used, it never hurts to learn something new.
-To finish my conclusion, I would like to emphasize what was said at the beginning of this document. And it is that, thanks to this project, I have been able to see and learn something that I had never done before, and from the inside.
+Trataré de centrarme más en poner el código lo más limpio posible para que se pueda leer fácilmente.
 
 
