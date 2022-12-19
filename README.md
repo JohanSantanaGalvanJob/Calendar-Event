@@ -175,6 +175,61 @@ Con el Devise JWT he seguido una serie de vídeos que explican de forma más o m
 
 Con Devise tenemos el :authenticate_user! que no ejecuta las peticiones a menos que se esté previamente autenticado.
 
+## Requisitos de usuario
+
+#### Plataforma:
+- **P1**. Dado que no está del todo bien hecha la parte de ordenador, es bastante recomendable que se use solamente en móviles.
+
+
+#### Acceso:
+- **A1**. La aplicación cuenta con una página en la que se puede seleccionar si nos queremos registrar, iniciar sesión, o continuar como invitado.
+- **A2**. Como invitado solamente puedes ver los eventos que existen en la página. Para poder darles like necesitas iniciar sesión o registrarte.
+- **A3**. Como administrador puedes crear, ver, editar o borrar datos.
+  - **A3.1**.Como administrador puedes hacer un CRUD completo de eventos.
+  - **A3.2**.Como administrador puedes hacer un CRUD completo de tipos de eventos.
+  - **A3.3*.Como administrador puedes hacer un CRUD completo de localización.
+  - **A3.4**. Por razones de seguridad, el administrador solamente puede ver los emails de los usuarios y borrar las cuentas.
+- **A4**. Como usuario puedes editar tu propio perfil.
+  - **A4.1**.Como usuario puedes darle like a un evento que te guste y entonces se guardará en la página de favoritos.
+  - **A4.2**. Como usuario además puedes quitar un evento de la lista de favoritos en caso de que no nos interese o nos hayamos equivocado.
+
+#### Interfaces:
+
+- **I1**. The application has two main interface where you can see all types of apartments.
+- **I2**. In the first main interface, you can navigate between help, login or apartment details and there is slider.
+  - **I2.1**. In the help interface, you will find cards with some places to go.
+    - **I2.1.1**. The first card you will find is the help system.
+    - **I2.1.2**. The second card you will fin is the application information.
+    - **I2.1.3**. The third card you will find is the additional information.
+    - **I2.1.4**. The fourth card you will find is the contact.
+  - **I2.2**. You will find a form and some actions in login interface.
+    - **I2.2.1**. You will be able to login to these interfaces by filling in the form with your account data.
+    - **I2.2.2**. You will be able to register if you do not have an account by clicking on a button.
+    - **I2.2.3**. You will be able to recover your password if you do not remember it.
+- **I3**. As a user you will be able to find more options than before.
+  - **I3.1**. In the help interface, you will find a card to delete your account.
+  - **I3.2**. You will be able to book an apartment.
+  - **I3.3**. You will be able to see all the reservations you have made.
+    - **I3.3.1**. You will be able to delete or edit your reservations depending on whether you have your reservation that day or not.
+  - **I3.4**. You will be able to log out.
+- **I4**. As a administrator, you will be able to see the second main interface.
+  - **I4.1**. You will be able to add new types of apartments.
+  - **I4.2**. You will be able to edit or delete existing apartment types.
+  - **I4.3**. You will be able to see all the reservations of all users.
+    -**I4.3.1**. You will be able to delete user reservations.
+
+#### Acciones:
+
+- **A1**. Las acciones del usuario ( como acceder a páginas, rellenar formularios o desloguearte) tendrán avisos y alertas para cada caso.
+- **A2**. Cuando introducimos datos en un formulario, en caso de éxito seremos notificados y en caso de error también.
+
+#### Validaciones:
+
+- **V1**. When typing or adding data, if an error occurs with respect to any character, you will be warned and the desired action will not be allowed.
+- **V2**. There are more than one type of validations, such as when you do not have the required credentials or the date is incorrect.
+  - **V2.1**. When you book an apartment, you cannot choose dates less than the current date at that time.
+- **V3**. When you enter your email address to log in or register, we will apply a mask to see if it is a valid email address.
+
 
 
 
