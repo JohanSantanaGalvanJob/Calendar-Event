@@ -4,6 +4,10 @@ Esta aplicación consiste en montar un calendario de eventos en la que un usuari
 
 Los eventos abarcan desde aquellos relacionados con Navidad, como conciertos, además de shows y otras cuestiones...
 
+En este diagrama se detallan las acciones que se puede realizar:
+
+![Image text](https://github.com/JohanSantanaGalvanJob/Calendar-Event/blob/master/readmeImages/Diagrama%20casos%20de%20uso.jpg)
+
 ## Requisitos de Instalación
 
 Como Editor de código, se puede usar cualquiera, aunque yo he usado Visual Studio Code: https://code.visualstudio.com/download
@@ -17,6 +21,10 @@ Necesitaremos NodeJS para posteriormente inicializar React:
 https://nodejs.org/en/
 
 https://es.reactjs.org/docs/getting-started.html
+
+Aqui está el enlace al POSTMAN para realizar peticiones: 
+
+https://documenter.getpostman.com/view/23479991/2s8YzZPeHF
 
 ## Algunas Librerías usadas
 
