@@ -29,7 +29,7 @@ En este diagrama se detallan las acciones que se puede realizar:
 - [Librerías y Gemas usadas]((##Algunas-Librerías-Usadas)
 - [Parte del Backend](##Parte-del-Backend)
 - [Código del backend](##Código-del-backend)
-- [System operation and technical specifications](##Consejos-a-tener-en-cuenta-con-el-Backend)
+- [Requisitos de usuario](##Requisitos-de-usuario)
 
     </ol>
 </details>
@@ -185,38 +185,47 @@ Con Devise tenemos el :authenticate_user! que no ejecuta las peticiones a menos 
 - **A1**. La aplicación cuenta con una página en la que se puede seleccionar si nos queremos registrar, iniciar sesión, o continuar como invitado.
 - **A2**. Como invitado solamente puedes ver los eventos que existen en la página. Para poder darles like necesitas iniciar sesión o registrarte.
 - **A3**. Como administrador puedes crear, ver, editar o borrar datos.
-  - **A3.1**.Como administrador puedes hacer un CRUD completo de eventos.
-  - **A3.2**.Como administrador puedes hacer un CRUD completo de tipos de eventos.
-  - **A3.3*.Como administrador puedes hacer un CRUD completo de localización.
+  - **A3.1**. Como administrador puedes hacer un CRUD completo de eventos.
+  - **A3.2**. Como administrador puedes hacer un CRUD completo de tipos de eventos.
+  - **A3.3**. Como administrador puedes hacer un CRUD completo de localización.
   - **A3.4**. Por razones de seguridad, el administrador solamente puede ver los emails de los usuarios y borrar las cuentas.
 - **A4**. Como usuario puedes editar tu propio perfil.
-  - **A4.1**.Como usuario puedes darle like a un evento que te guste y entonces se guardará en la página de favoritos.
+  - **A4.1**. Como usuario puedes darle like a un evento que te guste y entonces se guardará en la página de favoritos.
   - **A4.2**. Como usuario además puedes quitar un evento de la lista de favoritos en caso de que no nos interese o nos hayamos equivocado.
 
 #### Interfaces:
 
-- **I1**. The application has two main interface where you can see all types of apartments.
-- **I2**. In the first main interface, you can navigate between help, login or apartment details and there is slider.
-  - **I2.1**. In the help interface, you will find cards with some places to go.
-    - **I2.1.1**. The first card you will find is the help system.
-    - **I2.1.2**. The second card you will fin is the application information.
-    - **I2.1.3**. The third card you will find is the additional information.
-    - **I2.1.4**. The fourth card you will find is the contact.
-  - **I2.2**. You will find a form and some actions in login interface.
-    - **I2.2.1**. You will be able to login to these interfaces by filling in the form with your account data.
-    - **I2.2.2**. You will be able to register if you do not have an account by clicking on a button.
-    - **I2.2.3**. You will be able to recover your password if you do not remember it.
-- **I3**. As a user you will be able to find more options than before.
-  - **I3.1**. In the help interface, you will find a card to delete your account.
-  - **I3.2**. You will be able to book an apartment.
-  - **I3.3**. You will be able to see all the reservations you have made.
-    - **I3.3.1**. You will be able to delete or edit your reservations depending on whether you have your reservation that day or not.
-  - **I3.4**. You will be able to log out.
-- **I4**. As a administrator, you will be able to see the second main interface.
-  - **I4.1**. You will be able to add new types of apartments.
-  - **I4.2**. You will be able to edit or delete existing apartment types.
-  - **I4.3**. You will be able to see all the reservations of all users.
-    -**I4.3.1**. You will be able to delete user reservations.
+- **I1**. Tenemos una página principal en la que podemos seleccionar si queremos registrarnos, iniciar sesión, o continuar.
+- **I2**. En la página de registro tenemos un formulario que rellenar.
+- **I3**. En la página de inicio de sesión tenemos un formulario que rellenar.
+- **I4**. En la página principal la cual es la de eventos tenemos un menú lateral, el menú de arriba con el perfil y los ajustes, y un menú de abajo que varía según el rol que tengamos.
+  - **I4.1**. Si estamos logueados podremos hacer esto en la barra lateral:
+    - **I4.1.1**. Editar nuestro perfil.
+    - **I4.1.2**. Configurar el modo oscuro.
+    - **I4.1.3**. Cerrar sesión con nuestra cuenta.
+  - **I4.2**. Si no estamos logueados podremos:
+    - **I4.2.1**. Iniciar sesión.
+    - **I4.2.2**. Registrarnos.
+    - **I4.2.3**. Usar el modo oscuro.
+    - **I4.2.4**. Salirnos.
+- **I5**. Si hacemos click en el engranaje, accederemos a la página de ajustes.
+  - **I5.1**. Si estamos logueados podremos hacer esto en los ajustes.
+    - **I5.1.1**. Cambiar contraseña.
+    - **I5.1.2**. Cambiar vista.
+    - **I5.1.3**. Cambiar idioma.
+    - **I5.1.4**. Borrar la cuenta.
+    - **I5.1.5**. Controlar los emails.
+    - **I5.1.6**. Ayuda.
+  - **I5.2**. Si no estamos logueados podremos hacer esto en los ajustes.
+    - **I5.2.1**. Cambiar vista.
+    - **I5.2.2**. Cambiar idioma.
+    - **I5.2.3**. Ayuda.
+- **I6**. Si somos usuarios podremos acceder a la página de favoritos y ver los que hemos dado like.
+- **I7**. Si somos administradores accedemos a la página de añadir contenido.
+- **I8**. Podemos hacer un CRUD completo de eventos.
+- **I9**. Podemos hacer un CRUD completo de tipo de eventos.
+- **I10**. Podemos hacer un CRUD completo de localizaciones.
+- **I11**. Podemos ver y borrar usuarios.
 
 #### Acciones:
 
@@ -225,10 +234,10 @@ Con Devise tenemos el :authenticate_user! que no ejecuta las peticiones a menos 
 
 #### Validaciones:
 
-- **V1**. When typing or adding data, if an error occurs with respect to any character, you will be warned and the desired action will not be allowed.
-- **V2**. There are more than one type of validations, such as when you do not have the required credentials or the date is incorrect.
-  - **V2.1**. When you book an apartment, you cannot choose dates less than the current date at that time.
-- **V3**. When you enter your email address to log in or register, we will apply a mask to see if it is a valid email address.
+- **V1**. Cuando escribimos sobre un campo concreto seremos notificaos si ocurre algun error o de si lo que estamos poniendo no está bien.
+- **V2**. Hay más de un tipo de validación, como poner el email con la correcta notación, o la contraseña con mayúscula y + de 8 letras.
+  - **V2.1**. Cuando añadimos una hora en los eventos, el campo está hecho para solo podamos meter horas.
+- **V3**. Cuando ponemos un URL tenemos que poner https.
 
 
 
