@@ -7,6 +7,7 @@ import './Event.css';
 import Navbar from "../../components/Sidebar/Navbar";
 import EventService from "../../Services/EventService";
 import swal from 'sweetalert2';
+import { Carrousel } from "../../components/Carrousel/Carrousel";
 
 
 export const Event = () => {
@@ -51,6 +52,7 @@ export const Event = () => {
 
             <Navbar></Navbar>
             <div className="event-type-card-sos">
+                <Carrousel></Carrousel>
                 {events.map((event, index) => 
                 <div className="event-card-part">
                 <EventField key={event.id} event={event} ></EventField>
