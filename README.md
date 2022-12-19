@@ -1,5 +1,16 @@
 # Calendar Event
 
+<h1 align="center">Calendar Event</h1>
+
+<br />
+<div align="center">
+    <img src="https://github.com/JohanSantanaGalvanJob/Calendar-Event/blob/master/frontend/public/img/AppLogo.png" alt="Logo">
+
+  <p align="center">
+    Proyecto inspirado en los calendarios de eventos de la isla.
+  </p>
+</div>
+
 Esta aplicación consiste en montar un calendario de eventos en la que un usuario se registra y apunta los eventos que hay disponibles en la página principal además de poder ver detalles del mismo.
 
 Los eventos abarcan desde aquellos relacionados con Navidad, como conciertos, además de shows y otras cuestiones...
