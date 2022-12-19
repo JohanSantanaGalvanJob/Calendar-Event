@@ -11,6 +11,8 @@
   </p>
 </div>
 
+Cuando se me asignó un proyecto para una empresa, empecé a buscar qué hacían concretamente y fue en base a la recomendación de un empleado de la empresa que hice este pequeño pero arduo proyecto.
+
 Esta aplicación consiste en montar un calendario de eventos en la que un usuario se registra y apunta los eventos que hay disponibles en la página principal además de poder ver detalles del mismo.
 
 Los eventos abarcan desde aquellos relacionados con Navidad, como conciertos, además de shows y otras cuestiones...
@@ -18,6 +20,19 @@ Los eventos abarcan desde aquellos relacionados con Navidad, como conciertos, ad
 En este diagrama se detallan las acciones que se puede realizar:
 
 ![Image text](https://github.com/JohanSantanaGalvanJob/Calendar-Event/blob/master/readmeImages/Diagrama%20casos%20de%20uso.jpg)
+
+<details>
+  <summary>Tabla de contenidos</summary>
+    <ol>
+
+- [Requisitos de instalación](##Requisitos-de-Instalación)
+- [Librerías y Gemas usadas]((##Algunas-Librerías-Usadas)
+- [Parte del Backend](##Parte-del-Backend)
+- [Código del backend](##Código-del-backend)
+- [System operation and technical specifications](##Consejos-a-tener-en-cuenta-con-el-Backend)
+
+    </ol>
+</details>
 
 ## Requisitos de Instalación
 
@@ -57,12 +72,43 @@ Para la parte del backend tenemos primeramente el diagrama Entidad Relacion:
 
 Aquí podemos ver dos entidades principales: Usuario y Evento.
 
-Usuario tiene los campos de: nombre, apellido, email, fecha de nacimiento, contraseña.
-Evento tiene los campos de: título, descripción, fecha, hora a la que empieza y hora a la que termina, y la URL.
++ Usuario:
 
-Asimismo tenemos una tabla intermedia entre usuario y evento para que un usuario pueda apuntar varios eventos en su lista de favoritos y tenerlos guardados cuyos campos son el id del usuario y el id del evento.
+  - ID: Identificador de cada usuario (no null).
+  - Nombre: Nombre de usuario.
+  - Apellido: Apellido de usuario.
+  - Email: Email del usuario.
+  - Fecha de nacimiento: Fecha de nacimiento del usuario.
+  - Contraseña: contraseña del usuario.
 
-Finalmente podemos apreciar las entidades débiles que son la localización y el tipo de evento en la que solo está el nombre de ambos.
++ Evento:
+
+  - ID: Identificador de cada evento (no null).
+  - Título: Título del evento.
+  - Descripción: Descripción del evento.
+  - Hora a la que empieza: La hora a la que empieza el proyecto.
+  - Hora a la que termina: La hora a la que termina el proyecto.
+  - URL: La URL que redirecciona a la página.
+
+Asimismo tenemos una tabla intermedia entre usuario y evento para que un usuario pueda apuntar varios eventos en su lista de favoritos y tenerlos guardados:
+
++ Usuario_Evento
+
+- ID: Identificador propio (no null)
+- ID Usuario: El ID del usuario con la sesión iniciada
+- ID Evento: El ID del evento seleccionado
+
+Finalmente podemos apreciar las entidades débiles que son la localización y el tipo de evento:
+
++ Localización
+
+- ID: Identificador propio (no null)
+- Nombre: nombre de la localización
+
++ Tipo de evento
+
+- ID: Identificador propio (no null)
+- Nombre: nombre del tipo de evento
 
 El tipo de evento abarcan muchos conceptos como un concierto o si es temática navideña.
 
