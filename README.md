@@ -1,4 +1,3 @@
-# Calendar Event
 
 <h1 align="center">Calendar Event</h1>
 
