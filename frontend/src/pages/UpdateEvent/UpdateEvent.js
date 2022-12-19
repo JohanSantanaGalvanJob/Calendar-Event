@@ -131,12 +131,12 @@ export const UpdateEvent = () => {
                         </div>
                     </div>
                     <div className='edit-profile-input'>
-                        <input id='title' name='title' value={currentEvent.title} onChange={handleInputChange} required type='text' placeholder='Write the title' />
-                        <textarea id='description' name='description' value={currentEvent.description} onChange={handleInputChange} type='text' placeholder='Write the description' required={true}></textarea>
+                        <input id='title' name='title' value={currentEvent.title} onChange={handleInputChange} minLength={5} maxLength={30} pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$" required type='text' placeholder='Write the title' />
+                        <textarea id='description' name='description' value={currentEvent.description} onChange={handleInputChange} minLength={20} maxLength={1000} type='text' placeholder='Write the description' required={true}></textarea>
                         <input id='date' name='date' value={currentEvent.date} onChange={handleInputChange} type="date" placeholder='Write your date of birth' required={true}></input>
-                        <input id='starting_hour' name='starting_hour' value={currentEvent.starting_hour} onChange={handleInputChange} type="text" placeholder='Write the hour it starts' required={true}></input>
-                        <input id='finished_hour' name='finished_hour' value={currentEvent.finished_hour} onChange={handleInputChange} type="text" placeholder='Write the hour it ends' required={true}></input>
-                        <input id='url' name='url' value={currentEvent.url} onChange={handleInputChange} type="text" placeholder='Write the url' required={true}></input>
+                        <input id='starting_hour' name='starting_hour' value={currentEvent.starting_hour} onChange={handleInputChange} type="time" placeholder='Write the hour it starts' required={true}></input>
+                        <input id='finished_hour' name='finished_hour' value={currentEvent.finished_hour} onChange={handleInputChange} type="time" placeholder='Write the hour it ends' required={true}></input>
+                        <input id='url' name='url' value={currentEvent.url} onChange={handleInputChange} type="url" pattern="https://.*" placeholder='Write the url' required={true}></input>
                     </div>
 
                     <div className='edit-profile-input'>

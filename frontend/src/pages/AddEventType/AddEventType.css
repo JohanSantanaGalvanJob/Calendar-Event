@@ -12,11 +12,6 @@
     padding: .5em;
 } */
 
-body {
-    justify-content: center;
-    background-color: #F4F9F9;
-}
-
 .event-type-title {
     margin-top: 1em;
     margin-bottom: 1em;
@@ -26,7 +21,6 @@ body {
 
 .event-type-style {
     text-align: center;
-    background-color: #F4F9F9;
 
 }
 

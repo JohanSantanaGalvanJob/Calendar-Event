@@ -9,6 +9,7 @@ import {LocationCard} from '../../components/LocationCard/LocationCard'
 import { useState, useEffect } from "react";
 import LocationService from "../../Services/LocationService"
 import Navbar from "../../components/Sidebar/Navbar";
+import swal from 'sweetalert2';
 
 
 const AddLocation = () => {
@@ -17,8 +18,30 @@ const AddLocation = () => {
         name: ""
     };
 
+    const mySwal = () => {
+
+        swal.fire({
+            title: 'Event Added Correctly!',
+            icon: 'success',
+          }).then((result) => {
+            if (result.isConfirmed) {
+            }
+          })
+
+      }
+
+      const mySwalError = (error) => {
+
+        swal.fire({
+            title: 'Oops Something went wrong!',
+            icon: 'error',
+            text: error,
+          })
+
+      }
+
     const submit = () => {
-        saveLocation();
+       saveLocation()
     }
 
     const [locations, setLocations] = useState([]);
@@ -51,6 +74,7 @@ const AddLocation = () => {
             console.log(response.data);
         })
             .catch(e => {
+                mySwalError(e)
                 console.log(e);
             });
 
@@ -62,6 +86,7 @@ const AddLocation = () => {
             console.log(response.data);
           })
           .catch(e => {
+            mySwalError(e)
             console.log(e);
           });
     }
@@ -87,7 +112,7 @@ const AddLocation = () => {
                                     <form onSubmit={submit}>
 
                                         <div className='location-field'>
-                                            <input minLength={5} maxLength={30} id='name' name="name" type="text" value={location.name} placeholder='Write your new Location' onChange={handleInputChange} required></input>
+                                            <input minLength={5} maxLength={30} id='name' name="name" type="text" value={location.name} placeholder='Write your new Location' onChange={handleInputChange} pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$" required></input>
                                         </div>
 
                                         <button type="submit" className="location-button">Create</button>

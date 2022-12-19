@@ -181,11 +181,11 @@ export const AddEvent = () => {
 
                                     <div className='sign-up-form'>
                                         <div className='sign-up-field'>
-                                            <input id='title' name='title' value={event.title} onChange={handleInputChange} required type='text' placeholder='Write the title' />
+                                            <input id='title' name='title' value={event.title} minLength={5} maxLength={30} pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$" onChange={handleInputChange} required type='text' placeholder='Write the title' />
                                         </div>
 
                                         <div className='sign-up-field'>
-                                            <textarea id='description' name='description' value={event.description} onChange={handleInputChange} type='text' placeholder='Write the description' required={true}>
+                                            <textarea id='description' name='description' value={event.description} minLength={20} maxLength={1000} onChange={handleInputChange} type='text' placeholder='Write the description' required={true}>
                                             </textarea>
                                         </div>
 
@@ -194,15 +194,15 @@ export const AddEvent = () => {
                                         </div>
 
                                         <div className='sign-up-field'>
-                                            <input id='starting_hour' name='starting_hour' value={event.starting_hour} onChange={handleInputChange} type="text" placeholder='Write the hour it starts' required={true}></input>
+                                            <input id='starting_hour' name='starting_hour' value={event.starting_hour} onChange={handleInputChange} type="time" placeholder='Write the hour it starts' required={true}></input>
                                         </div>
 
                                         <div className='sign-up-field'>
-                                            <input id='finished_hour' name='finished_hour' value={event.finished_hour} onChange={handleInputChange} type="text" placeholder='Write the hour it ends' required={true}></input>
+                                            <input id='finished_hour' name='finished_hour' value={event.finished_hour} onChange={handleInputChange} type="time" placeholder='Write the hour it ends' required={true}></input>
                                         </div>
 
                                         <div className='sign-up-field'>
-                                            <input id='url' name='url' value={event.url} onChange={handleInputChange} type="text" placeholder='Write the url' required={true}></input>
+                                            <input id='url' name='url' value={event.url} onChange={handleInputChange} type="url" placeholder='Write the url' pattern="https://.*" required={true}></input>
                                         </div>
 
                                         <select className='sign-up-select' name="event_type_id" onChange={handleInputChange}>

@@ -107,9 +107,9 @@ export const EditProfile = props => {
                         </div>
                     </div>
                     <div className='edit-profile-input'>
-                        <input type='text' name='first_name' required value={currentUser.first_name} onChange={handleInputChange} ></input>
-                        <input type='text' name='last_name' required value={currentUser.last_name} onChange={handleInputChange} ></input>
-                        <input type='text' name='email' required value={currentUser.email} onChange={handleInputChange} ></input>
+                        <input type='text' name='first_name' required value={currentUser.first_name} maxLength={20} minLength={5} pattern="[a-zA-Z]*" onChange={handleInputChange} ></input>
+                        <input type='text' name='last_name' required value={currentUser.last_name} maxLength={20} minLength={5} pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$" onChange={handleInputChange} ></input>
+                        <input type='text' name='email' required value={currentUser.email} pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" onChange={handleInputChange} ></input>
                         <input type='date' name='date_birth' required value={currentUser.date_birth} onChange={handleInputChange} ></input>
                     </div>
                     <button type='submit' className="edit-profile-button">Edit</button>

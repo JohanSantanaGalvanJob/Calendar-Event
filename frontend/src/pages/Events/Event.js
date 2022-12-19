@@ -1,11 +1,9 @@
 import { DownMenu } from "../../components/DownMenu/DownMenu"
-import { UpMenu } from "../../components/UpMenu/UpMenu"
 import { EventField } from "../../components/EventField/EventField"
 import { useState, useEffect } from "react";
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 
 import './Event.css';
-import { Sidebar } from "react-pro-sidebar";
 import Navbar from "../../components/Sidebar/Navbar";
 import EventService from "../../Services/EventService";
 import swal from 'sweetalert2';
@@ -15,6 +13,7 @@ export const Event = () => {
 
     const [events, setEvents] = useState([]);
     const navigate = useNavigate();
+    
    
 
     const getEvents = () => {

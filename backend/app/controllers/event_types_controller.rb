@@ -1,5 +1,5 @@
 class EventTypesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:index]
+  skip_before_action :authenticate_user!, only: [:index,:show]
   before_action :set_event_type, only: %i[ show update destroy ]
 
   # GET /event_types

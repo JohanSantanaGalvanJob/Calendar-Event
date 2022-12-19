@@ -9,6 +9,7 @@
     height: 14em;
     border-radius: 0px 10px 10px 0px;
     padding: .5em;
+    text-decoration: none;
 }
 
 .event-field-img {
@@ -25,7 +26,7 @@
     white-space: normal;
     width: 100%;
     height: 100%;
-    /* overflow:auto; */
+    overflow:auto;
 
 }
 

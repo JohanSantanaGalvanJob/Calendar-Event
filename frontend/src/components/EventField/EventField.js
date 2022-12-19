@@ -2,6 +2,9 @@ import EventUserService from '../../Services/EventUserService';
 import './EventField.css';
 import { useState, useEffect } from "react";
 import swal from 'sweetalert2';
+import { Link } from 'react-router-dom';
+
+
 
 
 export const EventField = props => {
@@ -58,13 +61,20 @@ export const EventField = props => {
                 mySwalError("Some error occured adding the event to fav")
             });
 
+            
+
     };
+
+    let eventDetailUrl = `/EventDetail/${props.event.id}/${props.event.location_id}`;
 
     return (
         <>
+        
             <div className='event-field'>
                 <div>
+                <Link to={eventDetailUrl}>
                     <img className='event-field-img' src={props.event.image}></img>
+                    </Link>
                 </div>
                 <div className='event-field-content'>
                     <h4 className='event-field-title'>{props.event.title}</h4>
@@ -78,6 +88,8 @@ export const EventField = props => {
                     }
                 </div>
             </div>
+
+          
 
         </>
     )

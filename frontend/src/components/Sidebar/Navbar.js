@@ -1,16 +1,27 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link,useNavigate } from 'react-router-dom'
 import * as BootstrapIcons from "react-icons/bs";
 import * as AiIcons from "react-icons/ai";
 import { IconContext } from 'react-icons'
 import * as IoIcons5 from 'react-icons/io5'
 import './Navbar.css'
 import UserService from "../../Services/UserService"
+import swal from 'sweetalert2';
 
 function Navbar() {
     const user = JSON.parse(localStorage.getItem('userData'))
 
+    const navigate = useNavigate();
 
+    const mySwalError = (error) => {
+
+        swal.fire({
+            title: 'Oops Something went wrong!',
+            icon: 'error',
+            text: error,
+          })
+
+      }
 
     // const hasImg = !!user.image;
     const [sidebar, setSideBar] = useState(false)
@@ -26,15 +37,45 @@ function Navbar() {
     }
 
     const logOut = (event) => {
-        // saveUser()
+        const swalWithBootstrapButtons = swal.mixin({
+            customClass: {
+              confirmButton: 'btn btn-success',
+              cancelButton: 'btn btn-danger'
+            },
+            buttonsStyling: false
+          })
+
+        swal.fire({
+            title: 'Delete Location',
+            text: 'Are you sure you want to Log Out?',
+            icon: 'warning',
+            showCancelButton: true,
+            cancelButtonText: 'No, cancel!',
+            confirmButtonText: 'Yes',
+            reverseButtons: true
+        }).then((result) => {
+            if (result.isConfirmed) {
+                UserService.signOut(id).then((response) => {
+                    console.log(response);
+                    localStorage.removeItem('userData')
+                    navigate('/')
+                }).catch(e => {
+                    mySwalError(e);
+                     console.log(e);
+                 });
+            } else if (
+                /* Read more about handling dismissals below */
+                result.dismiss === swal.DismissReason.cancel
+              ) {
+                swalWithBootstrapButtons.fire(
+                  'Cancelled',
+                  'You have not logged out',
+                  'error'
+                )
+              }
+        })
         const id = localStorage.getItem("user")
         event.preventDefault();
-
-        UserService.signOut(id).then((response) => {
-            console.log(response);
-            localStorage.removeItem('userData')
-            window.location.reload()
-        });
 
     }
 
@@ -54,9 +95,9 @@ function Navbar() {
                         }
 
                     </Link>
-                    <img src='./icons/MenuArriba/logo.png' ></img>
+                    <img src='/icons/MenuArriba/logo.png' ></img>
                     <Link to='/Settings'>
-                        <img src='./icons/MenuArriba/ajustes.png'></img>
+                        <img src='/icons/MenuArriba/ajustes.png'></img>
                     </Link>
 
                 </div>
@@ -111,10 +152,8 @@ function Navbar() {
                                 <div className="navbar-line"></div>
 
                                 <li onClick={logOut}>
-                                    <Link to='/'>
                                         <IoIcons5.IoLogOutOutline></IoIcons5.IoLogOutOutline>
                                         <span>Log Out</span>
-                                    </Link>
                                 </li>
 
                                 <div className="navbar-line"></div>
@@ -163,19 +202,6 @@ function Navbar() {
                             </div>
 
                         }
-
-
-
-
-                        {/* <Link to="" onClick={item.method}>
-                                                {item.icon}
-                                                <span>{item.title}</span>
-
-                                            </Link> */}
-
-
-
-
                     </ul>
 
                     <div className='navbar-bottom-part'>

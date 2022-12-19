@@ -18,6 +18,7 @@ import { Favourite } from './pages/Favourite/Favourite';
 import { AddEvent } from './pages/AddEvent/AddEvent';
 import { UpdateEvent } from './pages/UpdateEvent/UpdateEvent';
 import { AddUser } from './pages/AddUser/AddUser';
+import { EventDetail } from './pages/EventDetail/EventDetail';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path="/LogIn" element={<LogIn/>} />
         <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="/Event" element={<Event />} />
+        <Route path="/EventDetail/:id/:name" element={<EventDetail />} />
         <Route path="/Add" element={<Add />} />
         <Route path="/AddEvent" element={<AddEvent />} />
         <Route path="/AddUser" element={<AddUser />} />

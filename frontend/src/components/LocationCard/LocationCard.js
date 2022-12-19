@@ -1,6 +1,7 @@
 import { IconButton } from "@mui/material";
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
+import swal from 'sweetalert2';
 
 import './LocationCard.css'
 
@@ -9,6 +10,16 @@ import { useEffect, useState } from "react";
 import LocationService from "../../Services/LocationService"
 
 export const LocationCard = props => {
+
+    const mySwalError = (error) => {
+
+        swal.fire({
+            title: 'Oops Something went wrong!',
+            icon: 'error',
+            text: error,
+          })
+
+      }
 
     const [currentLocation, setCurrentLocation] = useState(props.location);
     const [message, setMessage] = useState("");
@@ -31,6 +42,7 @@ export const LocationCard = props => {
                 console.log(response.data);
             })
             .catch(e => {
+               mySwalError(e);
                 console.log(e);
             });
 
@@ -45,42 +57,53 @@ export const LocationCard = props => {
                 setMessage("The Location was updated successfully!");
             })
             .catch(e => {
+                mySwalError('Some error occured while updating' + e)
                 console.log(e);
             });
     };
 
     const deleteLocation = () => {
-        LocationService.remove(currentLocation.id)
-            .then(response => {
-                console.log(response.data);
-            })
-            .catch(e => {
-                console.log(e);
-            });
+
+        const swalWithBootstrapButtons = swal.mixin({
+            customClass: {
+              confirmButton: 'btn btn-success',
+              cancelButton: 'btn btn-danger'
+            },
+            buttonsStyling: false
+          })
+
+        swal.fire({
+            title: 'Delete Location',
+            text: 'Are you sure you want to delete the Location?',
+            icon: 'warning',
+            showCancelButton: true,
+            cancelButtonText: 'No, cancel!',
+            confirmButtonText: 'Yes, delete it!',
+            reverseButtons: true
+        }).then((result) => {
+            if (result.isConfirmed) {
+                LocationService.remove(currentLocation.id)
+                .then(response => {
+                    console.log(response.data);
+                })
+                .catch(e => {
+                    console.log(e);
+                });
+            } else if (
+                /* Read more about handling dismissals below */
+                result.dismiss === swal.DismissReason.cancel
+              ) {
+                swalWithBootstrapButtons.fire(
+                  'Cancelled',
+                  'Location is safe',
+                  'error'
+                )
+              }
+        })
+
+
+       
     };
-
-
-
-    //   React.useEffect(() => {
-    //     axios.get(baseURL).then((response) => {
-    //         setEventTypes(response.data);
-    //     });
-    // }, []);
-
-    // //DELETE
-    // const deleteEventType = (id: any) => {
-    //     axios.delete(`http://localhost:3000/event_types/${id}`);
-    //     setEventTypes(EventTypes.filter((post) => {
-    //         return post.id !== id;
-    //     })
-    //     );
-    // };
-
-    // //UPDATE
-
-
-
-    // if (!EventTypes) return null;
 
     return (
 
@@ -94,7 +117,7 @@ export const LocationCard = props => {
                 <div className="location-card-line"></div>
 
                 <div className='location-card-input'>
-                    <input type="text" id='name' name="name" value={currentLocation.name} onChange={handleInputChange}></input>
+                    <input type="text" id='name' name="name" value={currentLocation.name} onChange={handleInputChange} pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$"></input>
                 </div>
 
                 <div className="location-card-icons">

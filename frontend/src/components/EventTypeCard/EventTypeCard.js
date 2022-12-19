@@ -99,7 +99,7 @@ export const EventTypeCard = props => {
                 <div className="event-type-card-line"></div>
 
                 <div className='event-type-card-input'>
-                    <input type="text" id='name' name="name" value={currentEventType.name} onChange={handleInputChange}></input>
+                    <input type="text" id='name' name="name" value={currentEventType.name} onChange={handleInputChange} pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$"></input>
                 </div>
 
                 <div className="event-type-card-icons">
