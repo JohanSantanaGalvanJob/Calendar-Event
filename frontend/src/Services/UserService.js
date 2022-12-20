@@ -15,8 +15,8 @@ const signUp = params => {
     console.log(params)
 
     var data = new FormData();
-    data.append('user[email]', params.email);
-    data.append('user[password]', params.password);
+    data.append('user[email]', window.btoa(params.email));
+    data.append('user[password]', window.btoa(params.password));
     data.append('user[first_name]', params.firstname);
     data.append('user[last_name]', params.lastname);
     data.append('user[date_birth]', params.date_birth);

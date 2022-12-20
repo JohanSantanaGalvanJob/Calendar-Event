@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import { Link,useNavigate } from 'react-router-dom'
 import * as BootstrapIcons from "react-icons/bs";
 import * as AiIcons from "react-icons/ai";
@@ -12,6 +12,44 @@ function Navbar() {
     const user = JSON.parse(localStorage.getItem('userData'))
 
     const navigate = useNavigate();
+    const [backgroundColor, setBackgroundColor] = useState("light");
+    const[downMenuColor, setDownMenuColor] = useState("light");
+    const [eventFieldColor, setEventFieldColor] = useState("");
+    const [navbarColor, setnavbarColor] = useState("");
+
+    const changeBackgroundColor = () => setBackgroundColor(backgroundColor === "light" ? "#5e5e5e" : "light");
+    const changeEventFieldColor = () => setEventFieldColor(eventFieldColor === "#CCF2F4" ? "#79aeaa" : "#CCF2F4");
+    const changeDownMenuColor = () => setDownMenuColor(downMenuColor === "#A4EBF3" ? "#79aeaa" : "#A4EBF3");
+
+    const changeNavbarColor = () => setnavbarColor(navbarColor === "#A4EBF3" ? "#79aeaa" : "#A4EBF3");
+
+
+    const changeAll = () => {
+        changeBackgroundColor();
+        changeEventFieldColor();
+        changeDownMenuColor();
+        changeNavbarColor();
+      }
+
+    useEffect(() => {
+        const cardParagraphs3 = document.querySelectorAll(".event-field");
+        const cardParagraphs4 = document.querySelectorAll(".down-menu-field");
+        const cardParagraphs5 = document.querySelectorAll(".navbar");
+
+    console.log(cardParagraphs3);
+    for (let i = 0; i < cardParagraphs3.length; i++) {
+      cardParagraphs3[i].style.backgroundColor = eventFieldColor === "#CCF2F4" ? "#79aeaa" : "#CCF2F4";
+    }
+    for (let i = 0; i < cardParagraphs4.length; i++) {
+        cardParagraphs4[i].style.backgroundColor = downMenuColor === "#A4EBF3" ? "#79aeaa" : "#A4EBF3";
+      }
+
+      for (let i = 0; i < cardParagraphs5.length; i++) {
+        cardParagraphs5[i].style.backgroundColor = navbarColor === "#A4EBF3" ? "#79aeaa" : "#A4EBF3";
+      }
+        document.body.style.backgroundColor = backgroundColor === "light" ? "white" : "#5e5e5e";
+      }, [backgroundColor,eventFieldColor,downMenuColor,navbarColor]);
+    
 
     const mySwalError = (error) => {
 
@@ -46,7 +84,7 @@ function Navbar() {
           })
 
         swal.fire({
-            title: 'Delete Location',
+            title: 'Log Out',
             text: 'Are you sure you want to Log Out?',
             icon: 'warning',
             showCancelButton: true,
@@ -86,7 +124,7 @@ function Navbar() {
     return (
         <>
             <IconContext.Provider value={{ color: 'black' }}>
-                <div className='navbar'>
+                <div id='navbar' className='navbar'>
 
                     <Link to='#' className='menu-bars'>
                         {isUser ? (
@@ -142,11 +180,11 @@ function Navbar() {
 
                                 <div className="navbar-line"></div>
 
-                                <li>
-                                    <Link to='/DarkMode'>
+                                <li onClick={changeAll}>
+                                        
                                         <AiIcons.AiOutlineEye></AiIcons.AiOutlineEye>
                                         <span>Dark Mode</span>
-                                    </Link>
+                                   
                                 </li>
 
                                 <div className="navbar-line"></div>
@@ -172,11 +210,11 @@ function Navbar() {
 
                                 <div className="navbar-line"></div>
 
-                                <li>
-                                    <Link to='/DarkMode'>
+                                <li onClick={changeAll}>
+                                    
                                         <AiIcons.AiOutlineEye></AiIcons.AiOutlineEye>
                                         <span>Dark Mode</span>
-                                    </Link>
+                        
                                 </li>
 
                                 <div className="navbar-line"></div>

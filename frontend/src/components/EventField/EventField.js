@@ -70,13 +70,13 @@ export const EventField = props => {
     return (
         <>
         
-            <div className='event-field'>
+            <div id='event-field' className='event-field'>
                 <div>
                 <Link to={eventDetailUrl}>
                     <img className='event-field-img' src={props.event.image}></img>
                     </Link>
                 </div>
-                <div className='event-field-content'>
+                <div id='event-field-content' className='event-field-content'>
                     <h4 className='event-field-title'>{props.event.title}</h4>
                     <div className="event-field-line"></div>
                     <p>{props.event.description}</p>

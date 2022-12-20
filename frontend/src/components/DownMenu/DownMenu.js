@@ -12,7 +12,7 @@ export const DownMenu = () => {
 
     return (
         <>
-            <div className='down-menu-field'>
+            <div id='down-menu-field' className='down-menu-field'>
                 <Link to='/Event'>
                     <img src='/icons/MenuAbajo/hogar.png'></img>
                 </Link>
