@@ -26,7 +26,7 @@ En este diagrama se detallan las acciones que se puede realizar:
 
 - [Requisitos de instalación](##Requisitos-de-Instalación)
 - [Requisitos de sistema](##Requisitos-de-Sistema)
-- [Librerías y Gemas usadas]((##Algunas-Librerías-Usadas)
+- [Librerías y Gemas usadas]((##Algunas-Librerías-usadas)
 - [Empezar]((##Empezar))
 - [Comparación de Tecnologías]((##Comparación-de-Tecnologías))
 - [Planificación]((##Planificación))
