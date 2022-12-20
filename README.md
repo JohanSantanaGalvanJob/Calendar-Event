@@ -27,10 +27,13 @@ En este diagrama se detallan las acciones que se puede realizar:
 - [Requisitos de instalación](##Requisitos-de-Instalación)
 - [Librerías y Gemas usadas]((##Algunas-Librerías-Usadas)
 - [Empezar]((##Empezar))
+- [Comparación de Tecnologías]((##Comparación de Tecnologías))
+- [Planificación]((##Planificación))
 - [Parte del Backend](##Parte-del-Backend)
 - [Código del backend](##Código-del-backend)
 - [Requisitos de usuario](##Requisitos-de-usuario)
 - [Interfaces](##Interfaces)
+- [Conclusión](##Conclusión)
 
     </ol>
 </details>
@@ -52,6 +55,19 @@ https://es.reactjs.org/docs/getting-started.html
 Aqui está el enlace al POSTMAN para realizar peticiones: 
 
 https://documenter.getpostman.com/view/23479991/2s8YzZPeHF
+
+## Requisitos de Sistema
+
+Se debe tener una cantidad considerable (20GB para que sobre) de espacio para la instalación tanto de:
+
+- Ruby
+- Rails
+- El proyecto en sí mismo
+- PostgreSQL
+
+Se debe tener una RAM de mínimo 4GB aunque se recomienda 8GB o más.
+El sistema operativo Windows 10
+CPU: Intel core i3 o su equivalente en AMD como mínimo para que no vaya ralentizado en web
 
 ## Algunas Librerías usadas
 
