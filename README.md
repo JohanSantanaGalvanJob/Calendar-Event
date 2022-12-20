@@ -332,6 +332,7 @@ Se puede ver el diseño de Figma a través de este enlace: https://www.figma.com
 Como cuestiones de usabilidad, me he centrado en un diseño simple, minimalista, pero con colores que recuerden a un evento o algo por el estilo. Sin embargo, debido a lo global del concepto, el azul claro resulta un color general.
 
   - Posee una estructura simple en la que se puede navegar fácilmente.
+  
   - Se puede ver claramente cuándo la aplicación falla a través de avisos.
   - Seremos notificados cuando hagamos algo con error o con éxito.
   - Los formularios son simples e indican exactamente qué es lo que se quiere
