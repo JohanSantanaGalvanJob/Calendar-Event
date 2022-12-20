@@ -25,9 +25,10 @@ En este diagrama se detallan las acciones que se puede realizar:
     <ol>
 
 - [Requisitos de instalación](##Requisitos-de-Instalación)
+- [Requisitos de sistema](##Requisitos-de-Sistema)
 - [Librerías y Gemas usadas]((##Algunas-Librerías-Usadas)
 - [Empezar]((##Empezar))
-- [Comparación de Tecnologías]((##Comparación de Tecnologías))
+- [Comparación de Tecnologías]((##Comparación-de-Tecnologías))
 - [Planificación]((##Planificación))
 - [Parte del Backend](##Parte-del-Backend)
 - [Código del backend](##Código-del-backend)
