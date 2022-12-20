@@ -51,10 +51,8 @@ const SignUp = () => {
       localStorage.setItem('user', response.data.status.data.id)
       localStorage.setItem('userData', JSON.stringify(response.data.status.data))
       console.log(localStorage.getItem('token'))
-      window.location.reload();
       // console.log(localStorage.getItem())
       mySwal();
-      navigate('/Event')
     }).catch(e => {
       mySwalError(e)
       console.log(e);

@@ -16,7 +16,10 @@ export const DownMenu = () => {
                 <Link to='/Event'>
                     <img src='/icons/MenuAbajo/hogar.png'></img>
                 </Link>
+                <Link to='/SearchPage'>
                 <img src='/icons/MenuAbajo/busqueda.png'></img>
+                </Link>
+                
                 {isAdmin ? (
                     <Link to='/Add'>
                         <img src='/icons/MenuAbajo/mas.png'></img>

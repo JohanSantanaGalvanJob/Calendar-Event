@@ -19,6 +19,7 @@ import { AddEvent } from './pages/AddEvent/AddEvent';
 import { UpdateEvent } from './pages/UpdateEvent/UpdateEvent';
 import { AddUser } from './pages/AddUser/AddUser';
 import { EventDetail } from './pages/EventDetail/EventDetail';
+import { SearchPage } from './pages/SearchPage/SearchPage';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="/Event" element={<Event />} />
         <Route path="/EventDetail/:id/:name" element={<EventDetail />} />
+        <Route path="/SearchPage" element={<SearchPage />} />
         <Route path="/Add" element={<Add />} />
         <Route path="/AddEvent" element={<AddEvent />} />
         <Route path="/AddUser" element={<AddUser />} />
