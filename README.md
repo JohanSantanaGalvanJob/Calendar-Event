@@ -333,9 +333,17 @@ Como cuestiones de usabilidad, me he centrado en un diseño simple, minimalista,
 
   - Posee una estructura simple en la que se puede navegar fácilmente.
   
+  ![Image text](https://github.com/JohanSantanaGalvanJob/Calendar-Event/blob/master/readmeImages/navegacion.PNG)
+  
   - Se puede ver claramente cuándo la aplicación falla a través de avisos.
+  
+  ![Image text](https://github.com/JohanSantanaGalvanJob/Calendar-Event/blob/master/readmeImages/alerta%20error.PNG)
+  
   - Seremos notificados cuando hagamos algo con error o con éxito.
-  - Los formularios son simples e indican exactamente qué es lo que se quiere
+  
+  ![Image text](https://github.com/JohanSantanaGalvanJob/Calendar-Event/blob/master/readmeImages/alertas.PNG)
+  
+  - Los formularios son simples e indican exactamente qué es lo que se quiere. En el de usuario tiene validaciones como que solo puedes poner letras en el nombre y en el apellido. Se contemplan tildes, espacios y tienen un mínimo de 5 caracteres y un máximo de 20 y 30 respectivamente. El email requisa de un texto seguido de un @ y luego un . . Y la contraseña requiere de una mayúscula y 8 o más caracteres.
 
 Paleta de colores usada: 
 
@@ -346,6 +354,10 @@ Paleta de colores usada:
  - Contraste entre colores suaves y no colores extremos, valorando los tono pastel para que no sea un choque ni sea demasiado confuso de cara al usuario final.
 
  - Textos hechos perfectamente en los formularios para que sean lo más limpias y fáciles de leer posibles .
+ 
+ - Modo oscuro:
+ 
+  ![Image text](https://github.com/JohanSantanaGalvanJob/Calendar-Event/blob/master/readmeImages/navegacion%20oscura.PNG)
 
 ## Conclusión
 
