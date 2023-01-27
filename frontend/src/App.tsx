@@ -20,6 +20,7 @@ import { UpdateEvent } from './pages/UpdateEvent/UpdateEvent';
 import { AddUser } from './pages/AddUser/AddUser';
 import { EventDetail } from './pages/EventDetail/EventDetail';
 import { SearchPage } from './pages/SearchPage/SearchPage';
+import ReportPage from './pages/Reports/ReportPage';
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
         <Route path="/Settings" element={<Settings />} />
         <Route path="/EditProfile" element={<EditProfile />} />
         <Route path="/Favourite" element={<Favourite />} />
+        <Route path="/ReportPage" element={<ReportPage />} />
         </>}
       </Routes>
   </>

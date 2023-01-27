@@ -1,0 +1,23 @@
+{
+    "name": "Data",
+    "engine": "handlebars",
+    "recipe": "chrome-pdf",
+    "data": null,
+    "shortid": "0bBVg4jt9E",
+    "chrome": {
+        "printBackground": true
+    },
+    "creationDate": {
+        "$$date": 1674243929128
+    },
+    "modificationDate": {
+        "$$date": 1674776714170
+    },
+    "_id": "kHaHAKKV348kPHuO",
+    "$entitySet": "templates",
+    "scripts": [
+        {
+            "shortid": "W0gvNctphZ"
+        }
+    ]
+}

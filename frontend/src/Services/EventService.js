@@ -5,6 +5,16 @@ const getAll = () => {
     return http.get("/events");
 };
 
+const getEventsObject = async () => {
+    try {
+      const { data } = await axios.get('http://localhost:3000/events');
+      const objectEvents = JSON.parse(JSON.stringify(data));
+      return objectEvents;
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
 const get = id => {
     return http.get(`/events/${id}`);
 };
@@ -63,7 +73,8 @@ const EventService = {
     update,
     remove,
     removeAll,
-    findByTitle
+    findByTitle,
+    getEventsObject
 };
 
 export default EventService;

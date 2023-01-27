@@ -10,10 +10,13 @@ Rails.application.routes.draw do
   resources :locations
   resources :event_types
   # scope "admin" do
+  get 'api/data', to: 'api#data'
     get "users", to: "users#index"
     get "users/:id", to: "users#show", as: "user"
     delete "users/:id", to: "users#destroy"
     delete "users", to: "users#destroyAll"
     put "users/:id", to: "users#update"
+    get "reports", to: "reports#show"
+    get "chart", to: "chart#chart"
   # end
 end

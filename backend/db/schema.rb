@@ -64,10 +64,12 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_12_151152) do
     t.string "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "location_id"
-    t.bigint "event_type_id"
-    t.index ["event_type_id"], name: "index_events_on_event_type_id_id"
-    t.index ["location_id"], name: "index_events_on_location_id_id"
+    t.bigint "location_id_id"
+    t.bigint "event_type_id_id"
+    t.integer "location_id"
+    t.integer "event_type_id"
+    t.index ["event_type_id_id"], name: "index_events_on_event_type_id_id"
+    t.index ["location_id_id"], name: "index_events_on_location_id_id"
   end
 
   create_table "locations", force: :cascade do |t|

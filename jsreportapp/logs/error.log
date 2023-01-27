@@ -1,0 +1,755 @@
+2023-01-16T20:21:05.427Z - error: Error when processing OData POST: /odata/templates Error: Entity with name "Events" already exists at the root level. existing: "events".
+    at module.exports (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\shared\createError.js:10:13)
+    at MainReporter.createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\shared\reporter.js:49:12)
+    at validateDuplicatedName (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\folders\validateDuplicatedName.js:75:20)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ListenerCollection.fire (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\shared\listenerCollection.js:157:21)
+    at async Object.insert (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\store\collection.js:141:5)
+2023-01-20T19:45:30.686Z - error: Error when processing OData POST: /odata/data Error: Entity with name "data" already exists at the root level. existing: "Data".
+    at module.exports (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\shared\createError.js:10:13)
+    at MainReporter.createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\shared\reporter.js:49:12)
+    at validateDuplicatedName (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\folders\validateDuplicatedName.js:75:20)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async ListenerCollection.fire (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\shared\listenerCollection.js:157:21)
+    at async Object.insert (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\store\collection.js:141:5)
+2023-01-22T00:49:21.975Z - error: Report render failed
+(because) request is not defined
+ReferenceError: request is not defined
+    at Request._callback (sandbox.js:6:8)
+    at Request.self.callback (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\request\request.js:185:22)
+    at Request.emit (node:events:513:28)
+    at Request.emit (node:domain:552:15)
+    at Request.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\request\request.js:1154:10)
+    at Request.emit (node:events:513:28)
+    at Request.emit (node:domain:552:15)
+    at IncomingMessage.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (node:events:627:28)
+    at IncomingMessage.emit (node:events:525:35) rootId=9vya0rvicr9cueo, id=9vya0rvicr9cueo
+2023-01-22T00:54:21.312Z - error: Report render failed
+(because) reqeust is not defined
+ReferenceError: reqeust is not defined
+    at Request._callback (sandbox.js:7:5)
+    at Request.self.callback (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\request\request.js:185:22)
+    at Request.emit (node:events:513:28)
+    at Request.emit (node:domain:552:15)
+    at Request.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\request\request.js:1154:10)
+    at Request.emit (node:events:513:28)
+    at Request.emit (node:domain:552:15)
+    at IncomingMessage.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (node:events:627:28)
+    at IncomingMessage.emit (node:events:525:35) rootId=32zyk4kpxyl7uo1, id=32zyk4kpxyl7uo1
+2023-01-22T00:56:30.347Z - error: Report render failed
+(because) request is not defined
+ReferenceError: request is not defined
+    at Request._callback (sandbox.js:7:5)
+    at Request.self.callback (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\request\request.js:185:22)
+    at Request.emit (node:events:513:28)
+    at Request.emit (node:domain:552:15)
+    at Request.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\request\request.js:1154:10)
+    at Request.emit (node:events:513:28)
+    at Request.emit (node:domain:552:15)
+    at IncomingMessage.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (node:events:627:28)
+    at IncomingMessage.emit (node:events:525:35) rootId=xt1jz99a335nmlf, id=xt1jz99a335nmlf
+2023-01-22T19:53:55.301Z - error: Report render failed
+(because) request is not defined
+ReferenceError: request is not defined
+    at Request._callback (sandbox.js:7:5)
+    at self.callback (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\request\request.js:185:22)
+    at Request.emit (node:events:513:28)
+    at Request.emit (node:domain:489:12)
+    at Request.onRequestError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (node:events:513:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at Socket.socketErrorListener (node:_http_client:494:9)
+    at Socket.emit (node:events:513:28)
+    at Socket.emit (node:domain:489:12) rootId=qamr7zw1bznq410, id=qamr7zw1bznq410
+2023-01-22T19:54:09.434Z - error: Report render failed
+(because) request is not defined
+ReferenceError: request is not defined
+    at Request._callback (sandbox.js:6:8)
+    at self.callback (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\request\request.js:185:22)
+    at Request.emit (node:events:513:28)
+    at Request.emit (node:domain:489:12)
+    at Request.onRequestError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (node:events:513:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at Socket.socketErrorListener (node:_http_client:494:9)
+    at Socket.emit (node:events:513:28)
+    at Socket.emit (node:domain:489:12) rootId=1evalf3pf2skrvj, id=1evalf3pf2skrvj
+2023-01-22T19:56:27.365Z - error: Report render failed
+(because) done is not a function
+TypeError: done is not a function
+    at Request._callback (sandbox.js:8:8)
+    at self.callback (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\request\request.js:185:22)
+    at Request.emit (node:events:513:28)
+    at Request.emit (node:domain:489:12)
+    at Request.onRequestError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (node:events:513:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at Socket.socketErrorListener (node:_http_client:494:9)
+    at Socket.emit (node:events:513:28)
+    at Socket.emit (node:domain:489:12) rootId=z4lcyc505rrnkia, id=z4lcyc505rrnkia
+2023-01-22T20:13:17.911Z - error: Error occurred during reporter init: Error: Error when loading extension handlebars@2.1.0
+Error: Extension "handlebars" is not compatible with "core" extension. Missing ".requires" information in "handlebars" definition
+    at validateMinimalVersion (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\validateMinimalVersion.js:24:11)
+    at Object._useOne (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:158:9)
+    at Object._useMany (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at Object.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:74:19)
+    at MainReporter.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:36)
+    at Object._useOne (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:248:15)
+    at Object._useMany (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at Object.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:74:19)
+    at MainReporter.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:36)
+2023-01-22T20:13:32.406Z - error: Error occurred during reporter init: Error: Error when loading extension handlebars@2.1.0
+Error: Extension "handlebars" is not compatible with "core" extension. Missing ".requires" information in "handlebars" definition
+    at validateMinimalVersion (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\validateMinimalVersion.js:24:11)
+    at Object._useOne (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:158:9)
+    at Object._useMany (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at Object.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:74:19)
+    at MainReporter.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:36)
+    at Object._useOne (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:248:15)
+    at Object._useMany (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at Object.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:74:19)
+    at MainReporter.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:36)
+2023-01-22T20:14:32.670Z - error: Error occurred during reporter init: Error: Error when loading extension data@2.4.0
+Error: Extension "data" is not compatible with "core" extension. Missing ".requires" information in "data" definition
+    at validateMinimalVersion (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\validateMinimalVersion.js:24:11)
+    at Object._useOne (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:158:9)
+    at Object._useMany (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at async MainReporter.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:7)
+    at Object._useOne (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:248:15)
+    at Object._useMany (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at async MainReporter.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:7)
+2023-01-22T20:21:16.703Z - error: Report render failed
+(because) done is not a function
+TypeError: done is not a function
+    at Request._callback (sandbox.js:8:8)
+    at self.callback (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\request\request.js:185:22)
+    at Request.emit (node:events:513:28)
+    at Request.emit (node:domain:489:12)
+    at Request.onRequestError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (node:events:513:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at Socket.socketErrorListener (node:_http_client:494:9)
+    at Socket.emit (node:events:513:28)
+    at Socket.emit (node:domain:489:12) rootId=qevxmrc8qs2cic5, id=qevxmrc8qs2cic5
+2023-01-22T20:22:05.502Z - error: Report render failed
+(because) done is not a function
+TypeError: done is not a function
+    at Request._callback (sandbox.js:9:8)
+    at self.callback (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\request\request.js:185:22)
+    at Request.emit (node:events:513:28)
+    at Request.emit (node:domain:489:12)
+    at Request.onRequestError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (node:events:513:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at Socket.socketErrorListener (node:_http_client:494:9)
+    at Socket.emit (node:events:513:28)
+    at Socket.emit (node:domain:489:12) rootId=kxa3056br825to9, id=kxa3056br825to9
+2023-01-22T20:23:07.116Z - error: Report render failed
+(because) done is not a function
+TypeError: done is not a function
+    at Request._callback (sandbox.js:9:8)
+    at self.callback (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\request\request.js:185:22)
+    at Request.emit (node:events:513:28)
+    at Request.emit (node:domain:489:12)
+    at Request.onRequestError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (node:events:513:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at Socket.socketErrorListener (node:_http_client:494:9)
+    at Socket.emit (node:events:513:28)
+    at Socket.emit (node:domain:489:12) rootId=v7sfkfygxn978v1, id=v7sfkfygxn978v1
+2023-01-24T00:47:43.875Z - error: Report render failed
+(because) error when evaluating custom script /testing
+Request failed with status code 404
+Error: Request failed with status code 404
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=7o6mt08qzcz5o0p, id=7o6mt08qzcz5o0p
+2023-01-24T15:11:27.822Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=4s9095h3cfmlt2a, id=4s9095h3cfmlt2a
+2023-01-24T15:12:33.306Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=wxf9nqjdtyk2tm7, id=wxf9nqjdtyk2tm7
+2023-01-24T15:12:49.880Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=807m090fbz0db1a, id=807m090fbz0db1a
+2023-01-24T15:25:37.638Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=xfep2vxiuidielv, id=xfep2vxiuidielv
+2023-01-24T17:23:56.194Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=f2nm0grt75itegt, id=f2nm0grt75itegt
+2023-01-24T17:23:56.198Z - error: Error during processing request at http://localhost:5488/templates/0bBVg4jt9E, details: Error when evaluating custom script /eventcalendar/testing
+Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+2023-01-25T00:14:51.722Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+Request failed with status code 404
+Error: Request failed with status code 404
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=hbkp38ijurpxsj1, id=hbkp38ijurpxsj1
+2023-01-25T00:15:02.769Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+Request failed with status code 404
+Error: Request failed with status code 404
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=86f2jg71jwpt2gh, id=86f2jg71jwpt2gh
+2023-01-25T00:17:21.068Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+Request failed with status code 404
+Error: Request failed with status code 404
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=14foi8jf9c2y5da, id=14foi8jf9c2y5da
+2023-01-25T01:44:10.387Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=mjpkknami66teb0, id=mjpkknami66teb0
+2023-01-25T01:44:15.813Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=jchp4z8djpqz97v, id=jchp4z8djpqz97v
+2023-01-25T01:45:11.043Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=rkv62xr08eck9sv, id=rkv62xr08eck9sv
+2023-01-25T01:47:59.013Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=53mktej6kersucl, id=53mktej6kersucl
+2023-01-25T01:48:45.781Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=ybjp95dv5t5qdit, id=ybjp95dv5t5qdit
+2023-01-25T01:52:26.791Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=doxdltua0beufuv, id=doxdltua0beufuv
+2023-01-25T01:53:42.047Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=z3ext3ash3u7ifs, id=z3ext3ash3u7ifs
+2023-01-25T01:58:37.192Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=6k9vb59ua4k7nu6, id=6k9vb59ua4k7nu6
+2023-01-25T01:59:05.174Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=4x7kng88e71bnkz, id=4x7kng88e71bnkz
+2023-01-25T01:59:54.910Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=iowzv4icyppm89i, id=iowzv4icyppm89i
+2023-01-25T02:00:15.393Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=34d2xnn6rpmx1g6, id=34d2xnn6rpmx1g6
+2023-01-25T02:00:26.114Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=4xehihzuw685z7j, id=4xehihzuw685z7j
+2023-01-25T02:13:05.110Z - error: Report render failed
+(because) document is not defined
+ReferenceError: document is not defined
+    at Query.<anonymous> (sandbox.js:28:19)
+    at bound (node:domain:433:15)
+    at Query.runBound (node:domain:444:12)
+    at Query.handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\query.js:139:14)
+    at Client._handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\client.js:290:19)
+    at Connection.emit (node:events:513:28)
+    at Connection.emit (node:domain:552:15)
+    at C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\connection.js:114:12
+    at Parser.parse (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\parser.js:40:17)
+    at Socket.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\index.js:11:42) rootId=7jy5onkkgrzeg8c, id=7jy5onkkgrzeg8c
+2023-01-25T15:14:41.789Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+connect ECONNREFUSED 127.0.0.1:3000
+Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1278:16)
+    at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17) rootId=dz5rc62wqjrsxm5, id=dz5rc62wqjrsxm5
+2023-01-25T15:15:35.562Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+connect ECONNREFUSED 127.0.0.1:3000
+Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1278:16)
+    at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17) rootId=gk7aitn34e8byge, id=gk7aitn34e8byge
+2023-01-25T15:24:06.176Z - error: Report render failed
+(because) document is not defined
+ReferenceError: document is not defined
+    at Query.<anonymous> (sandbox.js:28:19)
+    at bound (node:domain:433:15)
+    at Query.runBound (node:domain:444:12)
+    at Query.handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\query.js:139:14)
+    at Client._handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\client.js:290:19)
+    at Connection.emit (node:events:513:28)
+    at Connection.emit (node:domain:552:15)
+    at C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\connection.js:114:12
+    at Parser.parse (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\parser.js:40:17)
+    at Socket.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\index.js:11:42) rootId=doj72zwv2mf1fzq, id=doj72zwv2mf1fzq
+2023-01-25T15:25:08.298Z - error: Report render failed
+(because) document is not defined
+ReferenceError: document is not defined
+    at Query.<anonymous> (sandbox.js:16:19)
+    at bound (node:domain:433:15)
+    at Query.runBound (node:domain:444:12)
+    at Query.handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\query.js:139:14)
+    at Client._handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\client.js:290:19)
+    at Connection.emit (node:events:513:28)
+    at Connection.emit (node:domain:552:15)
+    at C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\connection.js:114:12
+    at Parser.parse (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\parser.js:40:17)
+    at Socket.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\index.js:11:42) rootId=zifdh38y95a5rga, id=zifdh38y95a5rga
+2023-01-25T15:25:33.523Z - error: Report render failed
+(because) document is not defined
+ReferenceError: document is not defined
+    at Query.<anonymous> (sandbox.js:16:19)
+    at bound (node:domain:433:15)
+    at Query.runBound (node:domain:444:12)
+    at Query.handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\query.js:139:14)
+    at Client._handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\client.js:290:19)
+    at Connection.emit (node:events:513:28)
+    at Connection.emit (node:domain:552:15)
+    at C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\connection.js:114:12
+    at Parser.parse (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\parser.js:40:17)
+    at Socket.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\index.js:11:42) rootId=khn247d3rmbfkcg, id=khn247d3rmbfkcg
+2023-01-25T15:25:48.224Z - error: Report render failed
+(because) document is not defined
+ReferenceError: document is not defined
+    at Query.<anonymous> (sandbox.js:16:19)
+    at bound (node:domain:433:15)
+    at Query.runBound (node:domain:444:12)
+    at Query.handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\query.js:139:14)
+    at Client._handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\client.js:290:19)
+    at Connection.emit (node:events:513:28)
+    at Connection.emit (node:domain:552:15)
+    at C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\connection.js:114:12
+    at Parser.parse (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\parser.js:40:17)
+    at Socket.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\index.js:11:42) rootId=bpjxd3b0vgupydu, id=bpjxd3b0vgupydu
+2023-01-25T15:26:24.579Z - error: Report render failed
+(because) document is not defined
+ReferenceError: document is not defined
+    at Query.<anonymous> (sandbox.js:16:19)
+    at bound (node:domain:433:15)
+    at Query.runBound (node:domain:444:12)
+    at Query.handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\query.js:139:14)
+    at Client._handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\client.js:290:19)
+    at Connection.emit (node:events:513:28)
+    at Connection.emit (node:domain:552:15)
+    at C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\connection.js:114:12
+    at Parser.parse (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\parser.js:40:17)
+    at Socket.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\index.js:11:42) rootId=hipdedghm8ztwrx, id=hipdedghm8ztwrx
+2023-01-25T15:26:28.371Z - error: Report render failed
+(because) document is not defined
+ReferenceError: document is not defined
+    at Query.<anonymous> (sandbox.js:16:19)
+    at bound (node:domain:433:15)
+    at Query.runBound (node:domain:444:12)
+    at Query.handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\query.js:139:14)
+    at Client._handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\client.js:290:19)
+    at Connection.emit (node:events:513:28)
+    at Connection.emit (node:domain:552:15)
+    at C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\connection.js:114:12
+    at Parser.parse (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\parser.js:40:17)
+    at Socket.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\index.js:11:42) rootId=ece7xq3imjh1uqg, id=ece7xq3imjh1uqg
+2023-01-26T00:02:28.439Z - error: Report render failed
+(because) document is not defined
+ReferenceError: document is not defined
+    at Query.<anonymous> (sandbox.js:16:19)
+    at bound (node:domain:433:15)
+    at Query.runBound (node:domain:444:12)
+    at Query.handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\query.js:139:14)
+    at Client._handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\client.js:290:19)
+    at Connection.emit (node:events:513:28)
+    at Connection.emit (node:domain:552:15)
+    at C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\connection.js:114:12
+    at Parser.parse (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\parser.js:40:17)
+    at Socket.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\index.js:11:42) rootId=b9fwbyg98fvege8, id=b9fwbyg98fvege8
+2023-01-26T00:40:07.755Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=dcfknilif9s3v42, id=dcfknilif9s3v42
+2023-01-26T00:40:37.422Z - error: Report render failed
+(because) document is not defined
+ReferenceError: document is not defined
+    at Query.<anonymous> (sandbox.js:16:15)
+    at bound (node:domain:433:15)
+    at Query.runBound (node:domain:444:12)
+    at Query.handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\query.js:139:14)
+    at Client._handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\client.js:290:19)
+    at Connection.emit (node:events:513:28)
+    at Connection.emit (node:domain:552:15)
+    at C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\connection.js:114:12
+    at Parser.parse (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\parser.js:40:17)
+    at Socket.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\index.js:11:42) rootId=85ln4x8v322f7rz, id=85ln4x8v322f7rz
+2023-01-26T00:41:00.184Z - error: Report render failed
+(because) document is not defined
+ReferenceError: document is not defined
+    at Query.<anonymous> (sandbox.js:16:15)
+    at bound (node:domain:433:15)
+    at Query.runBound (node:domain:444:12)
+    at Query.handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\query.js:139:14)
+    at Client._handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\client.js:290:19)
+    at Connection.emit (node:events:513:28)
+    at Connection.emit (node:domain:552:15)
+    at C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\connection.js:114:12
+    at Parser.parse (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\parser.js:40:17)
+    at Socket.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\index.js:11:42) rootId=v4n5ld8uipoznh1, id=v4n5ld8uipoznh1
+2023-01-26T00:41:52.362Z - error: Report render failed
+(because) document is not defined
+ReferenceError: document is not defined
+    at Query.<anonymous> (sandbox.js:16:15)
+    at bound (node:domain:433:15)
+    at Query.runBound (node:domain:444:12)
+    at Query.handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\query.js:139:14)
+    at Client._handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\client.js:290:19)
+    at Connection.emit (node:events:513:28)
+    at Connection.emit (node:domain:552:15)
+    at C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\connection.js:114:12
+    at Parser.parse (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\parser.js:40:17)
+    at Socket.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\index.js:11:42) rootId=a9klatzhsbij0f2, id=a9klatzhsbij0f2
+2023-01-26T00:42:38.162Z - error: Report render failed
+(because) document is not defined
+ReferenceError: document is not defined
+    at Query.<anonymous> (sandbox.js:16:15)
+    at bound (node:domain:433:15)
+    at Query.runBound (node:domain:444:12)
+    at Query.handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\query.js:139:14)
+    at Client._handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\client.js:290:19)
+    at Connection.emit (node:events:513:28)
+    at Connection.emit (node:domain:552:15)
+    at C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\connection.js:114:12
+    at Parser.parse (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\parser.js:40:17)
+    at Socket.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\index.js:11:42) rootId=kuxbeyhmf8azqmc, id=kuxbeyhmf8azqmc
+2023-01-26T00:42:41.889Z - error: Report render failed
+(because) document is not defined
+ReferenceError: document is not defined
+    at Query.<anonymous> (sandbox.js:16:15)
+    at bound (node:domain:433:15)
+    at Query.runBound (node:domain:444:12)
+    at Query.handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\query.js:139:14)
+    at Client._handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\client.js:290:19)
+    at Connection.emit (node:events:513:28)
+    at Connection.emit (node:domain:552:15)
+    at C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\connection.js:114:12
+    at Parser.parse (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\parser.js:40:17)
+    at Socket.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\index.js:11:42) rootId=kq7ac2bus2k11vl, id=kq7ac2bus2k11vl
+2023-01-26T00:43:27.249Z - error: Report render failed
+(because) document is not defined
+ReferenceError: document is not defined
+    at Query.<anonymous> (sandbox.js:16:15)
+    at bound (node:domain:433:15)
+    at Query.runBound (node:domain:444:12)
+    at Query.handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\query.js:139:14)
+    at Client._handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\client.js:290:19)
+    at Connection.emit (node:events:513:28)
+    at Connection.emit (node:domain:552:15)
+    at C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\connection.js:114:12
+    at Parser.parse (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\parser.js:40:17)
+    at Socket.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\index.js:11:42) rootId=mwzcc1a5qzrbg1l, id=mwzcc1a5qzrbg1l
+2023-01-26T01:00:09.157Z - error: Report render failed
+(because) document is not defined
+ReferenceError: document is not defined
+    at Query.<anonymous> (sandbox.js:20:23)
+    at bound (node:domain:433:15)
+    at Query.runBound (node:domain:444:12)
+    at Query.handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\query.js:139:14)
+    at Client._handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\client.js:290:19)
+    at Connection.emit (node:events:513:28)
+    at Connection.emit (node:domain:552:15)
+    at C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\connection.js:114:12
+    at Parser.parse (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\parser.js:40:17)
+    at Socket.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\index.js:11:42) rootId=hgdr2biwdpc8joz, id=hgdr2biwdpc8joz
+2023-01-26T02:14:43.444Z - error: Report render failed
+(because) displayGraph is not defined
+ReferenceError: displayGraph is not defined
+    at Query.<anonymous> (sandbox.js:25:17)
+    at bound (node:domain:433:15)
+    at Query.runBound (node:domain:444:12)
+    at Query.handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\query.js:139:14)
+    at Client._handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\client.js:290:19)
+    at Connection.emit (node:events:513:28)
+    at Connection.emit (node:domain:552:15)
+    at C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\connection.js:114:12
+    at Parser.parse (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\parser.js:40:17)
+    at Socket.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\index.js:11:42) rootId=aialw1qa84yy9ep, id=aialw1qa84yy9ep
+2023-01-26T11:16:27.231Z - error: Report render failed
+(because) displayGraph is not defined
+ReferenceError: displayGraph is not defined
+    at Query.<anonymous> (sandbox.js:25:17)
+    at bound (node:domain:433:15)
+    at Query.runBound (node:domain:444:12)
+    at Query.handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\query.js:139:14)
+    at Client._handleReadyForQuery (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\client.js:290:19)
+    at Connection.emit (node:events:513:28)
+    at Connection.emit (node:domain:552:15)
+    at C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg\lib\connection.js:114:12
+    at Parser.parse (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\parser.js:40:17)
+    at Socket.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\pg-protocol\dist\index.js:11:42) rootId=lfxjwhwmg7gzrzi, id=lfxjwhwmg7gzrzi
+2023-01-26T12:03:15.520Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=24lo35n05qyxns6, id=24lo35n05qyxns6
+2023-01-26T16:58:39.169Z - error: Error when starting http server on port 5488 Error: listen EADDRINUSE: address already in use :::5488
+    at Server.setupListenHandle [as _listen2] (node:net:1463:16)
+    at listenInCluster (node:net:1511:12)
+    at Server.listen (node:net:1599:7)
+    at C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-express\lib\main.js:22:12
+    at new Promise (<anonymous>)
+    at startAsync (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-express\lib\main.js:16:10)
+    at C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-express\lib\main.js:50:14
+    at Object.start (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-express\lib\main.js:125:13)
+    at Object.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-express\lib\main.js:333:30)
+    at async ListenerCollection.fire (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\shared\listenerCollection.js:157:21)
+2023-01-26T23:20:18.222Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=1w9bqivouytt50y, id=1w9bqivouytt50y
+2023-01-26T23:20:18.227Z - error: Error during processing request at http://localhost:5488/templates/0bBVg4jt9E, details: Error when evaluating custom script /eventcalendar/testing
+Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+2023-01-26T23:20:19.215Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=4iniinys2zvgcsh, id=4iniinys2zvgcsh
+2023-01-26T23:20:19.219Z - error: Error during processing request at http://localhost:5488/templates/0bBVg4jt9E, details: Error when evaluating custom script /eventcalendar/testing
+Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+2023-01-26T23:38:20.156Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=en2mr6hl3xes9tn, id=en2mr6hl3xes9tn
+2023-01-26T23:38:20.163Z - error: Error during processing request at http://localhost:5488/templates/0bBVg4jt9E, details: Error when evaluating custom script /eventcalendar/testing
+Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+2023-01-26T23:38:41.871Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=2oxm5spg6ylsr8x, id=2oxm5spg6ylsr8x
+2023-01-26T23:40:31.712Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+Request failed with status code 500
+Error: Request failed with status code 500
+    at createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\createError.js:16:15)
+    at settle (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\core\settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\axios\lib\adapters\http.js:293:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1358:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=vmx99n842ydv36g, id=vmx99n842ydv36g

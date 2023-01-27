@@ -1,5 +1,5 @@
 class EventsController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:index,:show]
+  skip_before_action :authenticate_user!, only: [:index,:show,:chart]
   before_action :set_event, only: %i[ show update destroy ]
 
 
@@ -9,10 +9,10 @@ class EventsController < ApplicationController
 
     render json: @events.map { |event|
       event.as_json.merge({ image: url_for(event.image) })
-  }
-    
-    
+    }  
   end
+
+  
 
   # GET /events/1
   def show

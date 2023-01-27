@@ -17,6 +17,17 @@ const SignUp = () => {
   const navigate = useNavigate();
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
 
+  
+  const initialUserState = {
+    id: null,
+    firstname: "",
+    lastname: "",
+    email: "",
+    password: "",
+    date_birth: undefined,
+    image: ""
+  };
+
   const mySwal = () => {
 
     swal.fire({
@@ -48,6 +59,7 @@ const SignUp = () => {
       console.log(response);
       const authheader = response.headers.get('Authorization');
       localStorage.setItem('token', authheader)
+      console.log(response)
       localStorage.setItem('user', response.data.status.data.id)
       localStorage.setItem('userData', JSON.stringify(response.data.status.data))
       console.log(localStorage.getItem('token'))
@@ -60,15 +72,6 @@ const SignUp = () => {
 
   }
 
-  const initialUserState = {
-    id: null,
-    firstname: "",
-    lastname: "",
-    email: "",
-    password: "",
-    date_birth: undefined,
-    image: ""
-  };
 
 
   const [user, setUser] = useState(initialUserState);

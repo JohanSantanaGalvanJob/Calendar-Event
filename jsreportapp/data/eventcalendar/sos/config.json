@@ -1,0 +1,17 @@
+{
+    "name": "sos",
+    "engine": "handlebars",
+    "recipe": "chrome-pdf",
+    "shortid": "RgZwUZRvl",
+    "chrome": {
+        "printBackground": true
+    },
+    "creationDate": {
+        "$$date": 1674608036639
+    },
+    "modificationDate": {
+        "$$date": 1674693327120
+    },
+    "_id": "5ZKBYtgyTjxm4MIv",
+    "$entitySet": "templates"
+}

@@ -11,6 +11,8 @@ import swal from 'sweetalert2';
 function Navbar() {
     const user = JSON.parse(localStorage.getItem('userData'))
 
+
+
     const navigate = useNavigate();
     const [backgroundColor, setBackgroundColor] = useState("light");
     const[downMenuColor, setDownMenuColor] = useState("light");
@@ -30,6 +32,7 @@ function Navbar() {
         changeDownMenuColor();
         changeNavbarColor();
       }
+      
 
     useEffect(() => {
         const cardParagraphs3 = document.querySelectorAll(".event-field");
@@ -119,6 +122,10 @@ function Navbar() {
 
     const showSidebar = () => {
         setSideBar(!sidebar)
+    }
+
+    const loadReport = () => {
+        window.location.replace('http://localhost:5488/templates/0bBVg4jt9E');
     }
 
     return (
@@ -241,6 +248,12 @@ function Navbar() {
 
                         }
                     </ul>
+
+                    {isAdmin ? (
+                        <button onClick={loadReport}>Get Report</button>
+                    ) : <></>}
+
+                    
 
                     <div className='navbar-bottom-part'>
                         <h2>© Event Calendar</h2>

@@ -3,6 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import { useForm } from "react-hook-form";
+import { act } from '@testing-library/react';
 import { DownMenu } from "../../components/DownMenu/DownMenu";
 import './AddEventType.css'
 import { EventTypeCard } from '../../components/EventTypeCard/EventTypeCard'
@@ -74,12 +75,14 @@ const AddEventType = () => {
             name: eventType.name
         };
 
-        EventTypeService.create(data).then(response => {
+        EventTypeService.create(data).then(async response => {
 
-            setEventType({
-                id: response.data.id,
-                name: response.data.name,
-            });
+            await act(async () => {
+                setEventType({
+                  id: response.data.id,
+                  name: response.data.name,
+                });
+          });
             
             console.log(response.data);
         })
@@ -123,7 +126,7 @@ const AddEventType = () => {
                                             <input minLength={5} maxLength={30} id='name' name="name" type="text" value={eventType.name} placeholder='Write your new Event Type' onChange={handleInputChange} pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$" required></input>
                                         </div>
 
-                                        <button type="submit" className="event-type-button">Create</button>
+                                        <button type="submit" className="event-type-button">Createff</button>
                                     </form>
                                     <h2 className="event-type-title">Event Type List</h2>
                                 </div>

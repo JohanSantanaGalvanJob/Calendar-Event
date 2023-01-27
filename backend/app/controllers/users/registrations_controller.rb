@@ -15,7 +15,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   def respond_with(resource,options={})
     if resource.persisted?
       render json:{
-        status: {code: 200, message: 'Signed Up successfully',data: resource.as_json.merge({ image: url_for(current_user.image) })}
+        status: {code: 200, message: 'Signed Up successfully',data: resource.as_json.merge({ image: url_for(resource.image) })}
       }, status: :ok
     else
       render json: {
@@ -25,4 +25,5 @@ class Users::RegistrationsController < Devise::RegistrationsController
       }
     end
   end
+  
 end
