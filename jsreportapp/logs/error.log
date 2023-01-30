@@ -753,3 +753,20 @@ Error: Request failed with status code 500
     at IncomingMessage.emit (node:domain:552:15)
     at endReadableNT (node:internal/streams/readable:1358:12)
     at processTicksAndRejections (node:internal/process/task_queues:83:21) rootId=vmx99n842ydv36g, id=vmx99n842ydv36g
+2023-01-27T18:44:10.619Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+connect ECONNREFUSED 127.0.0.1:3000
+Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1278:16)
+    at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17) rootId=9kmlvqpaz1txtqw, id=9kmlvqpaz1txtqw
+2023-01-27T18:44:10.623Z - error: Error during processing request at http://localhost:5488/templates/0bBVg4jt9E, details: Error when evaluating custom script /eventcalendar/testing
+connect ECONNREFUSED 127.0.0.1:3000
+Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1278:16)
+    at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17)
+2023-01-27T18:44:23.470Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+connect ECONNREFUSED 127.0.0.1:3000
+Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1278:16)
+    at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17) rootId=9bhb8cf7uzofbip, id=9bhb8cf7uzofbip

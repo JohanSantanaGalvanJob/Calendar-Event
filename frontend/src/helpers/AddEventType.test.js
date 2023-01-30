@@ -27,7 +27,7 @@ describe('<AddEventType />', () => {
 
             const loginButton = getByText('Createff')
             const passwordInput = getByPlaceholderText('Write your new Event Type');
-            fireEvent.change(passwordInput,{'target' : { 'value' : 'dgdsgs'}})
+            fireEvent.change(passwordInput,{'target' : { 'value' : 'Croacia'}})
             fireEvent.submit(loginButton);
             expect(Createmo).toHaveBeenCalledTimes(1);
             expect(Createmo).toHaveBeenCalledWith({"name": "Croacia"});
