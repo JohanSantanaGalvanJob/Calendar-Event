@@ -11,24 +11,23 @@ class Users::SessionsController < Devise::SessionsController
   if email_base64.present?
     email = Base64.decode64(email_base64).force_encoding('UTF-8')
     else
-    puts "ERROR"
+      render json: { status: { code: 400, message: "Email is required" } }, status: :bad_request
   end
 
   if password_base64.present?
     password = Base64.decode64(password_base64).force_encoding('UTF-8')
     else
-    puts "ERROR"
+      render json: { status: { code: 400, message: "Password is required" } }, status: :bad_request
   end
 
 
-  puts email
   user = User.find_by(email: email)
 
   if user && user.valid_password?(password)
     sign_in(:user, user)
     respond_with(user)
   else
-    render json: { status: { code: 400, message: "Invalid email or password" } }, status: :bad_request
+    render json: { status: { code: 400, message: "Invalid email or password",email: email, password: password } }, status: :bad_request
   end
 end
 
