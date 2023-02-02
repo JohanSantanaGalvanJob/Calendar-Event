@@ -19,6 +19,7 @@ const SignUp = () => {
   const [showName, setShowName] = useState(false);
   const [showSurname, setShowSurname] = useState(false);
   const [showPass, setShowPass] = useState(true);
+  const [textPass, setTextPass] = useState("*One capital letter. + 8 characters");
 
 
   const initialUserState = {
@@ -90,7 +91,11 @@ const SignUp = () => {
         break;
 
       case 'password':
-        setShowPass(!(event.target.value.length >= 8 && /[A-Z]/.test(event.target.value)));
+        if ((event.target.value.length >= 8 && /[A-Z]/.test(event.target.value))) {
+          setTextPass("De puta madre xd");
+        } else {
+          setTextPass("*One capital letter. + 8 characters");
+        }
         break;
 
       default:
@@ -170,7 +175,7 @@ const SignUp = () => {
                     </div>
                     <div className='sign-up-field'>
                       <input id='password' name='password' value={user.password} onChange={handleInputChange} type="password" placeholder='Write your password' pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required={true}></input>
-                      {showPass && <label className='sign-up-label'>*One capital letter. + 8 characters</label>}
+                      {showPass && <label className='sign-up-label'>{textPass}</label>}
                     </div>
                     <div className='sign-up-field'>
                       <input id='date_birth' name='date_birth' value={user.date_birth} onChange={handleInputChange} type="date" placeholder='Write your date of birth' required={true}></input>
