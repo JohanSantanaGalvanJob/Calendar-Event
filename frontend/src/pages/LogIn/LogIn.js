@@ -8,16 +8,13 @@ import { Col } from 'react-bootstrap';
 import UserService from "../../Services/UserService"
 import { useState, useEffect } from 'react';
 import swal from 'sweetalert2';
-import withReactContent from 'sweetalert2-react-content'
 import jsreport from 'jsreport-browser-client-dist'
-import EventService from '../../Services/EventService';
 jsreport.serverUrl = 'http://localhost:5488'
 
 
-export const LogIn = (naviga5, email, password) => {
+export const LogIn = () => {
 
-  const [events, setEvents] = useState([]);
-  const navigate = useNavigate;
+  const navigate = useNavigate();
 
 
 

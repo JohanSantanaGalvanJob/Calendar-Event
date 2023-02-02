@@ -38,9 +38,15 @@ const signUp = params => {
 
 const login = params => {
 
+    const email = btoa(params.email);
+    const password = btoa(params.password);
+
+    console.log(email);
+    console.log(password);
+
     var data = new FormData();
-    data.append('user[email]', params.email);
-    data.append('user[password]', params.password);
+    data.append('user[email]', email);
+    data.append('user[password]', password);
 
     var config = {
         method: 'post',

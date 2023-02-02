@@ -99,6 +99,7 @@ function Navbar() {
                 UserService.signOut(id).then((response) => {
                     console.log(response);
                     localStorage.removeItem('userData')
+                    localStorage.removeItem('token')
                     navigate('/')
                 }).catch(e => {
                     mySwalError(e);
