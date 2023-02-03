@@ -103,10 +103,17 @@ body {
 
 }
 
-.sign-up-label {
+.sign-up-label-false {
     font-size: 0.75em;
     text-align: left;
     color: red;
+    font-weight: bold;
+}
+
+.sign-up-label-true {
+    font-size: 0.75em;
+    text-align: left;
+    color: green;
     font-weight: bold;
 }
 

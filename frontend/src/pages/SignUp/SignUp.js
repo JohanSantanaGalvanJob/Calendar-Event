@@ -18,7 +18,7 @@ const SignUp = () => {
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
   const [showName, setShowName] = useState(false);
   const [showSurname, setShowSurname] = useState(false);
-  const [showPass, setShowPass] = useState(true);
+  const [goodPass, setGoodPass] = useState("sign-up-label-false");
   const [textPass, setTextPass] = useState("*One capital letter. + 8 characters");
 
 
@@ -92,8 +92,10 @@ const SignUp = () => {
 
       case 'password':
         if ((event.target.value.length >= 8 && /[A-Z]/.test(event.target.value))) {
+          setGoodPass("sign-up-label-true");
           setTextPass("De puta madre xd");
         } else {
+          setGoodPass("sign-up-label-false");
           setTextPass("*One capital letter. + 8 characters");
         }
         break;
@@ -162,20 +164,20 @@ const SignUp = () => {
                   <div className='sign-up-form'>
                     <div className='sign-up-field'>
                       <input id='firstname' name='firstname' value={user.firstname} onChange={handleInputChange} required type='text' maxLength={20} minLength={5} placeholder='Write your first name' pattern="[a-zA-Z]*" />
-                      {showName && <label className='sign-up-label' id='first-name-error'>*Alphabetical characters only</label>}
+                      {showName && <label className='sign-up-label-false' id='first-name-error'>*Alphabetical characters only</label>}
                     </div>
 
                     <div className='sign-up-field'>
                       <input id='lastname' name='lastname' value={user.lastname} onChange={handleInputChange} type='text' maxLength={20} minLength={5} pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$" placeholder='Write your last name' required={true}>
                       </input>
-                      {showSurname && <label className='sign-up-label'>*Alphabetical characters only</label>}
+                      {showSurname && <label className='sign-up-label-false'>*Alphabetical characters only</label>}
                     </div>
                     <div className='sign-up-field'>
                       <input id='email' name='email' value={user.email} onChange={handleInputChange} type="email" placeholder='Write your email' pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required={true}></input>
                     </div>
                     <div className='sign-up-field'>
                       <input id='password' name='password' value={user.password} onChange={handleInputChange} type="password" placeholder='Write your password' pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required={true}></input>
-                      {showPass && <label className='sign-up-label'>{textPass}</label>}
+                      <label className={goodPass}>{textPass}</label>
                     </div>
                     <div className='sign-up-field'>
                       <input id='date_birth' name='date_birth' value={user.date_birth} onChange={handleInputChange} type="date" placeholder='Write your date of birth' required={true}></input>
