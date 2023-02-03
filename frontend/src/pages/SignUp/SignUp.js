@@ -93,7 +93,7 @@ const SignUp = () => {
       case 'password':
         if ((event.target.value.length >= 8 && /[A-Z]/.test(event.target.value))) {
           setGoodPass("sign-up-label-true");
-          setTextPass("De puta madre xd");
+          setTextPass("That's good, thanks!");
         } else {
           setGoodPass("sign-up-label-false");
           setTextPass("*One capital letter. + 8 characters");
