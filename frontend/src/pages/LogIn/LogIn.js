@@ -8,8 +8,6 @@ import { Col } from 'react-bootstrap';
 import UserService from "../../Services/UserService"
 import { useState, useEffect } from 'react';
 import swal from 'sweetalert2';
-import jsreport from 'jsreport-browser-client-dist'
-jsreport.serverUrl = 'http://localhost:5488'
 
 
 export const LogIn = () => {
