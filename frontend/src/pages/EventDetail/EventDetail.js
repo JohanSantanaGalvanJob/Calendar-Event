@@ -19,6 +19,7 @@ export const EventDetail = () => {
     const [width, setWidth] = useState(0)
     let { id } = useParams();
     let { name } = useParams();
+    const [mapUrl, setMapUrl] = useState("");
 
     const mySwalError = (error) => {
 
@@ -67,6 +68,11 @@ export const EventDetail = () => {
 
         LocationService.get(name).then(response2 => {
             setLocations(response2.data);
+            if(/\s/.test(locations.name)) {
+                setMapUrl("https://maps.google.com/maps?q=" + response2.data.name.replace(/ /g, '') + "&t=&z=13&ie=UTF8&iwloc=&output=embed")
+            } else {
+                setMapUrl("https://maps.google.com/maps?q=" + response2.data.name + "&t=&z=13&ie=UTF8&iwloc=&output=embed")
+            }
             console.log(response2.data);
         }).catch(e => {
             mySwalError("An error occured loading the location. Please try Again Later")
@@ -75,6 +81,10 @@ export const EventDetail = () => {
 
 
     }, []);
+
+    const mapxd = () => {
+        
+    };
 
     return (
         <>
@@ -91,9 +101,9 @@ export const EventDetail = () => {
             <div className="event-detail-second-part">
                 <h3>Localización</h3>
                 <div className="event-detail-line"></div>
-                <div class="mapouter">
-                    <div class="gmap_canvas">
-                        <iframe width={width-50} height="500" id="gmap_canvas" src={"https://maps.google.com/maps?q=" + locations.name + "&t=&z=13&ie=UTF8&iwloc=&output=embed"} frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                <div className="mapouter">
+                    <div className="gmap_canvas">
+                        <iframe width={width-50} height="500" id="gmap_canvas" src={mapUrl}>
                         </iframe>
                     </div>
                 </div>
