@@ -9,12 +9,14 @@ import { useState, useEffect } from "react";
 import { Link, Navigate, useNavigate, useParams } from 'react-router-dom';
 import LocationService from "../../Services/LocationService";
 import { BackButton } from "../../components/BackButton/BackButton/BackButton";
+import { handleBreakpoints } from "@mui/system";
 
 
 export const EventDetail = () => {
 
     const [events, setEvents] = useState([]);
     const navigate = useNavigate();
+    const [width, setWidth] = useState(0)
     let { id } = useParams();
     let { name } = useParams();
 
@@ -40,6 +42,20 @@ export const EventDetail = () => {
                 console.log(e);
             });
     }
+
+    useEffect(() => {
+        function handleResize() {
+            setWidth(window.innerWidth)
+        }
+
+        window.addEventListener("resize", handleResize)
+
+        handleResize()
+
+        return () => {
+            window.removeEventListener("resize", handleResize)
+        }
+    }, [setWidth]);
 
     useEffect(() => {
         EventService.get(id).then((response) => {
@@ -75,7 +91,12 @@ export const EventDetail = () => {
             <div className="event-detail-second-part">
                 <h3>Localización</h3>
                 <div className="event-detail-line"></div>
-                <p>{locations.name}</p>
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width={width-50} height="500" id="gmap_canvas" src={"https://maps.google.com/maps?q=" + locations.name + "&t=&z=13&ie=UTF8&iwloc=&output=embed"} frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                        </iframe>
+                    </div>
+                </div>
             </div>
             <div className="event-detail-second-part">
                 <h3>Fecha y Horas</h3>

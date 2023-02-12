@@ -1,4 +1,4 @@
-.event-detail-first-part{
+.event-detail-first-part {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,41 +9,57 @@
     margin-left: 1em;
 }
 
-.event-detail-first-part h1{
+.event-detail-first-part h1 {
     text-align: center;
 }
 
-.event-detail-first-part p{
+.event-detail-first-part p {
     color: #424242;
     font-size: 0.80em;
 }
 
-.event-detail-line{
+.event-detail-line {
     margin-top: 1em;
     height: 1em;
     width: 90vw;
     border-top: 1px solid #424242;
 }
 
-.event-detail-second-part{
+.event-detail-second-part {
     display: flex;
-    align-items:flex-start;
-    justify-content:baseline;
+    align-items: flex-start;
+    justify-content: baseline;
     flex-wrap: wrap;
     margin-top: 2em;
     color: #424242;
     margin-right: 1em;
     margin-left: 1em;
+    justify-content: center;
 }
 
-.event-detail-text{
+.event-detail-text {
     display: flex;
-    align-items:flex-start;
-    justify-content:baseline;
+    align-items: flex-start;
+    justify-content: baseline;
     flex-wrap: wrap;
 }
 
 .event-detail-back-button {
     margin-top: 1em;
     margin-left: 1em;
+}
+
+.mapouter {
+    display: flex;
+    height: auto;
+    width: auto;
+    justify-content: center;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none !important;
+    height: auto;
+    width: auto;
+    border-radius: 1em;
 }
