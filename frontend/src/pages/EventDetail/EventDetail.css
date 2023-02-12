@@ -42,3 +42,8 @@
     justify-content:baseline;
     flex-wrap: wrap;
 }
+
+.event-detail-back-button {
+    margin-top: 1em;
+    margin-left: 1em;
+}

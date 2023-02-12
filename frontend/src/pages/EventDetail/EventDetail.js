@@ -8,6 +8,7 @@ import { EventField } from "../../components/EventField/EventField"
 import { useState, useEffect } from "react";
 import { Link, Navigate, useNavigate, useParams } from 'react-router-dom';
 import LocationService from "../../Services/LocationService";
+import { BackButton } from "../../components/BackButton/BackButton/BackButton";
 
 
 export const EventDetail = () => {
@@ -29,15 +30,15 @@ export const EventDetail = () => {
 
     const [locations, setLocations] = useState([]);
 
-    const getLocations = ()  =>{
+    const getLocations = () => {
         LocationService.get(events.location_id).then(response => {
             setLocations(response.data);
             console.log(response.data);
-          })
-          .catch(e => {
-            mySwalError('Locations: ' +e)
-            console.log(e);
-          });
+        })
+            .catch(e => {
+                mySwalError('Locations: ' + e)
+                console.log(e);
+            });
     }
 
     useEffect(() => {
@@ -51,7 +52,7 @@ export const EventDetail = () => {
         LocationService.get(name).then(response2 => {
             setLocations(response2.data);
             console.log(response2.data);
-          }).catch(e => {
+        }).catch(e => {
             mySwalError("An error occured loading the location. Please try Again Later")
             console.log(e);
         });
@@ -61,8 +62,11 @@ export const EventDetail = () => {
 
     return (
         <>
-        <style>{'body { background-color: #CCF2F4;}'}</style>
+            <style>{'body { background-color: #CCF2F4;}'}</style>
             <Navbar></Navbar>
+            <div className="event-detail-back-button">
+                <BackButton />
+            </div>
             <div className="event-detail-first-part">
                 <h1>{events.title}</h1>
                 <div className="event-detail-line"></div>
@@ -77,9 +81,9 @@ export const EventDetail = () => {
                 <h3>Fecha y Horas</h3>
                 <div className="event-detail-line"></div>
                 <p>
-                Fecha: {events.date}<br/>
-                Hora de entrada: {events.starting_hour}<br/>
-                Hora de finalización: {events.finished_hour}<br/>
+                    Fecha: {events.date}<br />
+                    Hora de entrada: {events.starting_hour}<br />
+                    Hora de finalización: {events.finished_hour}<br />
                 </p>
             </div>
             <div className="event-detail-second-part">
