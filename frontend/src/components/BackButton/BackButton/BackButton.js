@@ -1,5 +1,3 @@
-import './BackButton.css';
-
 export const BackButton = () => {
 
     const handleClick = () => {
