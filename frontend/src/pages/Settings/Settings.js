@@ -130,7 +130,7 @@ const Settings = () => {
                             </div>
                         </Link>
 
-                        <Link to='/Help'>
+                        <Link to='/helpSystem/bienvenida.html'>
                             <div className="settings-field">
                                 <div>
                                     <img src="/icons/Ayuda/interrogatorio.png"></img>
