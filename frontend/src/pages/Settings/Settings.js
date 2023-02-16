@@ -11,9 +11,12 @@ const Settings = () => {
     const isUser = !!user;
 
     const loadHelpSystem = () => {
-        window.location.replace('https://localhost:');
+        window.location.replace('https://localhost:443/helpSystem/Bienvenida.html');
     }
 
+        const handleHelpClick = () => {
+          loadHelpSystem();
+        };
 
 
     return (
@@ -91,8 +94,8 @@ const Settings = () => {
                             </div>
                         </Link>
 
-                       <div onClick={}>
-                            <div className="settings-field">
+                       
+                            <div className="settings-field" onClick={loadHelpSystem}>
                                 <div>
                                     <img src="/icons/Ayuda/interrogatorio.png"></img>
                                 </div>
@@ -102,7 +105,7 @@ const Settings = () => {
                                     <div className="settings-line"></div>
                                 </div>
                             </div>
-                            </div>
+                       
 
                     </>
 
