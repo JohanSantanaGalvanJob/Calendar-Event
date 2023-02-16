@@ -10,6 +10,11 @@ const Settings = () => {
     const user = JSON.parse(localStorage.getItem('userData'))
     const isUser = !!user;
 
+    const loadHelpSystem = () => {
+        window.location.replace('https://localhost:');
+    }
+
+
 
     return (
         <>
@@ -86,7 +91,7 @@ const Settings = () => {
                             </div>
                         </Link>
 
-                        <Link to='/Help'>
+                       <div onClick={}>
                             <div className="settings-field">
                                 <div>
                                     <img src="/icons/Ayuda/interrogatorio.png"></img>
@@ -97,7 +102,7 @@ const Settings = () => {
                                     <div className="settings-line"></div>
                                 </div>
                             </div>
-                        </Link>
+                            </div>
 
                     </>
 
