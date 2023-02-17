@@ -29,7 +29,7 @@
 /config/master.key
 
 # Ignore certificate files
-cert
+.cert
 
 # Ignore env file
 .env
