@@ -6,40 +6,40 @@
     <img src="https://github.com/JohanSantanaGalvanJob/Calendar-Event/blob/master/frontend/public/img/AppLogo.png" alt="Logo">
 
   <p align="center">
-    Proyecto inspirado en los calendarios de eventos de la isla.
+      Project inspired in the islands' events calendar.
   </p>
 </div>
 
-Cuando se me asignó un proyecto para una empresa, empecé a buscar qué hacían concretamente y fue en base a la recomendación de un empleado de la empresa que hice este pequeño pero arduo proyecto.
+When we got the company project assigned, we started to look at what type of projects the company usually did, and based on one of its ex-employees this project was prepared.
 
-Esta aplicación consiste en montar un calendario de eventos en la que un usuario se registra y apunta los eventos que hay disponibles en la página principal además de poder ver detalles del mismo.
+This app consists in a event calendar where every registered user can mount all of the available events on the main page, apart from the obvious that they can see every event details.  
 
-Los eventos abarcan desde aquellos relacionados con Navidad, como conciertos, además de shows y otras cuestiones...
+The events can be related to any festive, christmas, concerts, even shows and other topics...
 
-En este diagrama se detallan las acciones que se puede realizar:
+In this diagram you have detailed every action that you can make:
 
 ![Image text](https://github.com/JohanSantanaGalvanJob/Calendar-Event/blob/master/readmeImages/Diagrama%20casos%20de%20uso.jpg)
 
 <details>
-  <summary>Tabla de contenidos</summary>
+  <summary>content table</summary>
     <ol>
 
-- [Requisitos de instalación](##Requisitos-de-Instalación)
-- [Requisitos de sistema](##Requisitos-de-Sistema)
-- [Librerías y Gemas usadas]((##Algunas-Librerías-usadas)
+- [Installation requirements]((##Installation-requirements))
+- [System requirements]((##Requisitos-de-Sistema))
+- [Librerías y Gemas usadas]((##Algunas-Librerías-usadas))
 - [Empezar]((##Empezar))
 - [Comparación de Tecnologías]((##Comparación-de-Tecnologías))
 - [Planificación]((##Planificación))
-- [Parte del Backend](##Parte-del-Backend)
-- [Código del backend](##Código-del-backend)
-- [Requisitos de usuario](##Requisitos-de-usuario)
-- [Interfaces](##Interfaces)
-- [Conclusión](##Conclusión)
+- [Parte del Backend]((##Parte-del-Backend))
+- [Código del backend]((##Código-del-backend))
+- [Requisitos de usuario]((##Requisitos-de-usuario))
+- [Interfaces]((##Interfaces))
+- [Conclusión]((##Conclusión))
 
     </ol>
 </details>
 
-## Requisitos de Instalación
+## Installation requirements
 
 Como Editor de código, se puede usar cualquiera, aunque yo he usado Visual Studio Code: https://code.visualstudio.com/download
 
