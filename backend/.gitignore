@@ -27,6 +27,15 @@
 
 # Ignore master key for decrypting credentials and more & database.yml for database connection errors
 /config/master.key
+<<<<<<< HEAD
 /config/database.yml
 /.cert
 /hola
+=======
+
+# Ignore certificate files
+.cert
+
+# Ignore env file
+.env
+>>>>>>> 758c2753a8fb94b90c4559657a25e31844f34157
