@@ -1,14 +1,29 @@
 import { Link,useNavigate } from 'react-router-dom';
 import './FirstPage.css';
+import EventUserService from '../../Services/EventUserService';
 
 import { Container } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
+import { useEffect } from 'react';
 
 
 export const FirstPage = () => {
 
+    useEffect(() => {
+
+        EventUserService.getAll().then(response => {
+            console.log("response.data", response.data)
+            localStorage.setItem('eventsDeleted', response.data.id)
+        })
+            .catch(e => {
+             console.log(e);
+            });
+
+    },[])
+
     const navigate = useNavigate();
+    
 
     const Navigate = () => {
         navigate('/Home')

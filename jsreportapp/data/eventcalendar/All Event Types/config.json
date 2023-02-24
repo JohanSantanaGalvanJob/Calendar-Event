@@ -1,19 +1,18 @@
 {
-    "name": "Data",
+    "name": "All Event Types",
     "engine": "handlebars",
     "recipe": "chrome-pdf",
-    "data": null,
-    "shortid": "0bBVg4jt9E",
+    "shortid": "Y9Y17o0wG4",
     "chrome": {
         "printBackground": true
     },
     "creationDate": {
-        "$$date": 1674243929128
+        "$$date": 1677252476179
     },
     "modificationDate": {
-        "$$date": 1677252599505
+        "$$date": 1677252729795
     },
-    "_id": "kHaHAKKV348kPHuO",
+    "_id": "WoVK05vTtiu8hy9D",
     "$entitySet": "templates",
     "scripts": [
         {

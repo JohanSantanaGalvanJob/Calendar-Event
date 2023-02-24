@@ -7,7 +7,6 @@ import * as idb from "idb";
 import './Event.css';
 import Navbar from "../../components/Sidebar/Navbar";
 import EventService from "../../Services/EventService";
-// import swal from 'sweetalert2';
 import { Carrousel } from "../../components/Carrousel/Carrousel";
 
 export const Event = () => {
@@ -80,16 +79,16 @@ export const Event = () => {
 
   return (
     <>
-
+    {console.log(localEvents)}
       <Navbar></Navbar>
       <div className="event-type-card-sos">
         <Carrousel></Carrousel>
-        {localEvents.map((event, index) =>
+       
           <div className="event-card-part">
-            <EventField key={event.id} event={event} ></EventField>
+            <EventField event={localEvents} ></EventField>
             <div className="event-line"></div>
           </div>
-        )}
+        
       </div>
 
 

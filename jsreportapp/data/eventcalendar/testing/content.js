@@ -3,13 +3,20 @@
 const axios = require('axios');
 const nodemailer = require('nodemailer')
 var id = 54;
+const https = require('https');
 
 
 
 async function beforeRender(req, res) {
 
+    const agent = new https.Agent({
+        rejectUnauthorized: false
+    });
 
-    const sos = await axios.get(`http://localhost:3000/chart`)
+
+    const sos = await axios.get(`https://localhost:3000/chart`, {
+        httpsAgent: agent
+    })
     console.log(sos)
     req.data.chart = {
         ...sos.data
@@ -21,17 +28,23 @@ async function beforeRender(req, res) {
     console.log("Sin cuidado: " + req.data.xd);
 
 
-    const s = await axios.get(`http://localhost:3000/events`)
+    const s = await axios.get(`https://localhost:3000/events`, {
+        httpsAgent: agent
+    })
     req.data.events = { ...req.data,
         ...s.data
     }
 
-    const response = await axios.get('http://localhost:3000/locations')
+    const response = await axios.get('https://localhost:3000/locations', {
+        httpsAgent: agent
+    })
     req.data.locations = { ...req.data,
         ...response.data
     }
 
-    const responseEventType = await axios.get('http://localhost:3000/event_types')
+    const responseEventType = await axios.get('https://localhost:3000/event_types', {
+        httpsAgent: agent
+    })
     req.data.eventType = { ...req.data,
         ...responseEventType.data
     }

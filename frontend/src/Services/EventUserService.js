@@ -8,6 +8,10 @@ const get = id => {
     return http.get(`/event_users/${id}`);
 };
 
+const getByUser = id => {
+    return http.get(`/event_users/get_events_for_user/${id}`);
+};
+
 const create = data => {
     return http.post("/event_users", data);
 };
@@ -27,6 +31,7 @@ const removeAll = () => {
 const EventUserService = {
     getAll,
     get,
+    getByUser,
     create,
     update,
     remove,

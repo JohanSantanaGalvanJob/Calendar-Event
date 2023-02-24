@@ -1,19 +1,18 @@
 {
-    "name": "Data",
+    "name": "All Locations",
     "engine": "handlebars",
     "recipe": "chrome-pdf",
-    "data": null,
-    "shortid": "0bBVg4jt9E",
+    "shortid": "gm2NyzQDu",
     "chrome": {
         "printBackground": true
     },
     "creationDate": {
-        "$$date": 1674243929128
+        "$$date": 1677252688088
     },
     "modificationDate": {
-        "$$date": 1677252599505
+        "$$date": 1677252728506
     },
-    "_id": "kHaHAKKV348kPHuO",
+    "_id": "F6D7He0K4bHv97Hy",
     "$entitySet": "templates",
     "scripts": [
         {

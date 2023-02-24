@@ -9,6 +9,9 @@
     "entryPoint": "server.js"
   },
   "dependencies": {
+    "dotenv": "^16.0.3",
+    "fs": "^0.0.1-security",
+    "https": "^1.0.0",
     "jsreport": "^3.10.0",
     "jsreport-core": "^2.10.1",
     "nodemailer": "6.9.0",

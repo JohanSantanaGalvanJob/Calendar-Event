@@ -770,3 +770,312 @@ connect ECONNREFUSED 127.0.0.1:3000
 Error: connect ECONNREFUSED 127.0.0.1:3000
     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1278:16)
     at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17) rootId=9bhb8cf7uzofbip, id=9bhb8cf7uzofbip
+2023-02-21T23:17:58.894Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+unable to verify the first certificate
+Error: unable to verify the first certificate
+    at TLSSocket.onConnectSecure (node:_tls_wrap:1540:34)
+    at TLSSocket.emit (node:events:512:28)
+    at TLSSocket.emit (node:domain:552:15)
+    at TLSSocket._finishInit (node:_tls_wrap:959:8)
+    at ssl.onhandshakedone (node:_tls_wrap:743:12)
+    at TLSWrap.callbackTrampoline (node:internal/async_hooks:130:17) rootId=o54hf3zulz7jwla, id=o54hf3zulz7jwla
+2023-02-21T23:18:50.836Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+write EPROTO 20110000:error:0A00010B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:355:
+
+Error: write EPROTO 20110000:error:0A00010B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:355:
+
+    at WriteWrap.onWriteComplete [as oncomplete] (node:internal/stream_base_commons:94:16)
+    at WriteWrap.callbackTrampoline (node:internal/async_hooks:130:17) rootId=walq8iuqjtl2x15, id=walq8iuqjtl2x15
+2023-02-21T23:20:41.147Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+unable to verify the first certificate
+Error: unable to verify the first certificate
+    at TLSSocket.onConnectSecure (node:_tls_wrap:1540:34)
+    at TLSSocket.emit (node:events:512:28)
+    at TLSSocket.emit (node:domain:552:15)
+    at TLSSocket._finishInit (node:_tls_wrap:959:8)
+    at ssl.onhandshakedone (node:_tls_wrap:743:12)
+    at TLSWrap.callbackTrampoline (node:internal/async_hooks:130:17) rootId=zfafsnc5yr8vukp, id=zfafsnc5yr8vukp
+2023-02-21T23:20:51.611Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+unable to verify the first certificate
+Error: unable to verify the first certificate
+    at TLSSocket.onConnectSecure (node:_tls_wrap:1540:34)
+    at TLSSocket.emit (node:events:512:28)
+    at TLSSocket.emit (node:domain:552:15)
+    at TLSSocket._finishInit (node:_tls_wrap:959:8)
+    at ssl.onhandshakedone (node:_tls_wrap:743:12)
+    at TLSWrap.callbackTrampoline (node:internal/async_hooks:130:17) rootId=izra1yzaq65kex3, id=izra1yzaq65kex3
+2023-02-21T23:21:25.779Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+unable to verify the first certificate
+Error: unable to verify the first certificate
+    at TLSSocket.onConnectSecure (node:_tls_wrap:1540:34)
+    at TLSSocket.emit (node:events:512:28)
+    at TLSSocket.emit (node:domain:552:15)
+    at TLSSocket._finishInit (node:_tls_wrap:959:8)
+    at ssl.onhandshakedone (node:_tls_wrap:743:12)
+    at TLSWrap.callbackTrampoline (node:internal/async_hooks:130:17) rootId=b80xg0rmajt8j5f, id=b80xg0rmajt8j5f
+2023-02-21T23:21:40.854Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+unable to verify the first certificate
+Error: unable to verify the first certificate
+    at TLSSocket.onConnectSecure (node:_tls_wrap:1540:34)
+    at TLSSocket.emit (node:events:512:28)
+    at TLSSocket.emit (node:domain:552:15)
+    at TLSSocket._finishInit (node:_tls_wrap:959:8)
+    at ssl.onhandshakedone (node:_tls_wrap:743:12)
+    at TLSWrap.callbackTrampoline (node:internal/async_hooks:130:17) rootId=wlsonlcmux63bs5, id=wlsonlcmux63bs5
+2023-02-21T23:22:16.128Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+unable to verify the first certificate
+Error: unable to verify the first certificate
+    at TLSSocket.onConnectSecure (node:_tls_wrap:1540:34)
+    at TLSSocket.emit (node:events:512:28)
+    at TLSSocket.emit (node:domain:552:15)
+    at TLSSocket._finishInit (node:_tls_wrap:959:8)
+    at ssl.onhandshakedone (node:_tls_wrap:743:12)
+    at TLSWrap.callbackTrampoline (node:internal/async_hooks:130:17) rootId=bz5yoeb9kb7mvp3, id=bz5yoeb9kb7mvp3
+2023-02-21T23:22:31.455Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+unable to verify the first certificate
+Error: unable to verify the first certificate
+    at TLSSocket.onConnectSecure (node:_tls_wrap:1540:34)
+    at TLSSocket.emit (node:events:512:28)
+    at TLSSocket.emit (node:domain:552:15)
+    at TLSSocket._finishInit (node:_tls_wrap:959:8)
+    at ssl.onhandshakedone (node:_tls_wrap:743:12)
+    at TLSWrap.callbackTrampoline (node:internal/async_hooks:130:17) rootId=41u64gt2o93b0it, id=41u64gt2o93b0it
+2023-02-21T23:23:49.269Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+socket hang up
+Error: socket hang up
+    at connResetException (node:internal/errors:717:14)
+    at Socket.socketOnEnd (node:_http_client:520:23)
+    at Socket.emit (node:events:524:35)
+    at Socket.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) rootId=gngxy2oj9fxu7uf, id=gngxy2oj9fxu7uf
+2023-02-23T20:28:00.700Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+unable to verify the first certificate
+Error: unable to verify the first certificate
+    at TLSSocket.onConnectSecure (node:_tls_wrap:1540:34)
+    at TLSSocket.emit (node:events:512:28)
+    at TLSSocket.emit (node:domain:552:15)
+    at TLSSocket._finishInit (node:_tls_wrap:959:8)
+    at ssl.onhandshakedone (node:_tls_wrap:743:12)
+    at TLSWrap.callbackTrampoline (node:internal/async_hooks:130:17) rootId=t1ka1f3t3lss1n1, id=t1ka1f3t3lss1n1
+2023-02-23T20:30:08.904Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+unable to verify the first certificate
+Error: unable to verify the first certificate
+    at TLSSocket.onConnectSecure (node:_tls_wrap:1540:34)
+    at TLSSocket.emit (node:events:512:28)
+    at TLSSocket.emit (node:domain:552:15)
+    at TLSSocket._finishInit (node:_tls_wrap:959:8)
+    at ssl.onhandshakedone (node:_tls_wrap:743:12)
+    at TLSWrap.callbackTrampoline (node:internal/async_hooks:130:17) rootId=g9zxf0pw0o9jqxt, id=g9zxf0pw0o9jqxt
+2023-02-24T11:11:38.752Z - error: Error occurred during reporter init: Error: Error when loading extension express@2.8.1
+Error: Extension "express" is not compatible with "core" extension. Missing ".requires" information in "express" definition
+    at validateMinimalVersion (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\validateMinimalVersion.js:24:11)
+    at Object._useOne (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:158:9)
+    at Object._useMany (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at Object.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:74:19)
+    at MainReporter.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:36)
+    at Object._useOne (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:248:15)
+    at Object._useMany (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at Object.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:74:19)
+    at MainReporter.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:36)
+2023-02-24T11:14:47.696Z - error: Error occurred during reporter init: Error: Error when loading extension express@2.8.1
+Error: Extension "express" is not compatible with "core" extension. Missing ".requires" information in "express" definition
+    at validateMinimalVersion (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\validateMinimalVersion.js:24:11)
+    at Object._useOne (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:158:9)
+    at Object._useMany (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at Object.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:74:19)
+    at MainReporter.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:36)
+    at Object._useOne (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:248:15)
+    at Object._useMany (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at Object.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:74:19)
+    at MainReporter.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:36)
+2023-02-24T11:15:07.081Z - error: Error occurred during reporter init: Error: Error when loading extension express@2.8.1
+Error: Extension "express" is not compatible with "core" extension. Missing ".requires" information in "express" definition
+    at validateMinimalVersion (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\validateMinimalVersion.js:24:11)
+    at Object._useOne (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:158:9)
+    at Object._useMany (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at Object.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:74:19)
+    at MainReporter.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:36)
+    at Object._useOne (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:248:15)
+    at Object._useMany (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at Object.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:74:19)
+    at MainReporter.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:36)
+2023-02-24T11:16:12.499Z - error: Error occurred during reporter init: Error: Error when loading extension express@2.8.1
+Error: Extension "express" is not compatible with "core" extension. Missing ".requires" information in "express" definition
+    at validateMinimalVersion (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\validateMinimalVersion.js:24:11)
+    at Object._useOne (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:158:9)
+    at Object._useMany (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at Object.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:74:19)
+    at MainReporter.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:36)
+    at Object._useOne (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:248:15)
+    at Object._useMany (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at Object.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:74:19)
+    at MainReporter.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:36)
+2023-02-24T11:16:54.434Z - error: Error occurred during reporter init: Error: Error when loading extension express@2.8.1
+Error: Extension "express" is not compatible with "core" extension. Missing ".requires" information in "express" definition
+    at validateMinimalVersion (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\validateMinimalVersion.js:24:11)
+    at Object._useOne (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:158:9)
+    at Object._useMany (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at Object.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:74:19)
+    at MainReporter.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:36)
+    at Object._useOne (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:248:15)
+    at Object._useMany (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at Object.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:74:19)
+    at MainReporter.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:36)
+2023-02-24T11:19:05.657Z - error: Error occurred during reporter init: Error: Error when loading extension express@2.8.1
+Error: Extension "express" is not compatible with "core" extension. Missing ".requires" information in "express" definition
+    at validateMinimalVersion (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\validateMinimalVersion.js:24:11)
+    at Object._useOne (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:158:9)
+    at Object._useMany (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at Object.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:74:19)
+    at MainReporter.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:36)
+    at Object._useOne (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:248:15)
+    at Object._useMany (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at Object.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:74:19)
+    at MainReporter.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:36)
+2023-02-24T11:23:58.440Z - error: Error occurred during reporter init: TypeError: Cannot read properties of undefined (reading 'cert')
+    at prepareStartExpressApp (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-express\lib\main.js:79:28)
+    at Object.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-express\lib\main.js:328:27)
+    at ListenerCollection.fire (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\shared\listenerCollection.js:157:32)
+    at async MainReporter.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:269:7)
+2023-02-24T11:25:25.124Z - error: Error occurred during reporter init: TypeError: Cannot read properties of undefined (reading 'cert')
+    at prepareStartExpressApp (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-express\lib\main.js:79:28)
+    at Object.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-express\lib\main.js:328:27)
+    at ListenerCollection.fire (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\shared\listenerCollection.js:157:32)
+    at async MainReporter.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:269:7)
+2023-02-24T11:30:11.182Z - error: Error occurred during reporter init: TypeError: Cannot read properties of undefined (reading 'cert')
+    at prepareStartExpressApp (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-express\lib\main.js:79:28)
+    at Object.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-express\lib\main.js:328:27)
+    at ListenerCollection.fire (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\shared\listenerCollection.js:157:32)
+    at async MainReporter.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:269:7)
+2023-02-24T15:09:31.100Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+connect ECONNREFUSED ::1:3000
+Error: connect ECONNREFUSED ::1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+    at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17) rootId=gxxiy9ejgkexhx4, id=gxxiy9ejgkexhx4
+2023-02-24T15:13:29.327Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+connect ECONNREFUSED ::1:3000
+Error: connect ECONNREFUSED ::1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+    at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17) rootId=s2cilvl0vdd6987, id=s2cilvl0vdd6987
+2023-02-24T15:13:35.831Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+connect ECONNREFUSED ::1:3000
+Error: connect ECONNREFUSED ::1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16)
+    at TCPConnectWrap.callbackTrampoline (node:internal/async_hooks:130:17) rootId=br0zi2u0j95vgib, id=br0zi2u0j95vgib
+2023-02-24T15:15:16.240Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+unable to verify the first certificate
+Error: unable to verify the first certificate
+    at TLSSocket.onConnectSecure (node:_tls_wrap:1540:34)
+    at TLSSocket.emit (node:events:512:28)
+    at TLSSocket.emit (node:domain:552:15)
+    at TLSSocket._finishInit (node:_tls_wrap:959:8)
+    at ssl.onhandshakedone (node:_tls_wrap:743:12)
+    at TLSWrap.callbackTrampoline (node:internal/async_hooks:130:17) rootId=0cevrg8ga9h84q1, id=0cevrg8ga9h84q1
+2023-02-24T15:20:47.059Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+write EPROTO C4560000:error:0A00010B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:355:
+
+Error: write EPROTO C4560000:error:0A00010B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:355:
+
+    at WriteWrap.onWriteComplete [as oncomplete] (node:internal/stream_base_commons:94:16)
+    at WriteWrap.callbackTrampoline (node:internal/async_hooks:130:17) rootId=2uy9y332yx031k5, id=2uy9y332yx031k5
+2023-02-24T15:20:57.587Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+write EPROTO C4560000:error:0A00010B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:355:
+
+Error: write EPROTO C4560000:error:0A00010B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:355:
+
+    at WriteWrap.onWriteComplete [as oncomplete] (node:internal/stream_base_commons:94:16)
+    at WriteWrap.callbackTrampoline (node:internal/async_hooks:130:17) rootId=809jcb9m5hblma5, id=809jcb9m5hblma5
+2023-02-24T15:21:11.200Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+write EPROTO C4560000:error:0A00010B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:355:
+
+Error: write EPROTO C4560000:error:0A00010B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:355:
+
+    at WriteWrap.onWriteComplete [as oncomplete] (node:internal/stream_base_commons:94:16)
+    at WriteWrap.callbackTrampoline (node:internal/async_hooks:130:17) rootId=ilco7265ktkkmqd, id=ilco7265ktkkmqd
+2023-02-24T15:21:13.982Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+write EPROTO C4560000:error:0A00010B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:355:
+
+Error: write EPROTO C4560000:error:0A00010B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:355:
+
+    at WriteWrap.onWriteComplete [as oncomplete] (node:internal/stream_base_commons:94:16)
+    at WriteWrap.callbackTrampoline (node:internal/async_hooks:130:17) rootId=9xi9j9qgmvwtxcj, id=9xi9j9qgmvwtxcj
+2023-02-24T15:23:27.825Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+write EPROTO B0530000:error:0A00010B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:355:
+
+Error: write EPROTO B0530000:error:0A00010B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:355:
+
+    at WriteWrap.onWriteComplete [as oncomplete] (node:internal/stream_base_commons:94:16)
+    at WriteWrap.callbackTrampoline (node:internal/async_hooks:130:17) rootId=kngbx7ynn48kmw8, id=kngbx7ynn48kmw8
+2023-02-24T15:24:38.663Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+write EPROTO B0530000:error:0A00010B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:355:
+
+Error: write EPROTO B0530000:error:0A00010B:SSL routines:ssl3_get_record:wrong version number:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:355:
+
+    at WriteWrap.onWriteComplete [as oncomplete] (node:internal/stream_base_commons:94:16)
+    at WriteWrap.callbackTrampoline (node:internal/async_hooks:130:17) rootId=pj2qk2q974mwk4b, id=pj2qk2q974mwk4b
+2023-02-24T15:26:05.453Z - error: Error occurred during reporter init: Error: Enterprise trial expired
+    at verifyInService (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-licensing\lib\licensing.js:114:11)
+    at async AsyncFunction.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-licensing\lib\licensing.js:353:9)
+    at async ListenerCollection.fire (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\shared\listenerCollection.js:157:21)
+    at async MainReporter.init (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:269:7)
+2023-02-24T15:27:06.235Z - error: Error occurred during reporter init: Error: Enterprise trial expired
+    at handleResponse (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-licensing\lib\licensing.js:162:18)
+2023-02-24T15:37:25.637Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+socket hang up
+Error: socket hang up
+    at connResetException (node:internal/errors:717:14)
+    at Socket.socketOnEnd (node:_http_client:520:23)
+    at Socket.emit (node:events:524:35)
+    at Socket.emit (node:domain:552:15)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) rootId=jf4tb2idykqsluk, id=jf4tb2idykqsluk
+2023-02-24T15:40:34.813Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+unable to verify the first certificate
+Error: unable to verify the first certificate
+    at TLSSocket.onConnectSecure (node:_tls_wrap:1540:34)
+    at TLSSocket.emit (node:events:512:28)
+    at TLSSocket.emit (node:domain:552:15)
+    at TLSSocket._finishInit (node:_tls_wrap:959:8)
+    at ssl.onhandshakedone (node:_tls_wrap:743:12)
+    at TLSWrap.callbackTrampoline (node:internal/async_hooks:130:17) rootId=6zpxcebgwt51rf2, id=6zpxcebgwt51rf2
+2023-02-24T15:42:20.531Z - error: Error when processing OData PATCH: /odata/scripts(HdKCNntsGJ7A2lPh) Error: Entity (_id: HdKCNntsGJ7A2lPh) was modified previously by another source
+    at module.exports (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\shared\createError.js:10:13)
+    at MainReporter.createError (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\shared\reporter.js:49:12)
+    at AsyncFunction.<anonymous> (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-studio\lib\main.js:515:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async ListenerCollection.fire (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\shared\listenerCollection.js:157:21)
+    at async Object.update (C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\node_modules\@jsreport\jsreport-core\lib\main\store\collection.js:174:5)
+2023-02-24T15:42:48.249Z - error: Report render failed
+(because) error when evaluating custom script /eventcalendar/testing
+unable to verify the first certificate
+Error: unable to verify the first certificate
+    at TLSSocket.onConnectSecure (node:_tls_wrap:1540:34)
+    at TLSSocket.emit (node:events:512:28)
+    at TLSSocket.emit (node:domain:552:15)
+    at TLSSocket._finishInit (node:_tls_wrap:959:8)
+    at ssl.onhandshakedone (node:_tls_wrap:743:12)
+    at TLSWrap.callbackTrampoline (node:internal/async_hooks:130:17) rootId=qfda0zwwhdgyr4v, id=qfda0zwwhdgyr4v

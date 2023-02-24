@@ -206,7 +206,7 @@ export const AddEvent = () => {
                                         </div>
 
                                         <select className='sign-up-select' name="event_type_id" onChange={handleInputChange}>
-                                        <option selected='selected'>Select Event Type</option>
+                                            <option selected='selected'>Select Event Type</option>
                                             {eventTypes.map((eventType, index) =>
                                                 <>
                                                     <option value={eventType.id}  >{eventType.name}</option>

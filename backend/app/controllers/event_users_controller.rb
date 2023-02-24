@@ -8,6 +8,29 @@ class EventUsersController < ApplicationController
     render json: @event_users
   end
 
+  def get_image(id)
+    @event = Event.find(id)
+    return @event.as_json.merge({ image: url_for(@event.image) })
+  end
+
+  def get_events_for_user
+    user = User.find(params[:user_id])
+  event_user_records = EventUser.where(user_id: user.id)
+  response = event_user_records.map do |event| 
+    {
+      :id =>event.id,
+      :events => get_image(event.event_id),
+      
+    }
+  end
+
+  
+   
+  
+  
+
+  render json: response.to_json
+  end
   # GET /event_users/1
   def show
     render json: @event_user
