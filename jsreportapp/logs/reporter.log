@@ -15088,3 +15088,69 @@ Error: unable to verify the first certificate
 2023-02-24T15:49:38.108Z - info: Extensions location cache contains up to date information, skipping crawling in C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\
 2023-02-24T15:49:38.185Z - info: Found 35 extension(s)
 2023-02-24T15:49:38.307Z - info: Using extension base@3.0.1
+2023-02-24T15:49:38.315Z - info: Using extension child-templates@3.1.0
+2023-02-24T15:49:38.321Z - info: Using extension cli@3.2.3
+2023-02-24T15:49:38.327Z - info: Using extension components@3.3.0
+2023-02-24T15:49:38.333Z - info: Using extension data@3.1.0
+2023-02-24T15:49:38.335Z - info: Using extension express@3.6.0
+2023-02-24T15:49:38.792Z - info: Using extension freeze@3.0.1
+2023-02-24T15:49:38.796Z - info: Using extension fs-store@3.2.4
+2023-02-24T15:49:38.947Z - info: Using extension handlebars@3.2.1
+2023-02-24T15:49:38.951Z - info: Using extension import-export@3.2.0
+2023-02-24T15:49:38.974Z - info: Using extension jsrender@3.0.0
+2023-02-24T15:49:38.978Z - info: Using extension licensing@3.0.2
+2023-02-24T15:49:39.036Z - info: Using extension localization@3.2.1
+2023-02-24T15:49:39.040Z - info: Using extension npm@3.1.2
+2023-02-24T15:49:39.046Z - info: Using extension pdf-utils@3.7.0
+2023-02-24T15:49:39.050Z - info: Using extension reports@3.1.1
+2023-02-24T15:49:39.054Z - info: Using extension tags@3.1.1
+2023-02-24T15:49:39.060Z - info: Using extension text@3.0.0
+2023-02-24T15:49:39.063Z - info: Using extension version-control@3.1.2
+2023-02-24T15:49:39.091Z - info: Using extension assets@3.6.0
+2023-02-24T15:49:39.115Z - info: Using extension authorization@3.3.0
+2023-02-24T15:49:39.122Z - info: Using extension browser-client@3.1.1
+2023-02-24T15:49:39.129Z - info: Using extension chrome-pdf@3.3.0
+2023-02-24T15:49:39.134Z - info: Using extension docx@3.6.0
+2023-02-24T15:49:39.140Z - info: Using extension html-to-xlsx@3.3.0
+2023-02-24T15:49:39.284Z - info: html-to-xlsx detected chrome as available html engine
+2023-02-24T15:49:39.285Z - info: Using extension pptx@3.4.0
+2023-02-24T15:49:39.288Z - info: Using extension scheduling@3.0.3
+2023-02-24T15:49:39.335Z - info: Using extension scripts@3.4.0
+2023-02-24T15:49:39.339Z - info: Using extension static-pdf@3.0.1
+2023-02-24T15:49:39.341Z - info: Using extension studio@3.9.0
+2023-02-24T15:49:39.517Z - info: Using extension xlsx@3.4.0
+2023-02-24T15:49:39.562Z - info: Using extension public-templates@3.0.0
+2023-02-24T15:49:39.566Z - info: Using extension sample-template@3.2.1
+2023-02-24T15:49:39.569Z - info: Using extension studio-theme-dark@3.0.1
+2023-02-24T15:49:39.572Z - info: Code sandboxing is disabled, users can potentially penetrate the local system if you allow code from external users to be part of your reports
+2023-02-24T15:49:39.573Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2023-02-24T15:49:39.574Z - info: Using fs provider for template store.
+2023-02-24T15:49:39.583Z - info: fs store is persisting using fs for C:\Users\Johan\Desktop\clases\Proyecto\Calendar-Event\jsreportapp\data
+2023-02-24T15:49:39.594Z - info: fs store is loading data
+2023-02-24T15:49:39.638Z - info: fs store is initialized successfully
+2023-02-24T15:49:39.670Z - info: Creating default express app.
+2023-02-24T15:49:39.711Z - info: jsreport server successfully started on http port: 5488
+2023-02-24T15:49:39.719Z - info: Verifying license key free
+2023-02-24T15:49:39.721Z - info: Using free license
+2023-02-24T15:49:39.729Z - info: Initializing worker threads
+2023-02-24T15:49:40.111Z - info: 2 worker threads initialized in 382ms
+2023-02-24T15:49:40.112Z - info: Starting temp files cleanup with 180000ms threshold
+2023-02-24T15:49:40.113Z - info: reporter initialized
+2023-02-24T15:53:45.603Z - info: Render request 1 queued for execution and waiting for available worker fromEmitProfile=true, rootId=bg0e6kpwn9x89k5, id=bg0e6kpwn9x89k5
+2023-02-24T15:53:45.654Z - info: Starting rendering request 1 rootId=bg0e6kpwn9x89k5, id=bg0e6kpwn9x89k5, fromEmitProfile=true
+2023-02-24T15:53:45.656Z - info: Rendering template { name: Data, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=bg0e6kpwn9x89k5, id=bg0e6kpwn9x89k5, fromEmitProfile=true
+2023-02-24T15:53:53.375Z - warn: Page request failed: GET (script) 302 https://unpkg.com/chartist-plugin-pointlabels@0.0.6 (redirect to: /chartist-plugin-pointlabels@0.0.6/dist/chartist-plugin-pointlabels.js) rootId=bg0e6kpwn9x89k5, id=bg0e6kpwn9x89k5, fromEmitProfile=true
+2023-02-24T15:53:53.379Z - warn: Page request failed: GET (script) 302 https://unpkg.com/chartist-plugin-tooltips@0.0.17 (redirect to: /chartist-plugin-tooltips@0.0.17/dist/chartist-plugin-tooltip.js) rootId=bg0e6kpwn9x89k5, id=bg0e6kpwn9x89k5, fromEmitProfile=true
+2023-02-24T15:53:53.662Z - info: Rendering request 1 finished in 8061 ms rootId=bg0e6kpwn9x89k5, id=bg0e6kpwn9x89k5, fromEmitProfile=true
+2023-02-24T15:54:24.217Z - info: Render request 2 queued for execution and waiting for available worker fromEmitProfile=true, rootId=xvlj1pm2al7aoqz, id=xvlj1pm2al7aoqz
+2023-02-24T15:54:24.243Z - info: Starting rendering request 2 rootId=xvlj1pm2al7aoqz, id=xvlj1pm2al7aoqz, fromEmitProfile=true
+2023-02-24T15:54:24.245Z - info: Rendering template { name: All Locations, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=xvlj1pm2al7aoqz, id=xvlj1pm2al7aoqz, fromEmitProfile=true
+2023-02-24T15:54:25.784Z - warn: Page request failed: GET (script) 302 https://unpkg.com/chartist-plugin-tooltips@0.0.17 (redirect to: /chartist-plugin-tooltips@0.0.17/dist/chartist-plugin-tooltip.js) rootId=xvlj1pm2al7aoqz, id=xvlj1pm2al7aoqz, fromEmitProfile=true
+2023-02-24T15:54:25.792Z - warn: Page request failed: GET (script) 302 https://unpkg.com/chartist-plugin-pointlabels@0.0.6 (redirect to: /chartist-plugin-pointlabels@0.0.6/dist/chartist-plugin-pointlabels.js) rootId=xvlj1pm2al7aoqz, id=xvlj1pm2al7aoqz, fromEmitProfile=true
+2023-02-24T15:54:25.918Z - info: Rendering request 2 finished in 1703 ms rootId=xvlj1pm2al7aoqz, id=xvlj1pm2al7aoqz, fromEmitProfile=true
+2023-02-24T15:54:53.013Z - info: Render request 3 queued for execution and waiting for available worker fromEmitProfile=true, rootId=a4eqk4l7cu4op1x, id=a4eqk4l7cu4op1x
+2023-02-24T15:54:53.035Z - info: Starting rendering request 3 rootId=a4eqk4l7cu4op1x, id=a4eqk4l7cu4op1x, fromEmitProfile=true
+2023-02-24T15:54:53.036Z - info: Rendering template { name: All Event Types, recipe: chrome-pdf, engine: handlebars, preview: true } rootId=a4eqk4l7cu4op1x, id=a4eqk4l7cu4op1x, fromEmitProfile=true
+2023-02-24T15:54:54.306Z - warn: Page request failed: GET (script) 302 https://unpkg.com/chartist-plugin-tooltips@0.0.17 (redirect to: /chartist-plugin-tooltips@0.0.17/dist/chartist-plugin-tooltip.js) rootId=a4eqk4l7cu4op1x, id=a4eqk4l7cu4op1x, fromEmitProfile=true
+2023-02-24T15:54:54.306Z - warn: Page request failed: GET (script) 302 https://unpkg.com/chartist-plugin-pointlabels@0.0.6 (redirect to: /chartist-plugin-pointlabels@0.0.6/dist/chartist-plugin-pointlabels.js) rootId=a4eqk4l7cu4op1x, id=a4eqk4l7cu4op1x, fromEmitProfile=true
+2023-02-24T15:54:54.426Z - info: Rendering request 3 finished in 1415 ms rootId=a4eqk4l7cu4op1x, id=a4eqk4l7cu4op1x, fromEmitProfile=true
