@@ -1,6 +1,6 @@
 
 import './Settings.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { UpMenu } from '../../components/UpMenu/UpMenu'
 import { DownMenu } from '../../components/DownMenu/DownMenu'
 import Navbar from '../../components/Sidebar/Navbar'
@@ -9,15 +9,20 @@ const Settings = () => {
 
     const user = JSON.parse(localStorage.getItem('userData'))
     const isUser = !!user;
+    const navigate = useNavigate();
 
     const loadHelpSystem = () => {
         window.location.replace('https://localhost:443/helpSystem/Bienvenida.html');
     }
 
-        const handleHelpClick = () => {
-          loadHelpSystem();
-        };
+    const handleHelpClick = () => {
+        loadHelpSystem();
+    };
 
+    const handleClick = (event) => {
+        console.log(event.target)
+        // navigate(url);
+    };
 
     return (
         <>
@@ -29,8 +34,8 @@ const Settings = () => {
 
                     <>
 
-                        <Link to='/ChangePassword'>
-                            <div className="settings-field">
+                        {/* <Link to='/ChangePassword'> */}
+                            <div onClick={() => { navigate("/ChangePassword") }} className="settings-field">
                                 <div>
                                     <img src="./icons/Ayuda/llave.png"></img>
                                 </div>
@@ -40,10 +45,10 @@ const Settings = () => {
                                     <div className="settings-line"></div>
                                 </div>
                             </div>
-                        </Link>
+                        {/* </Link> */}
 
-                        <Link to='/ChangeView'>
-                            <div className="settings-field">
+                        {/* <Link to='/ChangeView'> */}
+                            <div onClick={() => { navigate("/Changeview") }} className="settings-field">
                                 <div>
                                     <img src="./icons/Ayuda/paleta.png"></img>
                                 </div>
@@ -53,10 +58,10 @@ const Settings = () => {
                                     <div className="settings-line"></div>
                                 </div>
                             </div>
-                        </Link>
+                        {/* </Link> */}
 
-                        <Link to='/ChangeLanguage'>
-                            <div className="settings-field">
+                        {/* <Link to='/ChangeLanguage'> */}
+                            <div onClick={() => { navigate("/ChangeLanguage") }} className="settings-field">
                                 <div>
                                     <img src="./icons/Ayuda/mundo.png"></img>
                                 </div>
@@ -66,10 +71,10 @@ const Settings = () => {
                                     <div className="settings-line"></div>
                                 </div>
                             </div>
-                        </Link>
+                        {/* </Link> */}
 
-                        <Link to='/DeleteAccount'>
-                            <div className="settings-field">
+                        {/* <Link to='/DeleteAccount'> */}
+                            <div onClick={() => { navigate("/DeleteAccount") }} className="settings-field">
                                 <div>
                                     <img src="./icons/Ayuda/basura.png"></img>,
                                 </div>
@@ -79,41 +84,41 @@ const Settings = () => {
                                     <div className="settings-line"></div>
                                 </div>
                             </div>
-                        </Link>
+                        {/* </Link> */}
 
-                        <Link to='/EmailSent'>
-                            <div className="settings-field">
-                                <div>
-                                    <img src="/icons/Ayuda/sobre.png"></img>
-                                </div>
-                                <div className='settings-content'>
-                                    <h2 className='settings-subtitle'>Control Emails Sent</h2>
-                                    <p className="settings-text">Control if you want to receive notifications from us or not.</p>
-                                    <div className="settings-line"></div>
-                                </div>
+                        {/* <Link to='/EmailSent'> */}
+                        <div onClick={() => { navigate("/EmailSent") }} className="settings-field">
+                            <div>
+                                <img src="/icons/Ayuda/sobre.png"></img>
                             </div>
-                        </Link>
+                            <div className='settings-content'>
+                                <h2 className='settings-subtitle'>Control Emails Sent</h2>
+                                <p className="settings-text">Control if you want to receive notifications from us or not.</p>
+                                <div className="settings-line"></div>
+                            </div>
+                        </div>
+                        {/* </Link> */}
 
-                       
-                            <div className="settings-field" onClick={loadHelpSystem}>
-                                <div>
-                                    <img src="/icons/Ayuda/interrogatorio.png"></img>
-                                </div>
-                                <div className='settings-content'>
-                                    <h2 className='settings-subtitle'>Help</h2>
-                                    <p className="settings-text">See how to navigate and perform all actions</p>
-                                    <div className="settings-line"></div>
-                                </div>
+
+                        <div className="settings-field" onClick={loadHelpSystem}>
+                            <div>
+                                <img src="/icons/Ayuda/interrogatorio.png"></img>
                             </div>
-                       
+                            <div className='settings-content'>
+                                <h2 className='settings-subtitle'>Help</h2>
+                                <p className="settings-text">See how to navigate and perform all actions</p>
+                                <div className="settings-line"></div>
+                            </div>
+                        </div>
+
 
                     </>
 
 
                 ) :
                     <>
-                        <Link to='/ChangeView'>
-                            <div className="settings-field">
+                        {/* <Link to='/ChangeView'> */}
+                            <div onClick={() => { navigate("/ChangeView") }} className="settings-field">
                                 <div>
                                     <img src="/icons/Ayuda/paleta.png"></img>
                                 </div>
@@ -123,10 +128,10 @@ const Settings = () => {
                                     <div className="settings-line"></div>
                                 </div>
                             </div>
-                        </Link>
+                        {/* </Link> */}
 
-                        <Link to='/ChangeLanguage'>
-                            <div className="settings-field">
+                        {/* <Link to='/ChangeLanguage'> */}
+                            <div onClick={() => { navigate("/ChangeLanguage") }} className="settings-field">
                                 <div>
                                     <img src="/icons/Ayuda/mundo.png"></img>
                                 </div>
@@ -136,7 +141,7 @@ const Settings = () => {
                                     <div className="settings-line"></div>
                                 </div>
                             </div>
-                        </Link>
+                        {/* </Link> */}
 
                         <Link to='/helpSystem/bienvenida.html'>
                             <div className="settings-field">
