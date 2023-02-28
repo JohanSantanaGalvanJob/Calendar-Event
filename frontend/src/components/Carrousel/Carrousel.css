@@ -1,18 +1,21 @@
-.each-slide-effect > div {
+.each-slide-effect>div {
   display: flex;
   align-items: center;
   justify-content: center;
   background-size: cover;
   height: 350px;
+  border-radius: .5em;
 }
 
 .each-slide-effect span {
   padding: 20px;
   font-size: 20px;
   background: #efefef;
+  opacity: 50%;
   text-align: center;
+  border-radius: 1em;
 }
 
-.carrousel{
-    margin-top: 1em;
+.carrousel {
+  margin: 2em 1em 2em 1em;
 }
