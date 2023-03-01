@@ -10,7 +10,10 @@
     height: 4.5em;
 }
 
-
+.navbar svg {
+    width: 3em;
+    height: auto;
+}
 
 .navbar>a:first-of-type {
     margin-left: 2rem;

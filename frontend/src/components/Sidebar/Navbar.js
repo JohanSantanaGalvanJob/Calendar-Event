@@ -141,7 +141,7 @@ function Navbar() {
                         }
 
                     </Link>
-                    <img src='/icons/MenuArriba/logo.png' ></img>
+                    <BootstrapIcons.BsCalendar2Week/>
                     <Link to='/Settings'>
                         <img src='/icons/MenuArriba/ajustes.png'></img>
                     </Link>
