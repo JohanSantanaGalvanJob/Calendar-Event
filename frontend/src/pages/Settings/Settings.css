@@ -10,6 +10,8 @@
     column-gap: 1em;
     margin: 1em 1em 0 1em;
     padding: .5em;
+    color: #424242;
+    text-decoration: none;
 }
 
 .settings-text{
