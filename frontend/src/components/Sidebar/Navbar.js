@@ -1,5 +1,5 @@
-import React, { useState,useEffect } from 'react'
-import { Link,useNavigate } from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import * as BootstrapIcons from "react-icons/bs";
 import * as AiIcons from "react-icons/ai";
 import { IconContext } from 'react-icons'
@@ -15,7 +15,7 @@ function Navbar() {
 
     const navigate = useNavigate();
     const [backgroundColor, setBackgroundColor] = useState("light");
-    const[downMenuColor, setDownMenuColor] = useState("light");
+    const [downMenuColor, setDownMenuColor] = useState("light");
     const [eventFieldColor, setEventFieldColor] = useState("");
     const [navbarColor, setnavbarColor] = useState("");
 
@@ -31,28 +31,28 @@ function Navbar() {
         changeEventFieldColor();
         changeDownMenuColor();
         changeNavbarColor();
-      }
-      
+    }
+
 
     useEffect(() => {
         const cardParagraphs3 = document.querySelectorAll(".event-field");
         const cardParagraphs4 = document.querySelectorAll(".down-menu-field");
         const cardParagraphs5 = document.querySelectorAll(".navbar");
 
-    console.log(cardParagraphs3);
-    for (let i = 0; i < cardParagraphs3.length; i++) {
-      cardParagraphs3[i].style.backgroundColor = eventFieldColor === "#CCF2F4" ? "#79aeaa" : "#CCF2F4";
-    }
-    for (let i = 0; i < cardParagraphs4.length; i++) {
-        cardParagraphs4[i].style.backgroundColor = downMenuColor === "#A4EBF3" ? "#79aeaa" : "#A4EBF3";
-      }
+        console.log(cardParagraphs3);
+        for (let i = 0; i < cardParagraphs3.length; i++) {
+            cardParagraphs3[i].style.backgroundColor = eventFieldColor === "#CCF2F4" ? "#79aeaa" : "#CCF2F4";
+        }
+        for (let i = 0; i < cardParagraphs4.length; i++) {
+            cardParagraphs4[i].style.backgroundColor = downMenuColor === "#A4EBF3" ? "#79aeaa" : "#A4EBF3";
+        }
 
-      for (let i = 0; i < cardParagraphs5.length; i++) {
-        cardParagraphs5[i].style.backgroundColor = navbarColor === "#A4EBF3" ? "#79aeaa" : "#A4EBF3";
-      }
+        for (let i = 0; i < cardParagraphs5.length; i++) {
+            cardParagraphs5[i].style.backgroundColor = navbarColor === "#A4EBF3" ? "#79aeaa" : "#A4EBF3";
+        }
         document.body.style.backgroundColor = backgroundColor === "light" ? "white" : "#5e5e5e";
-      }, [backgroundColor,eventFieldColor,downMenuColor,navbarColor]);
-    
+    }, [backgroundColor, eventFieldColor, downMenuColor, navbarColor]);
+
 
     const mySwalError = (error) => {
 
@@ -60,9 +60,9 @@ function Navbar() {
             title: 'Oops Something went wrong!',
             icon: 'error',
             text: error,
-          })
+        })
 
-      }
+    }
 
     // const hasImg = !!user.image;
     const [sidebar, setSideBar] = useState(false)
@@ -80,11 +80,11 @@ function Navbar() {
     const logOut = (event) => {
         const swalWithBootstrapButtons = swal.mixin({
             customClass: {
-              confirmButton: 'btn btn-success',
-              cancelButton: 'btn btn-danger'
+                confirmButton: 'btn btn-success',
+                cancelButton: 'btn btn-danger'
             },
             buttonsStyling: false
-          })
+        })
 
         swal.fire({
             title: 'Log Out',
@@ -103,18 +103,18 @@ function Navbar() {
                     navigate('/')
                 }).catch(e => {
                     mySwalError(e);
-                     console.log(e);
-                 });
+                    console.log(e);
+                });
             } else if (
                 /* Read more about handling dismissals below */
                 result.dismiss === swal.DismissReason.cancel
-              ) {
+            ) {
                 swalWithBootstrapButtons.fire(
-                  'Cancelled',
-                  'You have not logged out',
-                  'error'
+                    'Cancelled',
+                    'You have not logged out',
+                    'error'
                 )
-              }
+            }
         })
         const id = localStorage.getItem("user")
         event.preventDefault();
@@ -181,28 +181,42 @@ function Navbar() {
                             <div className='nav-text'>
                                 <li>
                                     <Link to='/EditProfile'>
-                                        <BootstrapIcons.BsPerson></BootstrapIcons.BsPerson>
+                                        <BootstrapIcons.BsPerson />
                                         <span>Edit Profile</span>
                                     </Link>
                                 </li>
 
                                 <div className="navbar-line"></div>
 
-                                <li onClick={changeAll}>
-                                        
-                                        <AiIcons.AiOutlineEye></AiIcons.AiOutlineEye>
+                                <li>
+                                    <Link onClick={changeAll} >
+                                        <AiIcons.AiOutlineEye />
                                         <span>Dark Mode</span>
-                                   
+                                    </Link>
+
+
                                 </li>
 
                                 <div className="navbar-line"></div>
 
-                                <li onClick={logOut}>
-                                        <IoIcons5.IoLogOutOutline></IoIcons5.IoLogOutOutline>
+                                <li>
+                                    <Link onClick={logOut}>
+                                        <IoIcons5.IoLogOutOutline />
                                         <span>Log Out</span>
+                                    </Link>
                                 </li>
 
                                 <div className="navbar-line"></div>
+
+                                {isAdmin ? (
+                                    <li onClick={loadReport}>
+                                        <Link>
+                                            <BootstrapIcons.BsFileBarGraph />
+                                            <span>Get Report</span>
+                                        </Link>
+
+                                    </li>
+                                ) : <></>}
 
                             </div>
 
@@ -218,11 +232,11 @@ function Navbar() {
 
                                 <div className="navbar-line"></div>
 
-                                <li onClick={changeAll}>
-                                    
+                                <li>
+                                    <Link onClick={changeAll}>
                                         <AiIcons.AiOutlineEye></AiIcons.AiOutlineEye>
                                         <span>Dark Mode</span>
-                        
+                                    </Link>
                                 </li>
 
                                 <div className="navbar-line"></div>
@@ -250,11 +264,9 @@ function Navbar() {
                         }
                     </ul>
 
-                    {isAdmin ? (
-                        <button onClick={loadReport}>Get Report</button>
-                    ) : <></>}
 
-                    
+
+
 
                     <div className='navbar-bottom-part'>
                         <h2>© Event Calendar</h2>

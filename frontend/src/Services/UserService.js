@@ -41,8 +41,8 @@ const login = params => {
     const email = btoa(params.email);
     const password = btoa(params.password);
 
-    console.log(email);
-    console.log(password);
+    // console.log(email);
+    // console.log(password);
 
     var data = new FormData();
     data.append('user[email]', email);
