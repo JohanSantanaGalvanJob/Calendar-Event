@@ -59,3 +59,4 @@ gem 'devise-jwt'
 gem 'faker'
 gem 'capistrano'
 gem 'capistrano-rails' 
+gem 'dotenv-rails', groups: [:development, :test]
