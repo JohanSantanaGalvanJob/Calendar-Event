@@ -1,8 +1,18 @@
 FROM ruby:3.0.2
-RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs
-RUN mkdir /noteapp
-WORKDIR /noteapp
-ADD Gemfile /noteapp/Gemfile
-ADD Gemfile.lock /noteapp/Gemfile.lock
-RUN bundle install
-ADD . /noteapp
+
+WORKDIR /app
+
+RUN apk update && \
+    apk add --no-cache \
+    build-base \
+    postgresql-dev \
+    nodejs \
+    yarn
+
+COPY Gemfile Gemfile.lock ./
+
+RUN bundle install --jobs $(nproc) --no-cache
+
+COPY . .
+
+CMD ["rails", "server", "-b", "0.0.0.0"]

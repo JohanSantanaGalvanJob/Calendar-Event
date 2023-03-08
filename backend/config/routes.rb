@@ -11,13 +11,16 @@ Rails.application.routes.draw do
   resources :event_types
   # scope "admin" do
   get 'api/data', to: 'api#data'
-    get "users", to: "users#index"
-    get "users/:id", to: "users#show", as: "user"
-    delete "users/:id", to: "users#destroy"
-    delete "users", to: "users#destroyAll"
-    put "users/:id", to: "users#update"
-    get "reports", to: "reports#show"
-    get "chart", to: "chart#chart"
-    get 'event_users/get_events_for_user/:user_id', to: 'event_users#get_events_for_user'
+  get "users", to: "users#index"
+  get "users/:id", to: "users#show", as: "user"
+  delete "users/:id", to: "users#destroy"
+  delete "users", to: "users#destroyAll"
+  put "users/:id", to: "users#update"
+  get "reports", to: "reports#show"
+  get "chart", to: "chart#chart"
+  get 'event_users/get_events_for_user/:user_id', to: 'event_users#get_events_for_user'
+  post '/send_message', to: 'events#send_message'
+  mount ActionCable.server => '/cable'
   # end
+
 end

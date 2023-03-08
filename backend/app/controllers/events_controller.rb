@@ -27,6 +27,7 @@ class EventsController < ApplicationController
 
   
       if @event.save
+        ActionCable.server.broadcast('event_channel', @event)
         render json: @event.as_json.merge({ image: url_for(@event.image) }), status: :created #, location: @event
       else
         render json: @event.errors, status: :unprocessable_entity
@@ -57,5 +58,12 @@ class EventsController < ApplicationController
     # Only allow a list of trusted parameters through.
     def event_params
       params.require(:event).permit(:title, :description, :date, :starting_hour, :finished_hour, :url, :location, :event_type, :location_id, :event_type_id, :image)
+    end
+
+    def send_message
+      @message = params[:message]
+      ActionCable.server.broadcast('orbea_fun_club', @message)
+
+      render json: { message: "Succesful"}
     end
 end
