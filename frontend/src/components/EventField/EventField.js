@@ -143,7 +143,7 @@ export const EventField = props => {
                         <div id='event-field' className='event-field'>
                             <div>
                                 <Link to={eventDetailUrl}>
-                                    <img className='event-field-img' src={eventa.image}></img>
+                                    <img className='event-field-img' src={eventa.image} alt='eventImage'></img>
                                 </Link>
                             </div>
                             <div id='event-field-content' className='event-field-content'>
@@ -152,7 +152,7 @@ export const EventField = props => {
                                 <p>{eventa.description}</p>
                                 {isUser ? (
                                     <div className='event-field-icon'>
-                                        <img src='./icons/MenuAbajo/estrella.png' onClick={() => saveEventUser(eventa)}></img>
+                                        <img src='./icons/MenuAbajo/estrella.png' onClick={() => saveEventUser(eventa)} alt='favouriteImage'></img>
                                     </div>
                                 ) : null
                                 }

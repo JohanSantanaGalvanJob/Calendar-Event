@@ -136,14 +136,14 @@ function Navbar() {
 
                     <Link to='#' className='menu-bars'>
                         {isUser ? (
-                            <img className='navbar-image' src={img} onClick={showSidebar} />
+                            <img className='navbar-image' src={img} onClick={showSidebar} alt='userImage'/>
                         ) : <BootstrapIcons.BsPerson onClick={showSidebar} />
                         }
 
                     </Link>
                     <BootstrapIcons.BsCalendar2Week/>
                     <Link to='/Settings'>
-                        <img src='/icons/MenuArriba/ajustes.png'></img>
+                        <img src='/icons/MenuArriba/ajustes.png' alt='settingsImage'></img>
                     </Link>
 
                 </div>
@@ -163,11 +163,11 @@ function Navbar() {
                             <li className='navbar-toggle'>
                                 {isUser ? (
                                     <div className='sidebar-user-information'>
-                                        <img className='sidebar-image' src={img} onClick={showSidebar} />
+                                        <img className='sidebar-image' src={img} onClick={showSidebar} alt='sidebarImage'/>
                                         <p className='sidebar-name'>{fullName}</p>
                                         <div className="navbar-line"></div>
                                     </div>
-                                ) : <img src='./icons/MenuArriba/usuario.png' onClick={showSidebar} />
+                                ) : <img src='./icons/MenuArriba/usuario.png' onClick={showSidebar} alt='userImage' />
                                 }
                             </li>
 
