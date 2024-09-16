@@ -31,8 +31,6 @@ Devise.setup do |config|
 
   # Configure the parent class responsible to send e-mails.
   # config.parent_mailer = 'ActionMailer::Base'
-
-  config.parent_model = 'User'
   # ==> ORM configuration
   # Load and configure the ORM. Supports :active_record (default) and
   # :mongoid (bson_ext recommended) by default. Other ORMs may be
@@ -317,6 +315,6 @@ Devise.setup do |config|
     jwt.revocation_requests = [
       ['DELETE', %r{^/users/sign_out}]
     ]
-    jwt.expiration_time = 120.minutes.to_i
+    # jwt.expiration_time = 120.minutes.to_i
    end
 end

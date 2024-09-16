@@ -1,9 +1,7 @@
 import { Link } from 'react-router-dom';
 import './Home.css';
 
-import { Container } from 'react-bootstrap';
-import { Row } from 'react-bootstrap';
-import { Col } from 'react-bootstrap';
+
 
 
 export const Home = () => {

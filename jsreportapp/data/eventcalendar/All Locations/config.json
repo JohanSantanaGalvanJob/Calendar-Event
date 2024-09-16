@@ -1,0 +1,22 @@
+{
+    "name": "All Locations",
+    "engine": "handlebars",
+    "recipe": "chrome-pdf",
+    "shortid": "gm2NyzQDu",
+    "chrome": {
+        "printBackground": true
+    },
+    "creationDate": {
+        "$$date": 1677252688088
+    },
+    "modificationDate": {
+        "$$date": 1677252728506
+    },
+    "_id": "F6D7He0K4bHv97Hy",
+    "$entitySet": "templates",
+    "scripts": [
+        {
+            "shortid": "W0gvNctphZ"
+        }
+    ]
+}

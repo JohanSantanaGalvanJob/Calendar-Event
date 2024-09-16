@@ -25,7 +25,7 @@ const signUp = params => {
 
     var config = {
         method: 'post',
-        url: 'http://'+ window.location.hostname +':3000/users',
+        url: 'https://'+ window.location.hostname +':3000/users',
         headers: {
             'Content-Type': 'multipart/form-data'
         },
@@ -41,8 +41,8 @@ const login = params => {
     const email = btoa(params.email);
     const password = btoa(params.password);
 
-    console.log(email);
-    console.log(password);
+    // console.log(email);
+    // console.log(password);
 
     var data = new FormData();
     data.append('user[email]', email);
@@ -50,7 +50,7 @@ const login = params => {
 
     var config = {
         method: 'post',
-        url: 'http://'+ window.location.hostname +':3000/users/sign_in',
+        url: 'https://'+ window.location.hostname +':3000/users/sign_in',
         headers: {
             'Content-Type': 'multipart/form-data'
         },
@@ -74,7 +74,7 @@ const update = (id, params) => {
 
     var config = {
         method: 'put',
-        url: `http://` + window.location.hostname +`:3000/users/${id}`,
+        url: `https://` + window.location.hostname +`:3000/users/${id}`,
         headers: {
             'Authorization': localStorage.getItem("token"),
             'Content-Type': 'multipart/form-data'

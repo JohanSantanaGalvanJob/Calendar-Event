@@ -25,5 +25,7 @@
 !/tmp/storage/
 !/tmp/storage/.keep
 
-# Ignore master key for decrypting credentials and more.
+# Ignore master key for decrypting credentials and more & database.yml for database connection errors
 /config/master.key
+/.cert
+/.env

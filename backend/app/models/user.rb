@@ -10,6 +10,7 @@ class User < ApplicationRecord
     super
   end
 
+  validates :last_name, presence: true, length: { minimum: 5, maximum: 20 }, format: { with: /\A[a-zA-ZñÑ]+(\s[a-zA-ZñÑ]+)?\z/, message: "sólo puede contener letras, un solo espacio y la letra 'ñ'" }
   validates :first_name, presence: true, length: { minimum: 5, maximum: 20 }, format: { with: /\A[a-zA-ZñÑ]+\z/, message: "sólo puede contener letras y la letra 'ñ'" }
   validates :email, presence: true
   validates :password, presence: true, length: { minimum: 8 }, 

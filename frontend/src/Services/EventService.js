@@ -7,7 +7,7 @@ const getAll = () => {
 
 const getEventsObject = async () => {
     try {
-      const { data } = await axios.get('http://localhost:3000/events');
+      const { data } = await axios.get('https://localhost:3000/events');
       const objectEvents = JSON.parse(JSON.stringify(data));
       return objectEvents;
     } catch (error) {
@@ -37,7 +37,7 @@ const create = params => {
 
     var config = {
         method: 'post',
-        url: 'http://'+ window.location.hostname +':3000/events',
+        url: 'https://'+ window.location.hostname +':3000/events',
         headers: {
             'Content-Type': 'multipart/form-data',
             'Authorization': localStorage.getItem("token"),

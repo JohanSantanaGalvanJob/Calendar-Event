@@ -1,6 +1,6 @@
 
 .settings-title{
-    margin-top: 1em;
+    margin: 1em auto 2em auto;
     text-align: center;
     text-decoration: none;
 }
@@ -8,13 +8,9 @@
 .settings-field{
     display: flex;
     column-gap: 1em;
-    margin: 1em;
-    margin-bottom: 0;
+    margin: 1em 1em 0 1em;
     padding: .5em;
-    text-decoration: none;
-}
-
-.settings-field p{
+    color: #424242;
     text-decoration: none;
 }
 
@@ -23,8 +19,6 @@
     font-style: italic;
     margin-top: 0;
     margin-left: 0.5em;
-    text-decoration: none;
-
 }
 
 .sss{

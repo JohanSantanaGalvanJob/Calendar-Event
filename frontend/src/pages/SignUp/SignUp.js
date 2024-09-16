@@ -16,8 +16,12 @@ const SignUp = () => {
   const [imgSrc, setImgSrc] = useState("https://mdbootstrap.com/img/Photos/Others/placeholder-avatar.jpg");
   const navigate = useNavigate();
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  const [showName, setShowName] = useState(false);
+  const [showSurname, setShowSurname] = useState(false);
+  const [goodPass, setGoodPass] = useState("sign-up-label-false");
+  const [textPass, setTextPass] = useState("*One capital letter. + 8 characters");
 
-  
+
   const initialUserState = {
     id: null,
     firstname: "",
@@ -68,17 +72,37 @@ const SignUp = () => {
     }).catch(e => {
       mySwalError(e)
       console.log(e);
-  });
+    });
 
   }
-
-
 
   const [user, setUser] = useState(initialUserState);
 
   const handleInputChange = event => {
     const { name, value } = event.target;
     setUser({ ...user, [name]: value });
+    switch (event.target.name) {
+      case 'firstname':
+        setShowName(/[^a-zA-Z0-9]/.test(event.target.value));
+        break;
+
+      case 'lastname':
+        setShowSurname(/[^a-zA-Z0-9]/.test(event.target.value));
+        break;
+
+      case 'password':
+        if ((event.target.value.length >= 8 && /[A-Z]/.test(event.target.value))) {
+          setGoodPass("sign-up-label-true");
+          setTextPass("That's good, thanks!");
+        } else {
+          setGoodPass("sign-up-label-false");
+          setTextPass("*One capital letter. + 8 characters");
+        }
+        break;
+
+      default:
+        break;
+    }
   };
 
   const handleInputFileChange = event => {
@@ -100,10 +124,10 @@ const SignUp = () => {
   const mySwalError = (error) => {
 
     swal.fire({
-        title: 'Oops Something went wrong!',
-        icon: 'error',
-        text: error,
-      })
+      title: 'Oops Something went wrong!',
+      icon: 'error',
+      text: error,
+    })
 
   }
 
@@ -140,20 +164,20 @@ const SignUp = () => {
                   <div className='sign-up-form'>
                     <div className='sign-up-field'>
                       <input id='firstname' name='firstname' value={user.firstname} onChange={handleInputChange} required type='text' maxLength={20} minLength={5} placeholder='Write your first name' pattern="[a-zA-Z]*" />
-                      <span className='sign-up-label' id='first-name-error'>*Alphabetical characters only</span>
+                      {showName && <label className='sign-up-label-false' id='first-name-error'>*Alphabetical characters only</label>}
                     </div>
 
                     <div className='sign-up-field'>
                       <input id='lastname' name='lastname' value={user.lastname} onChange={handleInputChange} type='text' maxLength={20} minLength={5} pattern="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$" placeholder='Write your last name' required={true}>
                       </input>
-                      <span className='sign-up-label'>*Alphabetical characters only</span>
+                      {showSurname && <label className='sign-up-label-false'>*Alphabetical characters only</label>}
                     </div>
                     <div className='sign-up-field'>
                       <input id='email' name='email' value={user.email} onChange={handleInputChange} type="email" placeholder='Write your email' pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required={true}></input>
                     </div>
                     <div className='sign-up-field'>
                       <input id='password' name='password' value={user.password} onChange={handleInputChange} type="password" placeholder='Write your password' pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required={true}></input>
-                      <span className='sign-up-label'>*One capital letter. + 8 characters</span>
+                      <label className={goodPass}>{textPass}</label>
                     </div>
                     <div className='sign-up-field'>
                       <input id='date_birth' name='date_birth' value={user.date_birth} onChange={handleInputChange} type="date" placeholder='Write your date of birth' required={true}></input>

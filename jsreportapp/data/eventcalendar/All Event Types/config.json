@@ -1,0 +1,22 @@
+{
+    "name": "All Event Types",
+    "engine": "handlebars",
+    "recipe": "chrome-pdf",
+    "shortid": "Y9Y17o0wG4",
+    "chrome": {
+        "printBackground": true
+    },
+    "creationDate": {
+        "$$date": 1677252476179
+    },
+    "modificationDate": {
+        "$$date": 1677252729795
+    },
+    "_id": "WoVK05vTtiu8hy9D",
+    "$entitySet": "templates",
+    "scripts": [
+        {
+            "shortid": "W0gvNctphZ"
+        }
+    ]
+}

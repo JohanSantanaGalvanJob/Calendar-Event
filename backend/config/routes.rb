@@ -18,5 +18,6 @@ Rails.application.routes.draw do
     put "users/:id", to: "users#update"
     get "reports", to: "reports#show"
     get "chart", to: "chart#chart"
+    get 'event_users/get_events_for_user/:user_id', to: 'event_users#get_events_for_user'
   # end
 end

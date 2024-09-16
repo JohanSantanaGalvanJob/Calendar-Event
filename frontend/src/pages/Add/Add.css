@@ -1,33 +1,39 @@
-@import url('http://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
+.addButtons {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+  }
 
-.cards{
+.cards {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
 }
 
-.add-field{
+.add-field {
 
     background-color: #CCF2F4;
     column-gap: 1em;
     margin: 1em;
     width: 35vw;
     height: 7em;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: .5em;
     padding: .5em;
     padding-bottom: 1em;
-   
+
 }
 
-.add-field-content{
+.add-field-content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.add-field a{
+.add-field a {
     text-decoration: none;
 }
 
@@ -39,12 +45,12 @@
     border-top: 1px solid #AAAAAA;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 
-.add-field-title{
+.add-field-title {
     color: #424242;
     font-style: italic;
     margin: .5em 0;
@@ -52,7 +58,7 @@ a{
     text-decoration: none;
 }
 
-.add-field-content p{
+.add-field-content p {
 
     margin: 0.5em 0;
     font-size: small;

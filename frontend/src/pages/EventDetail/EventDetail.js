@@ -8,14 +8,18 @@ import { EventField } from "../../components/EventField/EventField"
 import { useState, useEffect } from "react";
 import { Link, Navigate, useNavigate, useParams } from 'react-router-dom';
 import LocationService from "../../Services/LocationService";
+import { BackButton } from "../../components/BackButton/BackButton/BackButton";
+import { handleBreakpoints } from "@mui/system";
 
 
 export const EventDetail = () => {
 
     const [events, setEvents] = useState([]);
     const navigate = useNavigate();
+    const [width, setWidth] = useState(0)
     let { id } = useParams();
     let { name } = useParams();
+    const [mapUrl, setMapUrl] = useState("");
 
     const mySwalError = (error) => {
 
@@ -29,16 +33,30 @@ export const EventDetail = () => {
 
     const [locations, setLocations] = useState([]);
 
-    const getLocations = ()  =>{
+    const getLocations = () => {
         LocationService.get(events.location_id).then(response => {
             setLocations(response.data);
             console.log(response.data);
-          })
-          .catch(e => {
-            mySwalError('Locations: ' +e)
-            console.log(e);
-          });
+        })
+            .catch(e => {
+                mySwalError('Locations: ' + e)
+                console.log(e);
+            });
     }
+
+    useEffect(() => {
+        function handleResize() {
+            setWidth(window.innerWidth)
+        }
+
+        window.addEventListener("resize", handleResize)
+
+        handleResize()
+
+        return () => {
+            window.removeEventListener("resize", handleResize)
+        }
+    }, [setWidth]);
 
     useEffect(() => {
         EventService.get(id).then((response) => {
@@ -50,8 +68,13 @@ export const EventDetail = () => {
 
         LocationService.get(name).then(response2 => {
             setLocations(response2.data);
+            if(/\s/.test(locations.name)) {
+                setMapUrl("https://maps.google.com/maps?q=" + response2.data.name.replace(/ /g, '') + "&t=&z=13&ie=UTF8&iwloc=&output=embed")
+            } else {
+                setMapUrl("https://maps.google.com/maps?q=" + response2.data.name + "&t=&z=13&ie=UTF8&iwloc=&output=embed")
+            }
             console.log(response2.data);
-          }).catch(e => {
+        }).catch(e => {
             mySwalError("An error occured loading the location. Please try Again Later")
             console.log(e);
         });
@@ -59,10 +82,17 @@ export const EventDetail = () => {
 
     }, []);
 
+    const mapxd = () => {
+        
+    };
+
     return (
         <>
-        <style>{'body { background-color: #CCF2F4;}'}</style>
+            <style>{'body { background-color: #CCF2F4;}'}</style>
             <Navbar></Navbar>
+            <div className="event-detail-back-button">
+                <BackButton />
+            </div>
             <div className="event-detail-first-part">
                 <h1>{events.title}</h1>
                 <div className="event-detail-line"></div>
@@ -71,15 +101,20 @@ export const EventDetail = () => {
             <div className="event-detail-second-part">
                 <h3>Localización</h3>
                 <div className="event-detail-line"></div>
-                <p>{locations.name}</p>
+                <div className="mapouter">
+                    <div className="gmap_canvas">
+                        <iframe width={width-50} height="500" id="gmap_canvas" src={mapUrl}>
+                        </iframe>
+                    </div>
+                </div>
             </div>
             <div className="event-detail-second-part">
                 <h3>Fecha y Horas</h3>
                 <div className="event-detail-line"></div>
                 <p>
-                Fecha: {events.date}<br/>
-                Hora de entrada: {events.starting_hour}<br/>
-                Hora de finalización: {events.finished_hour}<br/>
+                    Fecha: {events.date}<br />
+                    Hora de entrada: {events.starting_hour}<br />
+                    Hora de finalización: {events.finished_hour}<br />
                 </p>
             </div>
             <div className="event-detail-second-part">
